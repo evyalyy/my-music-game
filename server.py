@@ -1,5 +1,7 @@
+import json
 import os
 import subprocess
+import threading
 import time
 from flask import Flask, request, jsonify, send_from_directory
 
@@ -7,11 +9,13 @@ YTDLP = os.environ.get('YTDLP_BIN', 'yt-dlp')
 CACHE_TTL = 5 * 3600  # YouTube URLs expire after ~6h, refresh at 5h
 
 app = Flask(__name__)
-_cache = {}  # ytId -> (url, fetched_at)
+_cache = {}        # ytId -> (url, fetched_at)
+_cache_lock = threading.Lock()
 
 
 def resolve_url(yt_id):
-    entry = _cache.get(yt_id)
+    with _cache_lock:
+        entry = _cache.get(yt_id)
     if entry and time.time() - entry[1] < CACHE_TTL:
         return entry[0], None
 
@@ -23,8 +27,28 @@ def resolve_url(yt_id):
     if not url:
         return None, result.stderr.strip()
 
-    _cache[yt_id] = (url, time.time())
+    with _cache_lock:
+        _cache[yt_id] = (url, time.time())
     return url, None
+
+
+def _prewarm():
+    try:
+        with open('songs.json') as f:
+            songs = json.load(f)
+    except Exception:
+        return
+
+    yt_ids = [s['youtubeId'] for s in songs if 'youtubeId' in s]
+    app.logger.info(f'Pre-warming {len(yt_ids)} songs in background…')
+    for yt_id in yt_ids:
+        with _cache_lock:
+            entry = _cache.get(yt_id)
+        if entry and time.time() - entry[1] < CACHE_TTL:
+            continue
+        resolve_url(yt_id)
+        time.sleep(0.5)  # be gentle with YouTube rate limits
+    app.logger.info('Pre-warm complete.')
 
 
 @app.route('/')
@@ -46,5 +70,7 @@ def audio():
     return jsonify({'url': url})
 
 
+threading.Thread(target=_prewarm, daemon=True).start()
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True, use_reloader=False)
