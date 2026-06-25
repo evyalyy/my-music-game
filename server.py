@@ -51,6 +51,12 @@ def _prewarm():
     app.logger.info('Pre-warm complete.')
 
 
+@app.route('/config')
+def config():
+    client_id = os.environ.get('SPOTIFY_CLIENT_ID', '')
+    return jsonify({'spotifyClientId': client_id})
+
+
 @app.route('/')
 @app.route('/<path:filename>')
 def static_files(filename='play.html'):
