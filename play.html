@@ -65,9 +65,10 @@
     const params = new URLSearchParams(location.search);
 
     if (params.has('code')) {
-      const songId = sessionStorage.getItem('pending_song_id');
+      const state = JSON.parse(atob(params.get('state') || 'e30='));
+      const { verifier, songId } = state;
       status.textContent = 'Connecting to Spotify…';
-      const data = await exchangeCode(params.get('code'));
+      const data = await exchangeCode(params.get('code'), verifier);
       if (data.error) { status.textContent = `Auth error: ${data.error}`; return; }
       storeToken(data);
       history.replaceState({}, '', `${location.pathname}?id=${songId}`);
@@ -186,8 +187,8 @@
   async function startSpotifyAuth(songId) {
     const verifier = generateRandomString(64);
     const challenge = await generateCodeChallenge(verifier);
-    sessionStorage.setItem('pkce_verifier', verifier);
-    sessionStorage.setItem('pending_song_id', songId);
+    // Carry verifier + songId in state so any browser can complete the flow
+    const state = btoa(JSON.stringify({ verifier, songId }));
 
     const params = new URLSearchParams({
       client_id: SPOTIFY_CLIENT_ID,
@@ -196,11 +197,12 @@
       scope: 'streaming user-read-email user-read-private',
       code_challenge_method: 'S256',
       code_challenge: challenge,
+      state,
     });
     location.href = `https://accounts.spotify.com/authorize?${params}`;
   }
 
-  async function exchangeCode(code) {
+  async function exchangeCode(code, verifier) {
     const res = await fetch('https://accounts.spotify.com/api/token', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -209,7 +211,7 @@
         grant_type: 'authorization_code',
         code,
         redirect_uri: REDIRECT_URI,
-        code_verifier: sessionStorage.getItem('pkce_verifier'),
+        code_verifier: verifier,
       }),
     });
     return res.json();
