@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Game</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #111;
+      color: #fff;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    #status {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.6;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    #btn {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: none;
+      background: #1db954;
+      cursor: pointer;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.1s;
+    }
+
+    #btn:active { transform: scale(0.93); }
+    #btn:disabled { background: #444; cursor: default; }
+  </style>
+</head>
+<body>
+
+<div id="status">Loading…</div>
+<button id="btn" disabled>▶</button>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const songId = params.get('id');
+  const status = document.getElementById('status');
+  const btn = document.getElementById('btn');
+
+  const audio = new Audio();
+  audio.preload = 'auto';
+
+  audio.addEventListener('playing', () => {
+    btn.textContent = '⏸';
+    status.textContent = 'Playing…';
+  });
+  audio.addEventListener('pause', () => {
+    btn.textContent = '▶';
+    status.textContent = 'Paused';
+  });
+  audio.addEventListener('ended', () => {
+    btn.textContent = '▶';
+    status.textContent = 'Ended';
+  });
+  audio.addEventListener('error', () => {
+    status.textContent = 'Playback error';
+  });
+
+  fetch('songs.json')
+    .then(r => r.json())
+    .then(songs => {
+      const song = songs.find(s => s.id === songId);
+      if (!song) { status.textContent = `Song not found (id=${songId})`; return; }
+      status.textContent = 'Fetching audio…';
+      return fetch(`/audio?ytId=${song.youtubeId}`);
+    })
+    .then(r => r && r.json())
+    .then(data => {
+      if (!data) return;
+      if (data.error) { status.textContent = `Error: ${data.error}`; return; }
+      audio.src = data.url;
+      status.textContent = 'Ready';
+      btn.disabled = false;
+    })
+    .catch(e => { status.textContent = `Error: ${e}`; });
+
+  btn.addEventListener('click', () => {
+    audio.paused ? audio.play() : audio.pause();
+  });
+</script>
+</body>
+</html>
