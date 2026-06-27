@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Game</title>
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -66,6 +67,8 @@
     VIEWS.forEach(v => {
       document.getElementById(`view-${v}`).classList.toggle('active', v === view);
     });
+    if (view === 'scanner') startScanner();
+    if (currentView === 'scanner' && view !== 'scanner') stopScanner();
     currentView = view;
   }
 
@@ -181,8 +184,88 @@
     });
   }
 
+  // ── Spotify SDK ───────────────────────────────────────────────────────────
+  let spotifyPlayer = null;
+  let spotifyDeviceId = null;
+
   async function initSpotifySDK() {
-    // implemented in Task 4
+    await loadSpotifySDK();
+    spotifyPlayer = new Spotify.Player({
+      name: 'Music Game',
+      getOAuthToken: cb => cb(spotifyToken),
+      volume: 1.0,
+    });
+    spotifyPlayer.addListener('ready', ({ device_id }) => {
+      spotifyDeviceId = device_id;
+    });
+    spotifyPlayer.addListener('authentication_error', () => {
+      clearToken();
+      document.getElementById('auth-status').textContent = 'Session expired — refresh.';
+      setState('auth');
+    });
+    spotifyPlayer.addListener('account_error', () => {
+      document.getElementById('auth-status').textContent = 'Spotify Premium required.';
+      setState('auth');
+    });
+    spotifyPlayer.addListener('initialization_error', ({ message }) => {
+      document.getElementById('auth-status').textContent = `Spotify init error: ${message}`;
+      setState('auth');
+    });
+    await spotifyPlayer.connect();
+  }
+
+  // ── QR Scanner ────────────────────────────────────────────────────────────
+  let qrScanner = null;
+  const isDebug = new URLSearchParams(location.search).has('debug');
+
+  function startScanner() {
+    document.getElementById('scan-status').textContent = 'Scan a card';
+
+    if (isDebug) {
+      document.getElementById('debug-input').style.display = 'flex';
+      document.getElementById('debug-url').value = '';
+      document.getElementById('debug-play').onclick = () => {
+        const url = document.getElementById('debug-url').value.trim();
+        const track = parseTrackUrl(url);
+        if (!track) {
+          document.getElementById('scan-status').textContent = 'Unrecognised URL';
+          return;
+        }
+        onTrackScanned(track);
+      };
+      return;
+    }
+
+    qrScanner = new Html5Qrcode('reader');
+    qrScanner.start(
+      { facingMode: 'environment' },
+      { fps: 10, qrbox: { width: 250, height: 250 } },
+      (decodedText) => {
+        const track = parseTrackUrl(decodedText);
+        if (!track) {
+          document.getElementById('scan-status').textContent = 'Not a music URL — try again';
+          return;
+        }
+        stopScanner();
+        onTrackScanned(track);
+      },
+      () => {}  // per-frame errors — ignore
+    ).catch(err => {
+      document.getElementById('scan-status').textContent = `Camera error: ${err}`;
+    });
+  }
+
+  function stopScanner() {
+    if (qrScanner) {
+      qrScanner.stop().catch(() => {});
+      qrScanner = null;
+    }
+    document.getElementById('debug-input').style.display = 'none';
+  }
+
+  function onTrackScanned(track) {
+    // Implemented in Task 5
+    console.log('Scanned:', track);
   }
 
   // ── Main entry point ──────────────────────────────────────────────────────
