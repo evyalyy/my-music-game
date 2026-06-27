@@ -6,263 +6,71 @@
   <title>Music Game</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      background: #111;
-      color: #fff;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      background: #111; color: #fff; font-family: sans-serif;
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
     }
-
-    #status {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      opacity: 0.6;
-      text-align: center;
-      padding: 0 1rem;
-    }
-
-    #btn {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: none;
-      background: #1db954;
-      cursor: pointer;
-      font-size: 3rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .view { display: none; flex-direction: column; align-items: center;
+            gap: 1.5rem; width: 100%; padding: 2rem; }
+    .view.active { display: flex; }
+    .status { font-size: 1.1rem; opacity: 0.6; text-align: center; }
+    .btn-round {
+      width: 120px; height: 120px; border-radius: 50%; border: none;
+      background: #1db954; color: #fff; cursor: pointer; font-size: 3rem;
+      display: flex; align-items: center; justify-content: center;
       transition: transform 0.1s;
     }
-
-    #btn:active { transform: scale(0.93); }
-    #btn:disabled { background: #444; cursor: default; }
+    .btn-round:active { transform: scale(0.93); }
+    .btn-round:disabled { background: #444; cursor: default; }
+    .btn-next {
+      padding: 0.75rem 2rem; border: 2px solid #fff; border-radius: 2rem;
+      background: transparent; color: #fff; font-size: 1rem; cursor: pointer;
+    }
+    #reader { width: 300px; }
+    #debug-input { display: none; flex-direction: column; align-items: center; gap: 0.5rem; width: 100%; }
+    #debug-url { width: 90%; max-width: 400px; padding: 0.75rem; border-radius: 0.5rem;
+                 border: 1px solid #555; background: #222; color: #fff; font-size: 1rem; }
   </style>
 </head>
 <body>
 
-<div id="status">Loading…</div>
-<button id="btn" disabled>▶</button>
+<!-- Auth view -->
+<div id="view-auth" class="view active">
+  <div class="status" id="auth-status">Loading…</div>
+</div>
+
+<!-- Scanner view -->
+<div id="view-scanner" class="view">
+  <div id="reader"></div>
+  <div id="debug-input">
+    <input id="debug-url" type="text" placeholder="Paste Spotify or YouTube URL…">
+    <button class="btn-next" id="debug-play">Play</button>
+  </div>
+  <div class="status" id="scan-status">Scan a card</div>
+</div>
+
+<!-- Player view -->
+<div id="view-player" class="view">
+  <div class="status" id="play-status">Playing…</div>
+  <button class="btn-round" id="play-btn" disabled>▶</button>
+  <button class="btn-next" id="next-btn">Next Song</button>
+</div>
 
 <script>
-  let SPOTIFY_CLIENT_ID;
-  const REDIRECT_URI = `${location.origin}/play.html`;
+  // ── State machine ─────────────────────────────────────────────────────────
+  const VIEWS = ['auth', 'scanner', 'player'];
+  let currentView = 'auth';
 
-  const status = document.getElementById('status');
-  const btn = document.getElementById('btn');
-
-  // ── Entry point ──────────────────────────────────────────────────────────
-
-  async function main() {
-    const config = await fetch('/config').then(r => r.json());
-    SPOTIFY_CLIENT_ID = config.spotifyClientId;
-
-    const params = new URLSearchParams(location.search);
-
-    if (params.has('code')) {
-      try {
-        const rawState = params.get('state') || '';
-        const state = JSON.parse(atob(rawState.replace(/-/g, '+').replace(/_/g, '/')));
-        const { verifier, songId } = state;
-        status.textContent = 'Connecting to Spotify…';
-        const data = await exchangeCode(params.get('code'), verifier);
-        if (data.error) { status.textContent = `Auth error: ${data.error} — ${data.error_description}`; return; }
-        storeToken(data);
-        history.replaceState({}, '', `${location.pathname}?id=${songId}`);
-        await playSong(songId);
-      } catch (e) {
-        status.textContent = `Callback error: ${e}`;
-      }
-      return;
-    }
-
-    const songId = params.get('id');
-    if (!songId) { status.textContent = 'No song ID in URL.'; return; }
-    await playSong(songId);
-  }
-
-  async function playSong(songId) {
-    let songs;
-    try {
-      songs = await fetch('songs.json').then(r => r.json());
-    } catch (e) {
-      status.textContent = `Error loading songs: ${e}`;
-      return;
-    }
-
-    const song = songs.find(s => s.id === songId);
-    if (!song) { status.textContent = `Song not found (id=${songId})`; return; }
-
-    if (song.service === 'spotify') {
-      await initSpotify(song);
-    } else {
-      await initYouTube(song);
-    }
-  }
-
-  // ── YouTube ───────────────────────────────────────────────────────────────
-
-  async function initYouTube(song) {
-    const audio = new Audio();
-    audio.preload = 'auto';
-
-    audio.addEventListener('playing', () => { btn.textContent = '⏸'; status.textContent = 'Playing…'; });
-    audio.addEventListener('pause',   () => { btn.textContent = '▶'; status.textContent = 'Paused'; });
-    audio.addEventListener('ended',   () => { btn.textContent = '▶'; status.textContent = 'Ended'; });
-    audio.addEventListener('error',   () => { status.textContent = 'Playback error'; });
-
-    status.textContent = 'Fetching audio…';
-    try {
-      const data = await fetch(`/audio?ytId=${song.youtubeId}`).then(r => r.json());
-      if (data.error) { status.textContent = `Error: ${data.error}`; return; }
-      audio.src = data.url;
-    } catch (e) {
-      status.textContent = `Error: ${e}`;
-      return;
-    }
-
-    status.textContent = 'Ready';
-    btn.disabled = false;
-    btn.addEventListener('click', () => audio.paused ? audio.play() : audio.pause());
-  }
-
-  // ── Spotify ───────────────────────────────────────────────────────────────
-
-  async function initSpotify(song) {
-    const token = getValidToken();
-    if (!token) {
-      status.textContent = 'Redirecting to Spotify…';
-      await startSpotifyAuth(new URLSearchParams(location.search).get('id'));
-      return;
-    }
-
-    status.textContent = 'Connecting to Spotify…';
-    await loadSpotifySDK();
-
-    const player = new Spotify.Player({
-      name: 'Music Game',
-      getOAuthToken: cb => cb(token),
-      volume: 1.0,
+  function setState(view) {
+    VIEWS.forEach(v => {
+      document.getElementById(`view-${v}`).classList.toggle('active', v === view);
     });
-
-    player.addListener('ready', async ({ device_id }) => {
-      const res = await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device_id}`, {
-        method: 'PUT',
-        headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ uris: [`spotify:track:${song.spotifyId}`] }),
-      });
-      if (res.status === 403) {
-        status.textContent = 'Spotify Premium required.';
-        return;
-      }
-      status.textContent = 'Ready';
-      btn.disabled = false;
-      btn.addEventListener('click', async () => {
-        const state = await player.getCurrentState();
-        if (!state) return;
-        state.paused ? player.resume() : player.pause();
-      });
-    });
-
-    player.addListener('player_state_changed', state => {
-      if (!state) return;
-      btn.textContent = state.paused ? '▶' : '⏸';
-      status.textContent = state.paused ? 'Paused' : 'Playing…';
-    });
-
-    player.addListener('not_ready', () => { status.textContent = 'Spotify disconnected'; btn.disabled = true; });
-    player.addListener('initialization_error', ({ message }) => { status.textContent = `Init error: ${message}`; });
-    player.addListener('authentication_error', ({ message }) => {
-      clearToken();
-      status.textContent = `Auth expired — refresh the page.`;
-    });
-    player.addListener('account_error', () => { status.textContent = 'Spotify Premium required.'; });
-    player.addListener('playback_error', ({ message }) => { status.textContent = `Playback error: ${message}`; });
-
-    player.connect();
+    currentView = view;
   }
 
-  // ── PKCE / token helpers ──────────────────────────────────────────────────
-
-  async function startSpotifyAuth(songId) {
-    const verifier = generateRandomString(64);
-    const challenge = await generateCodeChallenge(verifier);
-    // Carry verifier + songId in state so any browser can complete the flow
-    const state = btoa(JSON.stringify({ verifier, songId }))
-      .replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
-
-    const params = new URLSearchParams({
-      client_id: SPOTIFY_CLIENT_ID,
-      response_type: 'code',
-      redirect_uri: REDIRECT_URI,
-      scope: 'streaming user-read-email user-read-private',
-      code_challenge_method: 'S256',
-      code_challenge: challenge,
-      state,
-    });
-    location.href = `https://accounts.spotify.com/authorize?${params}`;
-  }
-
-  async function exchangeCode(code, verifier) {
-    const res = await fetch('https://accounts.spotify.com/api/token', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        client_id: SPOTIFY_CLIENT_ID,
-        grant_type: 'authorization_code',
-        code,
-        redirect_uri: REDIRECT_URI,
-        code_verifier: verifier,
-      }),
-    });
-    return res.json();
-  }
-
-  function storeToken(data) {
-    localStorage.setItem('spotify_token', data.access_token);
-    localStorage.setItem('spotify_token_expiry', Date.now() + data.expires_in * 1000);
-  }
-
-  function getValidToken() {
-    const token = localStorage.getItem('spotify_token');
-    const expiry = parseInt(localStorage.getItem('spotify_token_expiry') || '0');
-    return token && Date.now() < expiry ? token : null;
-  }
-
-  function clearToken() {
-    localStorage.removeItem('spotify_token');
-    localStorage.removeItem('spotify_token_expiry');
-  }
-
-  function generateRandomString(length) {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    return Array.from(crypto.getRandomValues(new Uint8Array(length)))
-      .map(x => chars[x % chars.length]).join('');
-  }
-
-  async function generateCodeChallenge(verifier) {
-    const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(verifier));
-    return btoa(String.fromCharCode(...new Uint8Array(digest)))
-      .replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
-  }
-
-  function loadSpotifySDK() {
-    return new Promise(resolve => {
-      window.onSpotifyWebPlaybackSDKReady = resolve;
-      const s = document.createElement('script');
-      s.src = 'https://sdk.scdn.co/spotify-player.js';
-      document.head.appendChild(s);
-    });
-  }
-
+  // ── Keepalive ─────────────────────────────────────────────────────────────
   setInterval(() => fetch('/ping'), 10 * 60 * 1000);
-
-  main();
 </script>
 </body>
 </html>
