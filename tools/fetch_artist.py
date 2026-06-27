@@ -74,7 +74,8 @@ def fetch_all_tracks(token, artist_id):
 
     # Fetch tracks from each album
     for album in albums:
-        year = int(album['release_date'][:4])
+        year_str = album.get('release_date', '')[:4]
+        year = int(year_str) if year_str.isdigit() else 0
         url = f'https://api.spotify.com/v1/albums/{album["id"]}/tracks'
         params = {'limit': 50}
         while url:

@@ -195,9 +195,12 @@
       getOAuthToken: cb => cb(spotifyToken),
       volume: 1.0,
     });
-    spotifyPlayer.addListener('ready', ({ device_id }) => {
-      spotifyDeviceId = device_id;
-    });
+    const readyPromise = new Promise(resolve =>
+      spotifyPlayer.addListener('ready', ({ device_id }) => {
+        spotifyDeviceId = device_id;
+        resolve();
+      })
+    );
     spotifyPlayer.addListener('authentication_error', () => {
       clearToken();
       document.getElementById('auth-status').textContent = 'Session expired — refresh.';
@@ -212,6 +215,7 @@
       setState('auth');
     });
     await spotifyPlayer.connect();
+    await readyPromise;
   }
 
   // ── QR Scanner ────────────────────────────────────────────────────────────
@@ -305,6 +309,10 @@
         body: JSON.stringify({ uris: [`spotify:track:${trackId}`] }),
       }
     );
+    if (!res.ok && res.status !== 403) {
+      document.getElementById('play-status').textContent = `Playback error (${res.status})`;
+      return;
+    }
     if (res.status === 403) {
       document.getElementById('play-status').textContent = 'Spotify Premium required.';
       return;
