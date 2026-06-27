@@ -103,6 +103,131 @@
     });
     console.log(`parseTrackUrl: ${passed}/${cases.length} tests passed`);
   })();
+
+  // ── Auth globals ──────────────────────────────────────────────────────────
+  let SPOTIFY_CLIENT_ID;
+  const REDIRECT_URI = `${location.origin}/play.html`;
+  let spotifyToken = null;
+
+  // ── PKCE helpers ──────────────────────────────────────────────────────────
+  function getValidToken() {
+    const token = localStorage.getItem('spotify_token');
+    const expiry = parseInt(localStorage.getItem('spotify_token_expiry') || '0');
+    return token && Date.now() < expiry ? token : null;
+  }
+
+  function storeToken(data) {
+    localStorage.setItem('spotify_token', data.access_token);
+    localStorage.setItem('spotify_token_expiry', Date.now() + data.expires_in * 1000);
+    spotifyToken = data.access_token;
+  }
+
+  function clearToken() {
+    localStorage.removeItem('spotify_token');
+    localStorage.removeItem('spotify_token_expiry');
+    spotifyToken = null;
+  }
+
+  function generateRandomString(length) {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    return Array.from(crypto.getRandomValues(new Uint8Array(length)))
+      .map(x => chars[x % chars.length]).join('');
+  }
+
+  async function generateCodeChallenge(verifier) {
+    const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(verifier));
+    return btoa(String.fromCharCode(...new Uint8Array(digest)))
+      .replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+  }
+
+  async function startSpotifyAuth() {
+    const verifier = generateRandomString(64);
+    const challenge = await generateCodeChallenge(verifier);
+    const state = btoa(JSON.stringify({ verifier }))
+      .replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+    const params = new URLSearchParams({
+      client_id: SPOTIFY_CLIENT_ID,
+      response_type: 'code',
+      redirect_uri: REDIRECT_URI,
+      scope: 'streaming user-read-email user-read-private',
+      code_challenge_method: 'S256',
+      code_challenge: challenge,
+      state,
+    });
+    location.href = `https://accounts.spotify.com/authorize?${params}`;
+  }
+
+  async function exchangeCode(code, verifier) {
+    const res = await fetch('https://accounts.spotify.com/api/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        client_id: SPOTIFY_CLIENT_ID,
+        grant_type: 'authorization_code',
+        code,
+        redirect_uri: REDIRECT_URI,
+        code_verifier: verifier,
+      }),
+    });
+    return res.json();
+  }
+
+  function loadSpotifySDK() {
+    return new Promise(resolve => {
+      window.onSpotifyWebPlaybackSDKReady = resolve;
+      const s = document.createElement('script');
+      s.src = 'https://sdk.scdn.co/spotify-player.js';
+      document.head.appendChild(s);
+    });
+  }
+
+  async function initSpotifySDK() {
+    // implemented in Task 4
+  }
+
+  // ── Main entry point ──────────────────────────────────────────────────────
+  async function main() {
+    const config = await fetch('/config').then(r => r.json());
+    SPOTIFY_CLIENT_ID = config.spotifyClientId;
+
+    const params = new URLSearchParams(location.search);
+
+    // OAuth callback
+    if (params.has('code')) {
+      document.getElementById('auth-status').textContent = 'Connecting to Spotify…';
+      try {
+        const rawState = params.get('state') || '';
+        const { verifier } = JSON.parse(atob(rawState.replace(/-/g, '+').replace(/_/g, '/')));
+        const data = await exchangeCode(params.get('code'), verifier);
+        if (data.error) {
+          document.getElementById('auth-status').textContent = `Auth error: ${data.error}`;
+          return;
+        }
+        storeToken(data);
+        history.replaceState({}, '', location.pathname);
+      } catch (e) {
+        document.getElementById('auth-status').textContent = `Auth error: ${e}`;
+        return;
+      }
+    }
+
+    // Check existing token
+    const token = getValidToken();
+    if (!token) {
+      document.getElementById('auth-status').textContent = 'Redirecting to Spotify…';
+      await startSpotifyAuth();
+      return;
+    }
+    spotifyToken = token;
+
+    // Init Spotify SDK once
+    document.getElementById('auth-status').textContent = 'Connecting to Spotify…';
+    await initSpotifySDK();
+
+    setState('scanner');
+  }
+
+  main();
 </script>
 </body>
 </html>
