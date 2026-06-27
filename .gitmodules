@@ -1,0 +1,3 @@
+[submodule "hitster-card-generator"]
+	path = hitster-card-generator
+	url = https://github.com/WhiteShunpo/hitster-card-generator.git
