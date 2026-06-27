@@ -61,7 +61,7 @@ def fetch_all_tracks(token, artist_id):
     # Fetch albums
     albums = []
     url = f'https://api.spotify.com/v1/artists/{artist_id}/albums'
-    params = {'include_groups': 'album,single', 'limit': 50, 'market': 'US'}
+    params = {'include_groups': 'album,single', 'limit': 10}
     while url:
         res = requests.get(url, headers={'Authorization': f'Bearer {token}'}, params=params, timeout=10)
         res.raise_for_status()

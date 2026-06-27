@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "id": "867be83e",
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5qIHFdkW6phMsTZlN2g8Lc"
+  },
+  {
+    "id": "d2e42853",
+    "title": "cardigan",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "7zcnlq38eqNWyUF6eNaB5Z"
+  },
+  {
+    "id": "1f52de72",
+    "title": "Cruel Summer",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "1BxfuPKGuaTgP7aM0Bbdwr"
+  },
+  {
+    "id": "635fb6a3",
+    "title": "Wildest Dreams",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "22C0JIVhFaczZ4t9heqREN"
+  },
+  {
+    "id": "89673d1d",
+    "title": "Blank Space",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "1u8c2t2Cy7UBoG4ArRcF5g"
+  },
+  {
+    "id": "2d115aef",
+    "title": "Style",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "0ug5NqcwcFR2xrfTkc7k8e"
+  },
+  {
+    "id": "2ccd16fa",
+    "title": "Shake It Off",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "0cqRj7pUJDkTCEsJkx8snD"
+  },
+  {
+    "id": "bd3eae89",
+    "title": "Bad Blood",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "2NlmmAjGYrrjAp0MED5rGx"
+  },
+  {
+    "id": "395932ca",
+    "title": "Love Story",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "5hnJCRSo4pxRsaEwT9YusG"
+  },
+  {
+    "id": "4e3223e8",
+    "title": "You Belong With Me",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "4kgTdThcDHfuDS2kKxB7Lc"
+  }
+]
