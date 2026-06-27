@@ -1,8 +1,12 @@
 import json
 import os
 import subprocess
-from dotenv import load_dotenv
-load_dotenv()
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 import threading
 import time
 from flask import Flask, request, jsonify, send_from_directory
