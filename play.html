@@ -47,6 +47,7 @@
   <div id="debug-input">
     <input id="debug-url" type="text" placeholder="Paste Spotify or YouTube URL…">
     <button class="btn-next" id="debug-play">Play</button>
+    <button class="btn-next" id="debug-reauth" style="opacity:0.5;font-size:0.8rem">Re-auth</button>
   </div>
   <div class="status" id="scan-status">Scan a card</div>
 </div>
@@ -238,6 +239,10 @@
 
       document.getElementById('debug-input').style.display = 'flex';
       document.getElementById('debug-url').value = '';
+      document.getElementById('debug-reauth').onclick = () => {
+        localStorage.clear();
+        location.href = location.pathname + '?debug=1';
+      };
       document.getElementById('debug-play').onclick = () => {
         const url = document.getElementById('debug-url').value.trim();
         const track = parseTrackUrl(url);
