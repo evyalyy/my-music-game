@@ -4,198 +4,150 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Game</title>
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      background: #111;
-      color: #fff;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      background: #111; color: #fff; font-family: sans-serif;
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
     }
-
-    #status {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      opacity: 0.6;
-      text-align: center;
-      padding: 0 1rem;
-    }
-
-    #btn {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: none;
-      background: #1db954;
-      cursor: pointer;
-      font-size: 3rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .view { display: none; flex-direction: column; align-items: center;
+            gap: 1.5rem; width: 100%; padding: 2rem; }
+    .view.active { display: flex; }
+    .status { font-size: 1.1rem; opacity: 0.6; text-align: center; }
+    .btn-round {
+      width: 120px; height: 120px; border-radius: 50%; border: none;
+      background: #1db954; color: #fff; cursor: pointer; font-size: 3rem;
+      display: flex; align-items: center; justify-content: center;
       transition: transform 0.1s;
     }
-
-    #btn:active { transform: scale(0.93); }
-    #btn:disabled { background: #444; cursor: default; }
+    .btn-round:active { transform: scale(0.93); }
+    .btn-round:disabled { background: #444; cursor: default; }
+    .btn-next {
+      padding: 0.75rem 2rem; border: 2px solid #fff; border-radius: 2rem;
+      background: transparent; color: #fff; font-size: 1rem; cursor: pointer;
+    }
+    #reader { width: 300px; }
+    #debug-input { display: none; flex-direction: column; align-items: center; gap: 0.5rem; width: 100%; }
+    #debug-url { width: 90%; max-width: 400px; padding: 0.75rem; border-radius: 0.5rem;
+                 border: 1px solid #555; background: #222; color: #fff; font-size: 1rem; }
   </style>
 </head>
 <body>
 
-<div id="status">Loading…</div>
-<button id="btn" disabled>▶</button>
+<!-- Auth view -->
+<div id="view-auth" class="view active">
+  <div class="status" id="auth-status">Loading…</div>
+</div>
+
+<!-- Scanner view -->
+<div id="view-scanner" class="view">
+  <div id="reader"></div>
+  <div id="debug-input">
+    <input id="debug-url" type="text" placeholder="Paste Spotify or YouTube URL…">
+    <button class="btn-next" id="debug-play">Play</button>
+  </div>
+  <div class="status" id="scan-status">Scan a card</div>
+</div>
+
+<!-- Player view -->
+<div id="view-player" class="view">
+  <div class="status" id="play-status">Playing…</div>
+  <button class="btn-round" id="play-btn" disabled>▶</button>
+  <button class="btn-next" id="next-btn">Next Song</button>
+</div>
 
 <script>
+  // ── State machine ─────────────────────────────────────────────────────────
+  const VIEWS = ['auth', 'scanner', 'player'];
+  let currentView = 'auth';
+
+  function setState(view) {
+    VIEWS.forEach(v => {
+      document.getElementById(`view-${v}`).classList.toggle('active', v === view);
+    });
+    if (view === 'scanner') startScanner();
+    if (currentView === 'scanner' && view !== 'scanner') stopScanner();
+    currentView = view;
+  }
+
+  // ── Keepalive ─────────────────────────────────────────────────────────────
+  setInterval(() => fetch('/ping'), 10 * 60 * 1000);
+
+  // ── URL parser ────────────────────────────────────────────────────────────
+  function parseTrackUrl(url) {
+    url = (url || '').trim();
+    let m;
+    m = url.match(/open\.spotify\.com\/track\/([A-Za-z0-9]+)/);
+    if (m) return { service: 'spotify', id: m[1] };
+    m = url.match(/[?&]v=([A-Za-z0-9_-]{11})/);
+    if (m) return { service: 'youtube', id: m[1] };
+    m = url.match(/youtu\.be\/([A-Za-z0-9_-]{11})/);
+    if (m) return { service: 'youtube', id: m[1] };
+    return null;
+  }
+
+  // Self-tests (run once, logged to console)
+  (function testParseTrackUrl() {
+    const cases = [
+      ['https://open.spotify.com/track/5sdQOyqq2IDhvmx2lHOpwd?si=abc', { service: 'spotify', id: '5sdQOyqq2IDhvmx2lHOpwd' }],
+      ['https://www.youtube.com/watch?v=dQw4w9WgXcQ', { service: 'youtube', id: 'dQw4w9WgXcQ' }],
+      ['https://youtu.be/dQw4w9WgXcQ', { service: 'youtube', id: 'dQw4w9WgXcQ' }],
+      ['not a url', null],
+      ['', null],
+    ];
+    let passed = 0;
+    cases.forEach(([input, expected]) => {
+      const result = parseTrackUrl(input);
+      const ok = JSON.stringify(result) === JSON.stringify(expected);
+      if (!ok) console.error('parseTrackUrl FAIL:', input, 'got', result, 'expected', expected);
+      else passed++;
+    });
+    console.log(`parseTrackUrl: ${passed}/${cases.length} tests passed`);
+  })();
+
+  // ── Auth globals ──────────────────────────────────────────────────────────
   let SPOTIFY_CLIENT_ID;
   const REDIRECT_URI = `${location.origin}/play.html`;
+  let spotifyToken = null;
 
-  const status = document.getElementById('status');
-  const btn = document.getElementById('btn');
-
-  // ── Entry point ──────────────────────────────────────────────────────────
-
-  async function main() {
-    const config = await fetch('/config').then(r => r.json());
-    SPOTIFY_CLIENT_ID = config.spotifyClientId;
-
-    const params = new URLSearchParams(location.search);
-
-    if (params.has('code')) {
-      try {
-        const rawState = params.get('state') || '';
-        const state = JSON.parse(atob(rawState.replace(/-/g, '+').replace(/_/g, '/')));
-        const { verifier, songId } = state;
-        status.textContent = 'Connecting to Spotify…';
-        const data = await exchangeCode(params.get('code'), verifier);
-        if (data.error) { status.textContent = `Auth error: ${data.error} — ${data.error_description}`; return; }
-        storeToken(data);
-        history.replaceState({}, '', `${location.pathname}?id=${songId}`);
-        await playSong(songId);
-      } catch (e) {
-        status.textContent = `Callback error: ${e}`;
-      }
-      return;
-    }
-
-    const songId = params.get('id');
-    if (!songId) { status.textContent = 'No song ID in URL.'; return; }
-    await playSong(songId);
+  // ── PKCE helpers ──────────────────────────────────────────────────────────
+  function getValidToken() {
+    const token = localStorage.getItem('spotify_token');
+    const expiry = parseInt(localStorage.getItem('spotify_token_expiry') || '0');
+    return token && Date.now() < expiry ? token : null;
   }
 
-  async function playSong(songId) {
-    let songs;
-    try {
-      songs = await fetch('songs.json').then(r => r.json());
-    } catch (e) {
-      status.textContent = `Error loading songs: ${e}`;
-      return;
-    }
-
-    const song = songs.find(s => s.id === songId);
-    if (!song) { status.textContent = `Song not found (id=${songId})`; return; }
-
-    if (song.service === 'spotify') {
-      await initSpotify(song);
-    } else {
-      await initYouTube(song);
-    }
+  function storeToken(data) {
+    localStorage.setItem('spotify_token', data.access_token);
+    localStorage.setItem('spotify_token_expiry', Date.now() + data.expires_in * 1000);
+    spotifyToken = data.access_token;
   }
 
-  // ── YouTube ───────────────────────────────────────────────────────────────
-
-  async function initYouTube(song) {
-    const audio = new Audio();
-    audio.preload = 'auto';
-
-    audio.addEventListener('playing', () => { btn.textContent = '⏸'; status.textContent = 'Playing…'; });
-    audio.addEventListener('pause',   () => { btn.textContent = '▶'; status.textContent = 'Paused'; });
-    audio.addEventListener('ended',   () => { btn.textContent = '▶'; status.textContent = 'Ended'; });
-    audio.addEventListener('error',   () => { status.textContent = 'Playback error'; });
-
-    status.textContent = 'Fetching audio…';
-    try {
-      const data = await fetch(`/audio?ytId=${song.youtubeId}`).then(r => r.json());
-      if (data.error) { status.textContent = `Error: ${data.error}`; return; }
-      audio.src = data.url;
-    } catch (e) {
-      status.textContent = `Error: ${e}`;
-      return;
-    }
-
-    status.textContent = 'Ready';
-    btn.disabled = false;
-    btn.addEventListener('click', () => audio.paused ? audio.play() : audio.pause());
+  function clearToken() {
+    localStorage.removeItem('spotify_token');
+    localStorage.removeItem('spotify_token_expiry');
+    spotifyToken = null;
   }
 
-  // ── Spotify ───────────────────────────────────────────────────────────────
-
-  async function initSpotify(song) {
-    const token = getValidToken();
-    if (!token) {
-      status.textContent = 'Redirecting to Spotify…';
-      await startSpotifyAuth(new URLSearchParams(location.search).get('id'));
-      return;
-    }
-
-    status.textContent = 'Connecting to Spotify…';
-    await loadSpotifySDK();
-
-    const player = new Spotify.Player({
-      name: 'Music Game',
-      getOAuthToken: cb => cb(token),
-      volume: 1.0,
-    });
-
-    player.addListener('ready', async ({ device_id }) => {
-      const res = await fetch(`https://api.spotify.com/v1/me/player/play?device_id=${device_id}`, {
-        method: 'PUT',
-        headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ uris: [`spotify:track:${song.spotifyId}`] }),
-      });
-      if (res.status === 403) {
-        status.textContent = 'Spotify Premium required.';
-        return;
-      }
-      status.textContent = 'Ready';
-      btn.disabled = false;
-      btn.addEventListener('click', async () => {
-        const state = await player.getCurrentState();
-        if (!state) return;
-        state.paused ? player.resume() : player.pause();
-      });
-    });
-
-    player.addListener('player_state_changed', state => {
-      if (!state) return;
-      btn.textContent = state.paused ? '▶' : '⏸';
-      status.textContent = state.paused ? 'Paused' : 'Playing…';
-    });
-
-    player.addListener('not_ready', () => { status.textContent = 'Spotify disconnected'; btn.disabled = true; });
-    player.addListener('initialization_error', ({ message }) => { status.textContent = `Init error: ${message}`; });
-    player.addListener('authentication_error', ({ message }) => {
-      clearToken();
-      status.textContent = `Auth expired — refresh the page.`;
-    });
-    player.addListener('account_error', () => { status.textContent = 'Spotify Premium required.'; });
-    player.addListener('playback_error', ({ message }) => { status.textContent = `Playback error: ${message}`; });
-
-    player.connect();
+  function generateRandomString(length) {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    return Array.from(crypto.getRandomValues(new Uint8Array(length)))
+      .map(x => chars[x % chars.length]).join('');
   }
 
-  // ── PKCE / token helpers ──────────────────────────────────────────────────
+  async function generateCodeChallenge(verifier) {
+    const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(verifier));
+    return btoa(String.fromCharCode(...new Uint8Array(digest)))
+      .replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+  }
 
-  async function startSpotifyAuth(songId) {
+  async function startSpotifyAuth() {
     const verifier = generateRandomString(64);
     const challenge = await generateCodeChallenge(verifier);
-    // Carry verifier + songId in state so any browser can complete the flow
-    const state = btoa(JSON.stringify({ verifier, songId }))
+    const state = btoa(JSON.stringify({ verifier }))
       .replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
-
     const params = new URLSearchParams({
       client_id: SPOTIFY_CLIENT_ID,
       response_type: 'code',
@@ -223,34 +175,6 @@
     return res.json();
   }
 
-  function storeToken(data) {
-    localStorage.setItem('spotify_token', data.access_token);
-    localStorage.setItem('spotify_token_expiry', Date.now() + data.expires_in * 1000);
-  }
-
-  function getValidToken() {
-    const token = localStorage.getItem('spotify_token');
-    const expiry = parseInt(localStorage.getItem('spotify_token_expiry') || '0');
-    return token && Date.now() < expiry ? token : null;
-  }
-
-  function clearToken() {
-    localStorage.removeItem('spotify_token');
-    localStorage.removeItem('spotify_token_expiry');
-  }
-
-  function generateRandomString(length) {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    return Array.from(crypto.getRandomValues(new Uint8Array(length)))
-      .map(x => chars[x % chars.length]).join('');
-  }
-
-  async function generateCodeChallenge(verifier) {
-    const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(verifier));
-    return btoa(String.fromCharCode(...new Uint8Array(digest)))
-      .replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
-  }
-
   function loadSpotifySDK() {
     return new Promise(resolve => {
       window.onSpotifyWebPlaybackSDKReady = resolve;
@@ -260,7 +184,210 @@
     });
   }
 
-  setInterval(() => fetch('/ping'), 10 * 60 * 1000);
+  // ── Spotify SDK ───────────────────────────────────────────────────────────
+  let spotifyPlayer = null;
+  let spotifyDeviceId = null;
+
+  async function initSpotifySDK() {
+    await loadSpotifySDK();
+    spotifyPlayer = new Spotify.Player({
+      name: 'Music Game',
+      getOAuthToken: cb => cb(spotifyToken),
+      volume: 1.0,
+    });
+    spotifyPlayer.addListener('ready', ({ device_id }) => {
+      spotifyDeviceId = device_id;
+    });
+    spotifyPlayer.addListener('authentication_error', () => {
+      clearToken();
+      document.getElementById('auth-status').textContent = 'Session expired — refresh.';
+      setState('auth');
+    });
+    spotifyPlayer.addListener('account_error', () => {
+      document.getElementById('auth-status').textContent = 'Spotify Premium required.';
+      setState('auth');
+    });
+    spotifyPlayer.addListener('initialization_error', ({ message }) => {
+      document.getElementById('auth-status').textContent = `Spotify init error: ${message}`;
+      setState('auth');
+    });
+    await spotifyPlayer.connect();
+  }
+
+  // ── QR Scanner ────────────────────────────────────────────────────────────
+  let qrScanner = null;
+  const isDebug = new URLSearchParams(location.search).has('debug');
+
+  function startScanner() {
+    document.getElementById('scan-status').textContent = 'Scan a card';
+
+    if (isDebug) {
+      document.getElementById('debug-input').style.display = 'flex';
+      document.getElementById('debug-url').value = '';
+      document.getElementById('debug-play').onclick = () => {
+        const url = document.getElementById('debug-url').value.trim();
+        const track = parseTrackUrl(url);
+        if (!track) {
+          document.getElementById('scan-status').textContent = 'Unrecognised URL';
+          return;
+        }
+        onTrackScanned(track);
+      };
+      return;
+    }
+
+    qrScanner = new Html5Qrcode('reader');
+    qrScanner.start(
+      { facingMode: 'environment' },
+      { fps: 10, qrbox: { width: 250, height: 250 } },
+      (decodedText) => {
+        const track = parseTrackUrl(decodedText);
+        if (!track) {
+          document.getElementById('scan-status').textContent = 'Not a music URL — try again';
+          return;
+        }
+        stopScanner();
+        onTrackScanned(track);
+      },
+      () => {}  // per-frame errors — ignore
+    ).catch(err => {
+      document.getElementById('scan-status').textContent = `Camera error: ${err}`;
+    });
+  }
+
+  function stopScanner() {
+    if (qrScanner) {
+      qrScanner.stop().catch(() => {});
+      qrScanner = null;
+    }
+    document.getElementById('debug-input').style.display = 'none';
+  }
+
+  // ── YouTube audio ─────────────────────────────────────────────────────────
+  const ytAudio = new Audio();
+  ytAudio.addEventListener('playing', () => {
+    document.getElementById('play-btn').textContent = '⏸';
+    document.getElementById('play-status').textContent = 'Playing…';
+  });
+  ytAudio.addEventListener('pause', () => {
+    document.getElementById('play-btn').textContent = '▶';
+    document.getElementById('play-status').textContent = 'Paused';
+  });
+  ytAudio.addEventListener('ended', () => {
+    document.getElementById('play-btn').textContent = '▶';
+    document.getElementById('play-status').textContent = 'Ended';
+  });
+  ytAudio.addEventListener('error', () => {
+    document.getElementById('play-status').textContent = 'Playback error';
+  });
+
+  let currentTrack = null;
+
+  async function onTrackScanned(track) {
+    currentTrack = track;
+    document.getElementById('play-status').textContent = 'Loading…';
+    document.getElementById('play-btn').disabled = true;
+    setState('player');
+
+    if (track.service === 'spotify') {
+      await playSpotify(track.id);
+    } else if (track.service === 'youtube') {
+      await playYouTube(track.id);
+    }
+  }
+
+  async function playSpotify(trackId) {
+    const res = await fetch(
+      `https://api.spotify.com/v1/me/player/play?device_id=${spotifyDeviceId}`,
+      {
+        method: 'PUT',
+        headers: { 'Authorization': `Bearer ${spotifyToken}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ uris: [`spotify:track:${trackId}`] }),
+      }
+    );
+    if (res.status === 403) {
+      document.getElementById('play-status').textContent = 'Spotify Premium required.';
+      return;
+    }
+    document.getElementById('play-btn').disabled = false;
+    document.getElementById('play-btn').onclick = async () => {
+      const state = await spotifyPlayer.getCurrentState();
+      if (!state) return;
+      state.paused ? spotifyPlayer.resume() : spotifyPlayer.pause();
+    };
+    spotifyPlayer.addListener('player_state_changed', state => {
+      if (!state) return;
+      document.getElementById('play-btn').textContent = state.paused ? '▶' : '⏸';
+      document.getElementById('play-status').textContent = state.paused ? 'Paused' : 'Playing…';
+    });
+  }
+
+  async function playYouTube(videoId) {
+    document.getElementById('play-status').textContent = 'Fetching audio…';
+    try {
+      const data = await fetch(`/audio?ytId=${videoId}`).then(r => r.json());
+      if (data.error) { document.getElementById('play-status').textContent = `Error: ${data.error}`; return; }
+      ytAudio.src = data.url;
+      document.getElementById('play-btn').disabled = false;
+      document.getElementById('play-btn').onclick = () => ytAudio.paused ? ytAudio.play() : ytAudio.pause();
+    } catch (e) {
+      document.getElementById('play-status').textContent = `Error: ${e}`;
+    }
+  }
+
+  document.getElementById('next-btn').addEventListener('click', () => {
+    if (currentTrack?.service === 'youtube') {
+      ytAudio.pause();
+      ytAudio.src = '';
+    } else if (currentTrack?.service === 'spotify' && spotifyPlayer) {
+      spotifyPlayer.pause();
+    }
+    currentTrack = null;
+    document.getElementById('play-btn').textContent = '▶';
+    setState('scanner');
+  });
+
+  // ── Main entry point ──────────────────────────────────────────────────────
+  async function main() {
+    const config = await fetch('/config').then(r => r.json());
+    SPOTIFY_CLIENT_ID = config.spotifyClientId;
+
+    const params = new URLSearchParams(location.search);
+
+    // OAuth callback
+    if (params.has('code')) {
+      document.getElementById('auth-status').textContent = 'Connecting to Spotify…';
+      try {
+        const rawState = params.get('state') || '';
+        const { verifier } = JSON.parse(atob(rawState.replace(/-/g, '+').replace(/_/g, '/')));
+        const data = await exchangeCode(params.get('code'), verifier);
+        if (data.error) {
+          document.getElementById('auth-status').textContent = `Auth error: ${data.error}`;
+          return;
+        }
+        storeToken(data);
+        history.replaceState({}, '', location.pathname);
+      } catch (e) {
+        document.getElementById('auth-status').textContent = `Auth error: ${e}`;
+        return;
+      }
+    }
+
+    // Check existing token
+    const token = getValidToken();
+    if (!token) {
+      document.getElementById('auth-status').textContent = 'Redirecting to Spotify…';
+      await startSpotifyAuth();
+      return;
+    }
+    spotifyToken = token;
+
+    // Init Spotify SDK once
+    document.getElementById('auth-status').textContent = 'Connecting to Spotify…';
+    await initSpotifySDK();
+
+    setState('scanner');
+  }
 
   main();
 </script>
