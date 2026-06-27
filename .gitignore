@@ -2,3 +2,4 @@
 .env
 .superpowers/
 hitster-card-generator/output/
+**/__pycache__
