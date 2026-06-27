@@ -263,10 +263,89 @@
     document.getElementById('debug-input').style.display = 'none';
   }
 
-  function onTrackScanned(track) {
-    // Implemented in Task 5
-    console.log('Scanned:', track);
+  // ── YouTube audio ─────────────────────────────────────────────────────────
+  const ytAudio = new Audio();
+  ytAudio.addEventListener('playing', () => {
+    document.getElementById('play-btn').textContent = '⏸';
+    document.getElementById('play-status').textContent = 'Playing…';
+  });
+  ytAudio.addEventListener('pause', () => {
+    document.getElementById('play-btn').textContent = '▶';
+    document.getElementById('play-status').textContent = 'Paused';
+  });
+  ytAudio.addEventListener('ended', () => {
+    document.getElementById('play-btn').textContent = '▶';
+    document.getElementById('play-status').textContent = 'Ended';
+  });
+  ytAudio.addEventListener('error', () => {
+    document.getElementById('play-status').textContent = 'Playback error';
+  });
+
+  let currentTrack = null;
+
+  async function onTrackScanned(track) {
+    currentTrack = track;
+    document.getElementById('play-status').textContent = 'Loading…';
+    document.getElementById('play-btn').disabled = true;
+    setState('player');
+
+    if (track.service === 'spotify') {
+      await playSpotify(track.id);
+    } else if (track.service === 'youtube') {
+      await playYouTube(track.id);
+    }
   }
+
+  async function playSpotify(trackId) {
+    const res = await fetch(
+      `https://api.spotify.com/v1/me/player/play?device_id=${spotifyDeviceId}`,
+      {
+        method: 'PUT',
+        headers: { 'Authorization': `Bearer ${spotifyToken}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ uris: [`spotify:track:${trackId}`] }),
+      }
+    );
+    if (res.status === 403) {
+      document.getElementById('play-status').textContent = 'Spotify Premium required.';
+      return;
+    }
+    document.getElementById('play-btn').disabled = false;
+    document.getElementById('play-btn').onclick = async () => {
+      const state = await spotifyPlayer.getCurrentState();
+      if (!state) return;
+      state.paused ? spotifyPlayer.resume() : spotifyPlayer.pause();
+    };
+    spotifyPlayer.addListener('player_state_changed', state => {
+      if (!state) return;
+      document.getElementById('play-btn').textContent = state.paused ? '▶' : '⏸';
+      document.getElementById('play-status').textContent = state.paused ? 'Paused' : 'Playing…';
+    });
+  }
+
+  async function playYouTube(videoId) {
+    document.getElementById('play-status').textContent = 'Fetching audio…';
+    try {
+      const data = await fetch(`/audio?ytId=${videoId}`).then(r => r.json());
+      if (data.error) { document.getElementById('play-status').textContent = `Error: ${data.error}`; return; }
+      ytAudio.src = data.url;
+      document.getElementById('play-btn').disabled = false;
+      document.getElementById('play-btn').onclick = () => ytAudio.paused ? ytAudio.play() : ytAudio.pause();
+    } catch (e) {
+      document.getElementById('play-status').textContent = `Error: ${e}`;
+    }
+  }
+
+  document.getElementById('next-btn').addEventListener('click', () => {
+    if (currentTrack?.service === 'youtube') {
+      ytAudio.pause();
+      ytAudio.src = '';
+    } else if (currentTrack?.service === 'spotify' && spotifyPlayer) {
+      spotifyPlayer.pause();
+    }
+    currentTrack = null;
+    document.getElementById('play-btn').textContent = '▶';
+    setState('scanner');
+  });
 
   // ── Main entry point ──────────────────────────────────────────────────────
   async function main() {
