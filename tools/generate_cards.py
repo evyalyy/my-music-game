@@ -53,11 +53,16 @@ def build_db_config():
     return db
 
 
-def load_songs(artist_filter=None):
+def load_songs(artist_filter=None, title_include=None, title_exclude=None):
+    import re
     db = json.loads(DB_PATH.read_text())
     songs = [e for e in db if e.get('service') == 'spotify']
     if artist_filter:
         songs = [s for s in songs if artist_filter.lower() in s['artist'].lower()]
+    if title_include:
+        songs = [s for s in songs if re.search(title_include, s['title'], re.IGNORECASE)]
+    if title_exclude:
+        songs = [s for s in songs if not re.search(title_exclude, s['title'], re.IGNORECASE)]
     return songs
 
 
@@ -82,11 +87,16 @@ def write_songs_json(hitster_songs, output_dir):
 
 def main():
     parser = argparse.ArgumentParser(description='Generate Hitster cards from songs-db.json')
-    parser.add_argument('--artist', default=None, help='Filter by artist name')
+    parser.add_argument('--artist', default=None, help='Filter by artist name (substring)')
     parser.add_argument('--output', default='hitster_cards', help='Output directory name')
+    parser.add_argument('--title-include', default=None, metavar='REGEX',
+                        help='Only include songs whose title matches this regex')
+    parser.add_argument('--title-exclude', default=None, metavar='REGEX',
+                        help='Exclude songs whose title matches this regex')
     args = parser.parse_args()
 
-    songs = load_songs(artist_filter=args.artist)
+    songs = load_songs(artist_filter=args.artist, title_include=args.title_include,
+                       title_exclude=args.title_exclude)
     if not songs:
         print('No matching songs found in songs-db.json')
         sys.exit(1)

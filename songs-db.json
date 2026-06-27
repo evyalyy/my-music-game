@@ -78,5 +78,5501 @@
     "year": 2008,
     "service": "spotify",
     "serviceId": "4kgTdThcDHfuDS2kKxB7Lc"
+  },
+  {
+    "id": "18eb193d",
+    "title": "The Fate of Ophelia",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "5UQ3JrA9kEh7rfwhUS1h0z"
+  },
+  {
+    "id": "6248c0da",
+    "title": "Elizabeth Taylor",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6virCtlwc98cKYVyeZYXqq"
+  },
+  {
+    "id": "fe6b9188",
+    "title": "Opalite",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "0WUwHkIXQY55MLOrw8EM6m"
+  },
+  {
+    "id": "50d9b2a9",
+    "title": "Father Figure",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6H0nEKqkTRxa30Pru1h7SD"
+  },
+  {
+    "id": "3d16b8bc",
+    "title": "Eldest Daughter",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6nhsv9Jeluz5gXt592KN3m"
+  },
+  {
+    "id": "10fbdcf9",
+    "title": "Ruin The Friendship",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "05VwM318oU6aNc1GS4MtLV"
+  },
+  {
+    "id": "aea6f5d3",
+    "title": "Actually Romantic",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6G3dUZrsaOYhe2gRyNukwA"
+  },
+  {
+    "id": "91ce41ef",
+    "title": "Wi$h Li$t",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6udRZQi3g501XNOcRnE9fo"
+  },
+  {
+    "id": "96c59af6",
+    "title": "Wood",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "4Ox858TeUXjy7WEKOcxaFI"
+  },
+  {
+    "id": "ac65d6a5",
+    "title": "CANCELLED!",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "67SmofYg9enUWfcPqUuoVm"
+  },
+  {
+    "id": "a8eaf517",
+    "title": "Honey",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "7jHzBmxAGVVPvLiq4Y45pD"
+  },
+  {
+    "id": "b8e3ee9d",
+    "title": "The Life of a Showgirl (feat. Sabrina Carpenter)",
+    "artist": "Taylor Swift, Sabrina Carpenter",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6EqHzZp61G5uQ12QEiibpT"
+  },
+  {
+    "id": "9e41a41e",
+    "title": "The Fate of Ophelia",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "53iuhJlwXhSER5J2IYYv1W"
+  },
+  {
+    "id": "680b53f3",
+    "title": "Elizabeth Taylor",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "1jgTiNob5cVyXeJ3WgX5bL"
+  },
+  {
+    "id": "8a1724a3",
+    "title": "Opalite",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "3yWuTOYDztXjZxdE2cIRUa"
+  },
+  {
+    "id": "a2891974",
+    "title": "Father Figure",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "03bTIHJElXZ0O0jqOQvAbY"
+  },
+  {
+    "id": "efe3c308",
+    "title": "Eldest Daughter",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "62HoDY1Km6lm47haFpUn9c"
+  },
+  {
+    "id": "5642c5ee",
+    "title": "Ruin The Friendship",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "62V2ZHslgQV98gH4AuVXnr"
+  },
+  {
+    "id": "f29a78e5",
+    "title": "Actually Romantic",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "2x3mwb96B6TquRqMtbxUE1"
+  },
+  {
+    "id": "62950416",
+    "title": "Wi$h Li$t",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "2TEQvxxQabwLQMqWMg1qGu"
+  },
+  {
+    "id": "3d34f67e",
+    "title": "Wood",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "5ylJtmaWPJ33cW3En7WOu0"
+  },
+  {
+    "id": "a59b521b",
+    "title": "CANCELLED!",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "1appZ3c336FkPvCuywfmrs"
+  },
+  {
+    "id": "31953823",
+    "title": "Honey",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "4qmFC3Jz5aQ0erlk2OSi2X"
+  },
+  {
+    "id": "75d90d1f",
+    "title": "The Life of a Showgirl (feat. Sabrina Carpenter)",
+    "artist": "Taylor Swift, Sabrina Carpenter",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "5eXgqtg3T8Av0m1FUaGHex"
+  },
+  {
+    "id": "5c557683",
+    "title": "The Life of a Showgirl Intro",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "0yZPIEgco572UWiwoQtcYF"
+  },
+  {
+    "id": "580a32c7",
+    "title": "The Fate of Ophelia - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "5k9RjjuYyOMCLL81U8FaHT"
+  },
+  {
+    "id": "9e434d0b",
+    "title": "The Fate of Ophelia",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "1dosSsKwYF7hoQA2kuu6wI"
+  },
+  {
+    "id": "ceafb8f4",
+    "title": "Elizabeth Taylor - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "3r9fAceWmaDFvbNiTnFiLr"
+  },
+  {
+    "id": "68805e58",
+    "title": "Elizabeth Taylor",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "1A2vZKJZovt4828jwLgiB3"
+  },
+  {
+    "id": "3c07a4e1",
+    "title": "Opalite - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "5SkuikJwvwfEvNyCepGkq3"
+  },
+  {
+    "id": "a06abe6f",
+    "title": "Opalite",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "67osB3wmJVTFzKhWqPb1Hm"
+  },
+  {
+    "id": "b6634fe9",
+    "title": "Father Figure - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "2NGGvVcfb2m2NbVaXHC3gb"
+  },
+  {
+    "id": "dcfe4753",
+    "title": "Father Figure",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "1lD0oPIfSYid1LhPvgrz10"
+  },
+  {
+    "id": "b1bace03",
+    "title": "Eldest Daughter - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "0wAvTNz81YTUhLFWuWJSAV"
+  },
+  {
+    "id": "1abe7212",
+    "title": "Eldest Daughter",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6iC3L3YmAkGucvJbXKDanA"
+  },
+  {
+    "id": "00bb412b",
+    "title": "Ruin The Friendship - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6NUy8xajng5zMSGJRKniAG"
+  },
+  {
+    "id": "9f9e2d8f",
+    "title": "Ruin The Friendship",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "34xxPZWbEyg5iDKEBqdsBZ"
+  },
+  {
+    "id": "3723ec67",
+    "title": "Actually Romantic - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6FJemhBlVTGTCgrrrLam3D"
+  },
+  {
+    "id": "b887b1fd",
+    "title": "Actually Romantic",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6ZSxG2QvGmwXbTfn7iDq7a"
+  },
+  {
+    "id": "c95a34bc",
+    "title": "Wi$h Li$t - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "5yrrh7VYFMCNjUOIMzGNp5"
+  },
+  {
+    "id": "2e653760",
+    "title": "Wi$h Li$t",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "3Qeh4z08FfDBRfQMfDv83f"
+  },
+  {
+    "id": "5ecc48ec",
+    "title": "Wood - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "20QSU9vg05qYSDVgOTAwPp"
+  },
+  {
+    "id": "fe5a7b28",
+    "title": "Wood",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "0129EujhGkwtwTFADGem5P"
+  },
+  {
+    "id": "5a37633d",
+    "title": "CANCELLED! - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6JNM6pLKbXMGG2opeExCb2"
+  },
+  {
+    "id": "e27f68ff",
+    "title": "CANCELLED!",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "3FzJDGVjRGNc7KrkabU5N0"
+  },
+  {
+    "id": "3779f844",
+    "title": "Honey - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "5EwypOO9NEI7MvjPOYZtWk"
+  },
+  {
+    "id": "9027d98f",
+    "title": "Honey",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "3vGd1heFoUuFGvKvl0SdW3"
+  },
+  {
+    "id": "f3a4357a",
+    "title": "The Life of a Showgirl - Track by Track",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "42TAweWJJ9YlQ47T5nesu5"
+  },
+  {
+    "id": "d6b366cf",
+    "title": "The Life of a Showgirl (feat. Sabrina Carpenter)",
+    "artist": "Taylor Swift, Sabrina Carpenter",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "243KxZULAjWO3KREpVHgOH"
+  },
+  {
+    "id": "57d12d42",
+    "title": "The Life of a Showgirl Outro",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "1ohk1U9KWGSKqwfVFQbVjG"
+  },
+  {
+    "id": "d1c8b335",
+    "title": "Fortnight (feat. Post Malone)",
+    "artist": "Taylor Swift, Post Malone",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "6dODwocEuGzHAavXqTbwHv"
+  },
+  {
+    "id": "117f829f",
+    "title": "The Tortured Poets Department",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "4PdLaGZubp4lghChqp8erB"
+  },
+  {
+    "id": "6ec607ea",
+    "title": "My Boy Only Breaks His Favorite Toys",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "7uGYWMwRy24dm7RUDDhUlD"
+  },
+  {
+    "id": "b3df3b0b",
+    "title": "Down Bad",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "1kbEbBdEgQdQeLXCJh28pJ"
+  },
+  {
+    "id": "1abca954",
+    "title": "So Long, London",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "7wAkQFShJ27V8362MqevQr"
+  },
+  {
+    "id": "3fae08b3",
+    "title": "But Daddy I Love Him",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "4QMgEffJQuKtjCNvqfRZ0m"
+  },
+  {
+    "id": "c82e7a58",
+    "title": "Fresh Out The Slammer",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "7IWcDWOfiooH5hRs9XOVYz"
+  },
+  {
+    "id": "bf1c137b",
+    "title": "Florida!!! (feat. Florence + The Machine)",
+    "artist": "Taylor Swift, Florence + The Machine",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "5ExOm0dh4NyRyAdSAO9hyM"
+  },
+  {
+    "id": "d7945d4d",
+    "title": "Guilty as Sin?",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "799KrpEbhZp0MHeiA8YK9P"
+  },
+  {
+    "id": "9eceb760",
+    "title": "Who’s Afraid of Little Old Me?",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2d8UxVNhJinc8uat9PoM9y"
+  },
+  {
+    "id": "013dcc03",
+    "title": "I Can Fix Him (No Really I Can)",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "5chnRTB9qMK3W1M41SnU9s"
+  },
+  {
+    "id": "397b4a32",
+    "title": "loml",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "3YkNIrAvbKNrrwwEd7NVLl"
+  },
+  {
+    "id": "7d68c72c",
+    "title": "I Can Do It With a Broken Heart",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2fPvQfGQEZOKtJ9qXeL4x8"
+  },
+  {
+    "id": "2f97c731",
+    "title": "The Smallest Man Who Ever Lived",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "1xtw1krCR6Dw2KwkXw5z63"
+  },
+  {
+    "id": "4f2ff489",
+    "title": "The Alchemy",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "1tuNqJOtRQVHvONR8Lg3MZ"
+  },
+  {
+    "id": "8ec9b4e3",
+    "title": "Clara Bow",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "4d9PtIEVij9jW5OaLinH66"
+  },
+  {
+    "id": "866e0b78",
+    "title": "The Black Dog",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "62E2nR0od0M5HYxuYLaDz7"
+  },
+  {
+    "id": "f146bc7e",
+    "title": "imgonnagetyouback",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "1kcwpPDQnqEqmezzXdJTCP"
+  },
+  {
+    "id": "c042a1d0",
+    "title": "The Albatross",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "4EF6IyONolQy0bIQXm2EmX"
+  },
+  {
+    "id": "bef97330",
+    "title": "Chloe or Sam or Sophia or Marcus",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "1rmEsOezwf2lmIZTMAO5Ag"
+  },
+  {
+    "id": "84c8521f",
+    "title": "How Did It End?",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "5Bedn0svl0ZD7RGmJkmKKw"
+  },
+  {
+    "id": "de09b6b1",
+    "title": "So High School",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "7Mts0OfPorF4iwOomvfqn1"
+  },
+  {
+    "id": "d25c41b5",
+    "title": "I Hate It Here",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "3hlGuz3loYoLfI3bpwieWq"
+  },
+  {
+    "id": "10e5343d",
+    "title": "thanK you aIMee",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "7ogK4lJDVDMU6A6vYR5rvD"
+  },
+  {
+    "id": "720d1890",
+    "title": "I Look in People's Windows",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "1Zai5UJ2di3qEuR2HeT2s8"
+  },
+  {
+    "id": "7bf1bcc5",
+    "title": "The Prophecy",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "18WFFUIsewmA8g31KAeo3e"
+  },
+  {
+    "id": "7c071e50",
+    "title": "Cassandra",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "0g4fMVo4JjwnIpTfFfLdxS"
+  },
+  {
+    "id": "0d6837fb",
+    "title": "Peter",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "3zMDGj4D8ogaYgAIZPeU7S"
+  },
+  {
+    "id": "e18af845",
+    "title": "The Bolter",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2913xXOVAIDAqxzV2g4VcU"
+  },
+  {
+    "id": "39c5ba4e",
+    "title": "Robin",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2CnjDMdpRjlWv04Xk3s6MW"
+  },
+  {
+    "id": "96465eab",
+    "title": "The Manuscript",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "1DTRUYVd8rYpla9hhVVwjo"
+  },
+  {
+    "id": "8935f6dd",
+    "title": "Fortnight (feat. Post Malone)",
+    "artist": "Taylor Swift, Post Malone",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2OzhQlSqBEmt7hmkYxfT6m"
+  },
+  {
+    "id": "64e00325",
+    "title": "The Tortured Poets Department",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "3NMrVbIVWT3fPXBj0rNDKG"
+  },
+  {
+    "id": "346b4d10",
+    "title": "My Boy Only Breaks His Favorite Toys",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2XXwLdtuAcE0HSCu61ijAb"
+  },
+  {
+    "id": "934ae96b",
+    "title": "Down Bad",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2F3N9tdombb64aW6VtZOdo"
+  },
+  {
+    "id": "1d464725",
+    "title": "So Long, London",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "3Vevii7qKqrmW8CcyzBHDl"
+  },
+  {
+    "id": "409aa524",
+    "title": "But Daddy I Love Him",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "5og4Qzt92jJzVDkOtSEilb"
+  },
+  {
+    "id": "99bfa7ea",
+    "title": "Fresh Out The Slammer",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "3fO566xJgwxIa3qGCGBvIC"
+  },
+  {
+    "id": "fa453d25",
+    "title": "Florida!!! (feat. Florence + The Machine)",
+    "artist": "Taylor Swift, Florence + The Machine",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "3ZVFcD8Wlw9T9klGqmJf9F"
+  },
+  {
+    "id": "9c012295",
+    "title": "Guilty as Sin?",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "0W0iAC1VGlB82PI6elxFYf"
+  },
+  {
+    "id": "1c9bb186",
+    "title": "Who’s Afraid of Little Old Me?",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "36t6frENUtCYKuZus6aYDO"
+  },
+  {
+    "id": "361068b2",
+    "title": "I Can Fix Him (No Really I Can)",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2h3MDMf8sd9s4XIzpTBIjX"
+  },
+  {
+    "id": "becee437",
+    "title": "loml",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "6RSG1dKPV5gEvILwJb4QtS"
+  },
+  {
+    "id": "418dafc3",
+    "title": "I Can Do It With a Broken Heart",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "4q5YezDOIPcoLr8R81x9qy"
+  },
+  {
+    "id": "6d5138df",
+    "title": "The Smallest Man Who Ever Lived",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2v1ivOOsgn64g5OywuH55L"
+  },
+  {
+    "id": "60486a12",
+    "title": "The Alchemy",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "1dhMTsEZz6ZEquGvmzVoHn"
+  },
+  {
+    "id": "1eabcd51",
+    "title": "Clara Bow",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "1UlhrRvYzbHEyugEDspXUB"
+  },
+  {
+    "id": "1cbd9c40",
+    "title": "Welcome To New York (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4WUepByoeqcedHoYhSNHRt"
+  },
+  {
+    "id": "bc871d06",
+    "title": "Blank Space (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0108kcWLnn2HlH2kedi1gn"
+  },
+  {
+    "id": "fc04fdb6",
+    "title": "Style (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3Vpk1hfMAQme8VJ0SNRSkd"
+  },
+  {
+    "id": "4a86b93c",
+    "title": "Out Of The Woods (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1OcSfkeCg9hRC2sFKB4IMJ"
+  },
+  {
+    "id": "03f75173",
+    "title": "All You Had To Do Was Stay (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2k0ZEeAqzvYMcx9Qt5aClQ"
+  },
+  {
+    "id": "1e77fb0f",
+    "title": "Shake It Off (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "50yNTF0Od55qnHLxYsA5Pw"
+  },
+  {
+    "id": "369188a7",
+    "title": "I Wish You Would (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3FxJDucHWdw6caWTKO5b23"
+  },
+  {
+    "id": "6fc0772c",
+    "title": "Bad Blood (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "7oZONwFiFIErZcXAtTu7FY"
+  },
+  {
+    "id": "ca8f92d7",
+    "title": "Wildest Dreams (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "27exgla7YBw9DUNNcTIpjy"
+  },
+  {
+    "id": "94a1ef1c",
+    "title": "How You Get The Girl (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "733OhaXQIHY7BKtY3vnSkn"
+  },
+  {
+    "id": "e31d0c7f",
+    "title": "This Love (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4WBEj8TeGtRPNJdOmT3WJW"
+  },
+  {
+    "id": "c762ef88",
+    "title": "I Know Places (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1ULabO0PEsdJekqVH6G10G"
+  },
+  {
+    "id": "fcc4fb9b",
+    "title": "Clean (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0lKUBmEyQfzsQHozyeXzES"
+  },
+  {
+    "id": "1fa4da5b",
+    "title": "Wonderland (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6HRsJu8vcnzYDN4t0570FY"
+  },
+  {
+    "id": "fe617f28",
+    "title": "You Are In Love (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0TyGh27YQ5LknmiDhCzJiT"
+  },
+  {
+    "id": "808137cc",
+    "title": "New Romantics (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5M787RexsAiVYjQusM98CV"
+  },
+  {
+    "id": "eb04b8eb",
+    "title": "\"Slut!\" (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0CD7DzeCsuPJygddqlUVYa"
+  },
+  {
+    "id": "bd2187c9",
+    "title": "Say Don't Go (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3CCRVu4F91Qp2mnGjmWBrf"
+  },
+  {
+    "id": "325500c2",
+    "title": "Now That We Don't Talk (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5QUIK7ZtziW8kGWo8RqopF"
+  },
+  {
+    "id": "c97ae641",
+    "title": "Suburban Legends (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6M9ppdfFjR1AbpUl3Y8DcV"
+  },
+  {
+    "id": "804c3cd6",
+    "title": "Is It Over Now? (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6IG3sQ8s9nfk6TUlVzRhbN"
+  },
+  {
+    "id": "a7ba9d27",
+    "title": "Bad Blood (feat. Kendrick Lamar) (Taylor's Version)",
+    "artist": "Taylor Swift, Kendrick Lamar",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6qAcApH8obo8eqatCKUHd9"
+  },
+  {
+    "id": "2111cab1",
+    "title": "Welcome To New York (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1hR8BSuEqPCCZfv93zzzz9"
+  },
+  {
+    "id": "da968312",
+    "title": "Blank Space (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "45wMBGri1PORPjM9PwFfrS"
+  },
+  {
+    "id": "9cb6c5f5",
+    "title": "Style (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1hjRhYpWyqDpPahmSlUTlc"
+  },
+  {
+    "id": "bc824375",
+    "title": "Out Of The Woods (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "045ZeOHPIzhxxsm8bq5kyE"
+  },
+  {
+    "id": "dbe89686",
+    "title": "All You Had To Do Was Stay (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6GXgd1BPD9bUpqw5AntGV5"
+  },
+  {
+    "id": "15c684e9",
+    "title": "Shake It Off (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3pv7Q5v2dpdefwdWIvE7yH"
+  },
+  {
+    "id": "9599c094",
+    "title": "I Wish You Would (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "43y1WpBdnEy5TR9aZoSQL9"
+  },
+  {
+    "id": "56e70d28",
+    "title": "Bad Blood (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "64FzgoLZ3oXu2SriZblHic"
+  },
+  {
+    "id": "9f00e06f",
+    "title": "Wildest Dreams (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1K39ty6o1sHwwlZwO6a7wK"
+  },
+  {
+    "id": "b2b7ae30",
+    "title": "How You Get The Girl (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "75W3SngKzTuoQ94uLf3y82"
+  },
+  {
+    "id": "b1edff4b",
+    "title": "This Love (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5QVVjX0ZItqlVpEuVCM9Yg"
+  },
+  {
+    "id": "926d2adf",
+    "title": "I Know Places (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2f0GI2ZLUtbGqFx8t2Gk6A"
+  },
+  {
+    "id": "78c69655",
+    "title": "Clean (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2ByBBvpR9b7IynvRmnG7kG"
+  },
+  {
+    "id": "4d662aa4",
+    "title": "Wonderland (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2ve0kuaWUCt4Zx8x4bf1MR"
+  },
+  {
+    "id": "c96fc5a5",
+    "title": "You Are In Love (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4UwqOWDpdeIDVQDuKT6iza"
+  },
+  {
+    "id": "1a245e38",
+    "title": "New Romantics (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2vPMoMDXxu9uX1igWZmXSG"
+  },
+  {
+    "id": "d6abf58d",
+    "title": "\"Slut!\" (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "71BqAINEnezjQfxE4VuJfq"
+  },
+  {
+    "id": "5aa7f060",
+    "title": "Say Don't Go (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4NioO5R9sHEZh4cGzMHyNt"
+  },
+  {
+    "id": "9da41e46",
+    "title": "Now That We Don't Talk (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5KD6AEm19QnMbfWpfoOHMl"
+  },
+  {
+    "id": "fcf7236a",
+    "title": "Suburban Legends (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6T0sEnqjmHISIKwFETeeiP"
+  },
+  {
+    "id": "f476ac79",
+    "title": "Is It Over Now? (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1Iq8oo9XkmmvCQiGOfORiz"
+  },
+  {
+    "id": "0dc6840d",
+    "title": "Mine (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "7G0gBu6nLdhFDPRLc0HdDG"
+  },
+  {
+    "id": "a1b2b1e5",
+    "title": "Sparks Fly (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3MytWN8L7shNYzGl4tAKRp"
+  },
+  {
+    "id": "b4d16786",
+    "title": "Back To December (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "79uDOz0zuuWS7HWxzMmTa2"
+  },
+  {
+    "id": "18c8e030",
+    "title": "Speak Now (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5xXqyjLicvEpch72qEryFT"
+  },
+  {
+    "id": "0bab433b",
+    "title": "Dear John (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1zU8j1x3yi9xalMF96pzKp"
+  },
+  {
+    "id": "70fee4e1",
+    "title": "Mean (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "30Y4CV7A6YqtQtTTo7Ue4j"
+  },
+  {
+    "id": "85d0defb",
+    "title": "The Story Of Us (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6dTA6y0C2ReQklntzZl8l3"
+  },
+  {
+    "id": "c6ac0886",
+    "title": "Never Grow Up (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2EFZ9emtKWEglWUQGEQ3P9"
+  },
+  {
+    "id": "fe8875de",
+    "title": "Enchanted (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3sW3oSbzsfecv9XoUdGs7h"
+  },
+  {
+    "id": "a5ab8934",
+    "title": "Better Than Revenge (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0NwGC0v03ysCYINtg6ns58"
+  },
+  {
+    "id": "63c13034",
+    "title": "Innocent (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "12nBPF4Rh4XLFJV0YLN7uj"
+  },
+  {
+    "id": "45e6aeb1",
+    "title": "Haunted (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4tMzIAFTFdqGBQLdfbPces"
+  },
+  {
+    "id": "471e18df",
+    "title": "Last Kiss (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "59KOoHFcw5XfICnO57holu"
+  },
+  {
+    "id": "b180b6f0",
+    "title": "Long Live (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4hqJ4bSlYJOXb6Z4SRmzxs"
+  },
+  {
+    "id": "5880605e",
+    "title": "Ours (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3yNJkriPzWjkkDAWHIAVUq"
+  },
+  {
+    "id": "0fecb358",
+    "title": "Superman (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4evLyY5Ue1Wesc61t2KXAU"
+  },
+  {
+    "id": "ca17393f",
+    "title": "Electric Touch (feat. Fall Out Boy) (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift, Fall Out Boy",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4e3ZNTAV6PCrdYMUrUlMpQ"
+  },
+  {
+    "id": "52393ac2",
+    "title": "When Emma Falls in Love (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0zo975x58DlXbZllWvfYhg"
+  },
+  {
+    "id": "ca144dd6",
+    "title": "I Can See You (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5kHMfzgLZP95O9NBy0ku4v"
+  },
+  {
+    "id": "f78fc6fd",
+    "title": "Castles Crumbling (feat. Hayley Williams) (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift, Hayley Williams",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4ABYxlb92WBIjHu7TIKmml"
+  },
+  {
+    "id": "1d007d80",
+    "title": "Foolish One (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4s8BIKx4Zh6ryAEz8RTlaU"
+  },
+  {
+    "id": "f7d80d36",
+    "title": "Timeless (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1HCdems7PQZRj42QDWLA0A"
+  },
+  {
+    "id": "db4769ff",
+    "title": "Lavender Haze",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "24emu3sabKISjRkrys28jq"
+  },
+  {
+    "id": "6cec87bd",
+    "title": "Maroon",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6qxvy9Pe4RJIq5JBVbbwbS"
+  },
+  {
+    "id": "7da65607",
+    "title": "Snow On The Beach (feat. Lana Del Rey)",
+    "artist": "Taylor Swift, Lana Del Rey",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "7GA86Uo2jYbj8vIXe2nyWd"
+  },
+  {
+    "id": "3e9d902a",
+    "title": "You're On Your Own, Kid",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6PQOU00xWNrGwCZzboriXy"
+  },
+  {
+    "id": "f389c8be",
+    "title": "Midnight Rain",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4eKMqf9ZMSclDX7V9Ptg7x"
+  },
+  {
+    "id": "88c91055",
+    "title": "Question...?",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "7oomkQSYf1ia2VnVEWfFIU"
+  },
+  {
+    "id": "3d0d7f4d",
+    "title": "Vigilante Shit",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0GKDhq6ZbmSbRHd3eyGlB7"
+  },
+  {
+    "id": "01bbf1bc",
+    "title": "Bejeweled",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0VpF6RLdCfPIeYRwMu4tZK"
+  },
+  {
+    "id": "3f4f14b0",
+    "title": "Labyrinth",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4bBDkw2KBMX0tcgAaXC83Q"
+  },
+  {
+    "id": "af288ad5",
+    "title": "Karma",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "45R112Jz5hQeKgITXgSXzs"
+  },
+  {
+    "id": "385bf2d3",
+    "title": "Sweet Nothing",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2L09RYwH5Pjzca6PmbUAw3"
+  },
+  {
+    "id": "a1ec12c8",
+    "title": "Mastermind",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1QQii3pa5m8MEda0nbkjfw"
+  },
+  {
+    "id": "73caeb01",
+    "title": "The Great War",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2VuqMjgoKaOHNM8HpxtXKx"
+  },
+  {
+    "id": "01e2812e",
+    "title": "Bigger Than The Whole Sky",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "71CBDRKmF2VeRKYMG1DFBh"
+  },
+  {
+    "id": "4716f80f",
+    "title": "Paris",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5tWxKWq1DSP1s9WQ5PWuqu"
+  },
+  {
+    "id": "3a8ac8ac",
+    "title": "High Infidelity",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1SztNGCwEHJEVFx90E5g7D"
+  },
+  {
+    "id": "72655aa4",
+    "title": "Glitch",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "7C0w28EsX0Um2FrZs9gso2"
+  },
+  {
+    "id": "2d18384e",
+    "title": "Would've, Could've, Should've",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4txojlesMFQZGWxwz2EeqB"
+  },
+  {
+    "id": "273359d7",
+    "title": "Dear Reader",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "10GRRCR5fctuOF4GFmATJI"
+  },
+  {
+    "id": "81701a5b",
+    "title": "Hits Different",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3xYJScVfxByb61dYHTwiby"
+  },
+  {
+    "id": "25608014",
+    "title": "Snow On The Beach (feat. More Lana Del Rey)",
+    "artist": "Taylor Swift, Lana Del Rey",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4zmKGsrXjLmljb5fTaBTot"
+  },
+  {
+    "id": "3d9bfbc4",
+    "title": "Karma (feat. Ice Spice)",
+    "artist": "Taylor Swift, Ice Spice",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4i6cwNY6oIUU2XZxPIw82Y"
+  },
+  {
+    "id": "eac755d0",
+    "title": "Lavender Haze",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "4g2c7NoTWAOSYDy44l9nub"
+  },
+  {
+    "id": "c9c152e8",
+    "title": "Maroon",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "199E1RRrVmVTQqBXih5qRC"
+  },
+  {
+    "id": "6285d6b9",
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "02Zkkf2zMkwRGQjZ7T4p8f"
+  },
+  {
+    "id": "aebb5aae",
+    "title": "Snow On The Beach (feat. Lana Del Rey)",
+    "artist": "Taylor Swift, Lana Del Rey",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "6ADDIJxxqzM9LMpm78yzQG"
+  },
+  {
+    "id": "e2ab91ac",
+    "title": "You're On Your Own, Kid",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "7gVWKBcfIW93YxNBi3ApIE"
+  },
+  {
+    "id": "19d91767",
+    "title": "Midnight Rain",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "6Nl7KyvjkFncGsjB49SxLl"
+  },
+  {
+    "id": "d3bc660b",
+    "title": "Question...?",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "6C7OF1Jal7YkyjzyUG8vkK"
+  },
+  {
+    "id": "5bc0f288",
+    "title": "Vigilante Shit",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "5yeuXkukVGuix3vmLu2BPJ"
+  },
+  {
+    "id": "0cebfef5",
+    "title": "Bejeweled",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "0jvo9CjnbR0lYUDTSNTMiu"
+  },
+  {
+    "id": "acc33b2c",
+    "title": "Labyrinth",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "43q586vP8gGkYypKoSddhl"
+  },
+  {
+    "id": "54af7768",
+    "title": "Karma",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "5oqDgw5VGBln5dSIOPWyBq"
+  },
+  {
+    "id": "cf1cd2d3",
+    "title": "Sweet Nothing",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "3zmwONxswBAzGwExPugSLN"
+  },
+  {
+    "id": "1f5d731a",
+    "title": "Mastermind",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "56hioFjQ0DXrdn04hZcFgG"
+  },
+  {
+    "id": "95fd7169",
+    "title": "The Great War",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "3UMrglJeju5yWyYIW6o99b"
+  },
+  {
+    "id": "ec979b52",
+    "title": "Bigger Than The Whole Sky",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "0BiqmkasE5FdrChwKfVp8X"
+  },
+  {
+    "id": "da99e82e",
+    "title": "Paris",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "7712gjoih4QoDbXpljEk21"
+  },
+  {
+    "id": "f7add7c2",
+    "title": "High Infidelity",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "5kiZGSxgqPdv6rbqL9THdd"
+  },
+  {
+    "id": "d83b2528",
+    "title": "Glitch",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "6wAFvJPpTZVirBKGZ4EnMW"
+  },
+  {
+    "id": "dcfad117",
+    "title": "Would've, Could've, Should've",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "0aV5uARAknQgYhBaK944FP"
+  },
+  {
+    "id": "213445aa",
+    "title": "Dear Reader",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "3QF5RsWzK1lCvf2o2cY65P"
+  },
+  {
+    "id": "50ec8c0c",
+    "title": "Lavender Haze",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "5jQI2r1RdgtuT8S3iG8zFC"
+  },
+  {
+    "id": "f1d90c0b",
+    "title": "Maroon",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "3eX0NZfLtGzoLUxPNvRfqm"
+  },
+  {
+    "id": "6db21537",
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "0V3wPSX9ygBnCm8psDIegu"
+  },
+  {
+    "id": "d5450eda",
+    "title": "Snow On The Beach (feat. Lana Del Rey)",
+    "artist": "Taylor Swift, Lana Del Rey",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "1wtOxkiel43cVs0Yux5Q4h"
+  },
+  {
+    "id": "b6fd0e04",
+    "title": "You're On Your Own, Kid",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "4D7BCuvgdJlYvlX5WlN54t"
+  },
+  {
+    "id": "4df69362",
+    "title": "Midnight Rain",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "3rWDp9tBPQR9z6U5YyRSK4"
+  },
+  {
+    "id": "ee0ee5c7",
+    "title": "Question...?",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "0heeNYlwOGuUSe7TgUD27B"
+  },
+  {
+    "id": "05a90ea6",
+    "title": "Vigilante Shit",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "1xwAWUI6Dj0WGC3KiUPN0O"
+  },
+  {
+    "id": "04aa3126",
+    "title": "Bejeweled",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "3qoftcUZaUOncvIYjFSPdE"
+  },
+  {
+    "id": "bbc847c1",
+    "title": "Labyrinth",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "0A1JLUlkZkp2EFrosoNQi0"
+  },
+  {
+    "id": "cd240abd",
+    "title": "Karma",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "7KokYm8cMIXCsGVmUvKtqf"
+  },
+  {
+    "id": "42e7be2d",
+    "title": "Sweet Nothing",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "0wavGRldH0AWyu2zvTz8zb"
+  },
+  {
+    "id": "21648464",
+    "title": "Mastermind",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "7FmYn9e7KHMXcxqGSj9LjH"
+  },
+  {
+    "id": "7861e98f",
+    "title": "State Of Grace (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6lzc0Al0zfZOIFsFvBS1ki"
+  },
+  {
+    "id": "11b6bf88",
+    "title": "Red (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4OAuvHryIVv4kMDNSLuPt6"
+  },
+  {
+    "id": "820a105a",
+    "title": "Treacherous (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3S7HNKPakdwNEBFIVTL6dZ"
+  },
+  {
+    "id": "3dde8c1e",
+    "title": "I Knew You Were Trouble (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6AtZLIzUINvExIUy4QhdjP"
+  },
+  {
+    "id": "72920ede",
+    "title": "All Too Well (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3nsfB1vus2qaloUdcBZvDu"
+  },
+  {
+    "id": "d4e567b6",
+    "title": "22 (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3yII7UwgLF6K5zW3xad3MP"
+  },
+  {
+    "id": "4cacade4",
+    "title": "I Almost Do (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2r9CbjYgFhtAmcFv1cSquB"
+  },
+  {
+    "id": "739fae3c",
+    "title": "We Are Never Ever Getting Back Together (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5YqltLsjdqFtvqE7Nrysvs"
+  },
+  {
+    "id": "3a34fdf1",
+    "title": "Stay Stay Stay (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7eQj6r5PIdYKEIZjucBMcq"
+  },
+  {
+    "id": "eb3cee5a",
+    "title": "The Last Time (feat. Gary Lightbody of Snow Patrol) (Taylor’s Version)",
+    "artist": "Taylor Swift, Gary Lightbody",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0y6kdSRCVQhSsHSpWvTUm7"
+  },
+  {
+    "id": "e6c832ef",
+    "title": "Holy Ground (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7J4b3LVCIGO4CMBDFLPoP6"
+  },
+  {
+    "id": "3fa83d6d",
+    "title": "Sad Beautiful Tragic (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "73qMN9bXy7MSPwwGfH3wQr"
+  },
+  {
+    "id": "4cdb95e5",
+    "title": "The Lucky One (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4e5ayHsOLJNLTGfjau2mEw"
+  },
+  {
+    "id": "5cd385dc",
+    "title": "Everything Has Changed (feat. Ed Sheeran) (Taylor’s Version)",
+    "artist": "Taylor Swift, Ed Sheeran",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7qEUFOVcxRI19tbT68JcYK"
+  },
+  {
+    "id": "ce253b15",
+    "title": "Starlight (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7A2cNLRT0YJc1yjxHlKihs"
+  },
+  {
+    "id": "adaea437",
+    "title": "Begin Again (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "05GsNucq8Bngd9fnd4fRa0"
+  },
+  {
+    "id": "3478a47b",
+    "title": "The Moment I Knew (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0NRHj8hDwwmSPaA41o379r"
+  },
+  {
+    "id": "c4152f8f",
+    "title": "Come Back...Be Here (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4pNApnaUWAL2J4KO2eqokq"
+  },
+  {
+    "id": "31750503",
+    "title": "Girl At Home (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0DMVrlMUn01M0IcpDbwgu7"
+  },
+  {
+    "id": "91d8975f",
+    "title": "State Of Grace (Acoustic Version) (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5jAIouBES8LWMiriuNq170"
+  },
+  {
+    "id": "92f4257c",
+    "title": "Ronan (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7nWui6jiMM2m9qFmET1Mtj"
+  },
+  {
+    "id": "174436fd",
+    "title": "Better Man (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4OmFmE0fzcMG6g0Y8p4eSD"
+  },
+  {
+    "id": "c00e2ce5",
+    "title": "Nothing New (feat. Phoebe Bridgers) (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift, Phoebe Bridgers",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "01K4zKU104LyJ8gMb7227B"
+  },
+  {
+    "id": "844cc2e3",
+    "title": "Babe (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0v4z1tuZvn6LGknom9Qx7d"
+  },
+  {
+    "id": "5d9957e8",
+    "title": "Message In A Bottle (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3z6XUommYDWPHeFhmhhT6j"
+  },
+  {
+    "id": "4426f76c",
+    "title": "I Bet You Think About Me (feat. Chris Stapleton) (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift, Chris Stapleton",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4CkgMiMqZ5JzW9iYXSTMTL"
+  },
+  {
+    "id": "4e3fec3b",
+    "title": "Forever Winter (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3oGVx9RBmiYGv5ZCecWLkx"
+  },
+  {
+    "id": "dd6634af",
+    "title": "Run (feat. Ed Sheeran) (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift, Ed Sheeran",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4IQkfUsrwXol38VV3U7t7T"
+  },
+  {
+    "id": "48cd97fa",
+    "title": "The Very First Night (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6pYNq0ZwpPVazKzsqpf0G8"
+  },
+  {
+    "id": "4ab55db6",
+    "title": "All Too Well (10 Minute Version) (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5enxwA8aAbwZbf5qCHORXi"
+  },
+  {
+    "id": "0453a055",
+    "title": "Fearless (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "77sMIMlNaSURUAXq5coCxE"
+  },
+  {
+    "id": "31e72106",
+    "title": "Fifteen (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2nqio0SfWg6gh2eCtfuMa5"
+  },
+  {
+    "id": "0e6baebe",
+    "title": "Love Story (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6YvqWjhGD8mB5QXcbcUKtx"
+  },
+  {
+    "id": "5e02c52f",
+    "title": "Hey Stephen (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "550erGcdD9n6PnwxrvYqZT"
+  },
+  {
+    "id": "4e38dfd2",
+    "title": "White Horse (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5YL553x8sHderRBDlm3NM3"
+  },
+  {
+    "id": "5837311c",
+    "title": "You Belong With Me (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1qrpoAMXodY6895hGKoUpA"
+  },
+  {
+    "id": "4a14c04c",
+    "title": "Breathe (feat. Colbie Caillat) (Taylor’s Version)",
+    "artist": "Taylor Swift, Colbie Caillat",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7HC7R2D8WjXVcUHJyEGjRs"
+  },
+  {
+    "id": "66ae5787",
+    "title": "Tell Me Why (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0k0vFacOHNuArLWMiH60p7"
+  },
+  {
+    "id": "cab266a6",
+    "title": "You’re Not Sorry (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6iiAfo4wTA2CVC3Uwx9uh8"
+  },
+  {
+    "id": "237d0f17",
+    "title": "The Way I Loved You (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "22bPsP2jCgbLUvh82U0Z3M"
+  },
+  {
+    "id": "ab575eaa",
+    "title": "Forever & Always (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1msEuwSBneBKpVCZQcFTsU"
+  },
+  {
+    "id": "47db6e01",
+    "title": "The Best Day (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6ON9UuIq49xXY9GPmHIYRp"
+  },
+  {
+    "id": "6cc68e63",
+    "title": "Change (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3ExweHKZF9B752DPQByRVT"
+  },
+  {
+    "id": "4371f987",
+    "title": "Jump Then Fall (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2m3ObD945KvpE5y9A1eUWm"
+  },
+  {
+    "id": "2ab77c50",
+    "title": "Untouchable (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0tQ9vBYpldCuikPsbgOVKA"
+  },
+  {
+    "id": "ec83239a",
+    "title": "Forever & Always (Piano Version) (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "01QdEx6kFr78ZejhQtWR5m"
+  },
+  {
+    "id": "3fb84241",
+    "title": "Come In With The Rain (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1n2wszmJyVkw6FHqyLnQsY"
+  },
+  {
+    "id": "0b167157",
+    "title": "Superstar (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "51A8eKvvZz9uydvIZ7xRSV"
+  },
+  {
+    "id": "d7e38267",
+    "title": "The Other Side Of The Door (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1cSFlSBdpT4F5vb1frQ231"
+  },
+  {
+    "id": "6cbcb56f",
+    "title": "Today Was A Fairytale (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2JoJrsEV15OzbijS47lids"
+  },
+  {
+    "id": "ef492f57",
+    "title": "You All Over Me (feat. Maren Morris) (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift, Maren Morris",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4CHpVfAhuxNJ3ibExe6kxO"
+  },
+  {
+    "id": "40bce657",
+    "title": "Mr. Perfectly Fine (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2CYVETnhM9aytqrazYYwrK"
+  },
+  {
+    "id": "21766e1f",
+    "title": "We Were Happy (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "34V9RiEPe8MNdU32qJsJa1"
+  },
+  {
+    "id": "9947583f",
+    "title": "That’s When (feat. Keith Urban) (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift, Keith Urban",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7eResoqEJJAVTkQYSqvO3P"
+  },
+  {
+    "id": "1940e3f7",
+    "title": "Don’t You (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4uuEGH5SVuzkkSFjo2DEiY"
+  },
+  {
+    "id": "51642759",
+    "title": "Bye Bye Baby (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4qUijfYU8EoIWiY6oSyrgT"
+  },
+  {
+    "id": "508dba83",
+    "title": "willow",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2gVhfX2Gy1T9kDuS9azrF7"
+  },
+  {
+    "id": "1f89d4c6",
+    "title": "champagne problems",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1gcyHQpBQ1lfXGdhZmWrHP"
+  },
+  {
+    "id": "0779f6c7",
+    "title": "gold rush",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3Dby3p1m6IOZn2gIIqECgK"
+  },
+  {
+    "id": "cb4e1314",
+    "title": "‘tis the damn season",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6sQckd3Z8NPxVVKUnavY1F"
+  },
+  {
+    "id": "5d6a87f9",
+    "title": "tolerate it",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6lCvK2AR2uOKkVFCVlAzzm"
+  },
+  {
+    "id": "f482f7cd",
+    "title": "no body, no crime (feat. HAIM)",
+    "artist": "Taylor Swift, HAIM",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6uwfVkaOM1mcMkFmSn35ix"
+  },
+  {
+    "id": "7c1d012a",
+    "title": "happiness",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "55Vf4bimc1Rtfg0PAQRAo2"
+  },
+  {
+    "id": "bb2fdd76",
+    "title": "dorothea",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "66tOfHVH3aUrscg8vExRV4"
+  },
+  {
+    "id": "b4fc3e7d",
+    "title": "coney island (feat. The National)",
+    "artist": "Taylor Swift, The National",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2awNGIJHodfLZSClB3PYhz"
+  },
+  {
+    "id": "1c3b88a5",
+    "title": "ivy",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "43Ykum9T72UOPhBN31grpN"
+  },
+  {
+    "id": "7746bbb3",
+    "title": "cowboy like me",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "52OkpDsU6MmPx1AwGOb6Ap"
+  },
+  {
+    "id": "64861e05",
+    "title": "long story short",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5VYWxXUpxuxEmCqMLDqICo"
+  },
+  {
+    "id": "3ef1c2bd",
+    "title": "marjorie",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5uICWmZTLkpEVbK22PBP6e"
+  },
+  {
+    "id": "43a06fed",
+    "title": "closure",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6a8aUhYbaQBUI8PcJ5ZmQ6"
+  },
+  {
+    "id": "b8343784",
+    "title": "evermore (feat. Bon Iver)",
+    "artist": "Taylor Swift, Bon Iver",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6Wlq9rqkxrqj5Kls4Kw14H"
+  },
+  {
+    "id": "5155674b",
+    "title": "right where you left me - bonus track",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3zwMVvkBe2qIKDObWgXw4N"
+  },
+  {
+    "id": "f1599552",
+    "title": "it’s time to go - bonus track",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1kdWw77ZpYOkhxeuhzU1j6"
+  },
+  {
+    "id": "036015e8",
+    "title": "willow",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0lx2cLdOt3piJbcaXIV74f"
+  },
+  {
+    "id": "f9b7e92a",
+    "title": "champagne problems",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0sY6ZUTh4yoctD8VIXz339"
+  },
+  {
+    "id": "d93d0d6b",
+    "title": "gold rush",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "5BK0uqwY9DNfZ630STAEaq"
+  },
+  {
+    "id": "8975c9a5",
+    "title": "‘tis the damn season",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "7dW84mWkdWE5a6lFWxJCBG"
+  },
+  {
+    "id": "99858c52",
+    "title": "tolerate it",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0PurA4JVJ8YQgSVopY8fn6"
+  },
+  {
+    "id": "d279a890",
+    "title": "no body, no crime (feat. HAIM)",
+    "artist": "Taylor Swift, HAIM",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "3RaT22zZsxVYxxKR7TAaYF"
+  },
+  {
+    "id": "c91f6b84",
+    "title": "happiness",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "73YUReisjb3A9ActdLLjJQ"
+  },
+  {
+    "id": "0b6c9e0b",
+    "title": "dorothea",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "670fUmXf4KQekzbEgaXyPA"
+  },
+  {
+    "id": "8eada114",
+    "title": "coney island (feat. The National)",
+    "artist": "Taylor Swift, The National",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "3k7ne7VmH43ZPWxPdvPUgR"
+  },
+  {
+    "id": "60ea52fa",
+    "title": "ivy",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "19CSr8rwW05VJL2F91KFNK"
+  },
+  {
+    "id": "1b1897a3",
+    "title": "cowboy like me",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "1XjHRolIXL2M1EEOUsGGR4"
+  },
+  {
+    "id": "bd87d1be",
+    "title": "long story short",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2o2sgVJIgFXk8GQjWTgI6U"
+  },
+  {
+    "id": "ba7638b0",
+    "title": "marjorie",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "12ntTeqEeTg7GAVpe8Mhpl"
+  },
+  {
+    "id": "2f975edb",
+    "title": "closure",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "35rdVq36LMHQX0Suw9a6tK"
+  },
+  {
+    "id": "6d6480fb",
+    "title": "evermore (feat. Bon Iver)",
+    "artist": "Taylor Swift, Bon Iver",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "3O5osWf1rSoKMwe6E9ZaXP"
+  },
+  {
+    "id": "a5b132c0",
+    "title": "the 1",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0P9wLFurlgumLXuqFEpw52"
+  },
+  {
+    "id": "ceb4ae98",
+    "title": "the last great american dynasty",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4ojxSyrEraN7d46BMBPThZ"
+  },
+  {
+    "id": "ba043148",
+    "title": "exile (feat. Bon Iver)",
+    "artist": "Taylor Swift, Bon Iver",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "6kz2hkq1xQvDqPcUyBkw8f"
+  },
+  {
+    "id": "74b619ab",
+    "title": "my tears ricochet",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0Oju1YcbPCJuUQQWoZNdJK"
+  },
+  {
+    "id": "b0dff8b6",
+    "title": "mirrorball",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "5jQyGzcwqAxwT5QUIMivoX"
+  },
+  {
+    "id": "881ea7d4",
+    "title": "seven",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2vJ7QvyCiR4DaHxwO58izA"
+  },
+  {
+    "id": "6052d433",
+    "title": "august",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "1UHoF9p75IVsvUt6WdTYhn"
+  },
+  {
+    "id": "78207e69",
+    "title": "this is me trying",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "5DnDBYrfGoxdnomqEAkFIv"
+  },
+  {
+    "id": "9d1bfc59",
+    "title": "illicit affairs",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "7CVTowKpGPA2MsIbkTl2oc"
+  },
+  {
+    "id": "e5bbe221",
+    "title": "invisible string",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4WHIqhrbdva5vQSrCuet3l"
+  },
+  {
+    "id": "c9ff8c71",
+    "title": "mad woman",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "7klXN6RCN5Rj0VeYO5gBzU"
+  },
+  {
+    "id": "6253904d",
+    "title": "epiphany",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "5MFjHn1qfR9AsWuyzJLk1z"
+  },
+  {
+    "id": "b2860d5b",
+    "title": "betty",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2jhfs6moEAK13eLM6xim4l"
+  },
+  {
+    "id": "438564ae",
+    "title": "peace",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0O9i6jhscByEJs1ipy5hu4"
+  },
+  {
+    "id": "3eda2031",
+    "title": "hoax",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4XCYmu7QLySdIahgBALKJK"
+  },
+  {
+    "id": "c8b1b712",
+    "title": "the lakes - bonus track",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0zEprKYeuGOIZoHyu6O1E2"
+  },
+  {
+    "id": "5b7b0034",
+    "title": "the 1 - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "08J4bMHbILkwSIhbtrcvjN"
+  },
+  {
+    "id": "6595f96e",
+    "title": "cardigan - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "3EPgWM1zfTSzEc0z4AwWTM"
+  },
+  {
+    "id": "948d0dac",
+    "title": "the last great american dynasty - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "28tIMaewZuGR8urkvFhQyA"
+  },
+  {
+    "id": "03c07b94",
+    "title": "exile (feat. Bon Iver) - the long pond studio sessions",
+    "artist": "Taylor Swift, Bon Iver",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "7N015NTIWGjQDddHUdHPoO"
+  },
+  {
+    "id": "d5447545",
+    "title": "my tears ricochet - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "5mdNyCS7ttVcAyVYOIFEjs"
+  },
+  {
+    "id": "d52c8f0e",
+    "title": "mirrorball - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2yceD2hx5HhOLgkm1CITCi"
+  },
+  {
+    "id": "d000bb37",
+    "title": "seven - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4cOWq0cVsKjxaQpRMbDoH1"
+  },
+  {
+    "id": "f4d4ee5b",
+    "title": "august - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4MGexoZc12lqE0hYkq9YYx"
+  },
+  {
+    "id": "6cbde333",
+    "title": "this is me trying - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "1gaLZjPrDnHQWJds2Jg4KT"
+  },
+  {
+    "id": "189fc203",
+    "title": "illicit affairs - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "560uQyz3p5G9WdnMX39xc6"
+  },
+  {
+    "id": "0d3d3015",
+    "title": "invisible string - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "5KByGq0JijSSDcy0qzuINs"
+  },
+  {
+    "id": "2b81dbb1",
+    "title": "mad woman - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "04xrhDrQ2WOW8GLwu7kbc0"
+  },
+  {
+    "id": "3f0408be",
+    "title": "epiphany - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4yyKppX85ZkmlGOC2toBZA"
+  },
+  {
+    "id": "a8d0baf9",
+    "title": "betty - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "1mh5dObNoOvCfHmXnhvDEK"
+  },
+  {
+    "id": "6b4f01b7",
+    "title": "peace - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4YHHz3VIXgNDGdoL9xC1tx"
+  },
+  {
+    "id": "178417d2",
+    "title": "hoax - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0QTBsdoJhamY3Aid3fOsOd"
+  },
+  {
+    "id": "13cc5a79",
+    "title": "the lakes - the long pond studio sessions",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "6mqyTq948oap5AkyTsd6XF"
+  },
+  {
+    "id": "93d5ef91",
+    "title": "the 1",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4pfrrhvplbJZAIsfosGWQP"
+  },
+  {
+    "id": "bd66fda9",
+    "title": "cardigan",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0KRYCBwIpWYFNrXOmXbyUh"
+  },
+  {
+    "id": "a01fe801",
+    "title": "the last great american dynasty",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2olxzvoFI9IpxqFeUv7WOX"
+  },
+  {
+    "id": "975b2cc4",
+    "title": "exile (feat. Bon Iver)",
+    "artist": "Taylor Swift, Bon Iver",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "5S4aYQAJOwJMAamANWlICO"
+  },
+  {
+    "id": "a086ec2a",
+    "title": "my tears ricochet",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "5P2bHCDM2tsgIaYWsZMhu5"
+  },
+  {
+    "id": "989a4692",
+    "title": "mirrorball",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2I8YAEA1VmCuP1wkJHMpTw"
+  },
+  {
+    "id": "7cdac23f",
+    "title": "seven",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "76mOLcXOjOEhyY4mMF1l3r"
+  },
+  {
+    "id": "a0a556ee",
+    "title": "august",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "6nK2pIKFcRc5frrZKHgsiT"
+  },
+  {
+    "id": "0120532e",
+    "title": "this is me trying",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "7cm50Lw03k6VvRauJtkyTj"
+  },
+  {
+    "id": "65af133c",
+    "title": "illicit affairs",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "6DrLROM5MG9bxWHeEG5elq"
+  },
+  {
+    "id": "f760e687",
+    "title": "invisible string",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2ehRU518I0hYqMGQnk4lDY"
+  },
+  {
+    "id": "8b92ab7f",
+    "title": "mad woman",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0RP1kqoSPkVXsKiQNhMKzV"
+  },
+  {
+    "id": "89d89998",
+    "title": "epiphany",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "1EXa37LpSvi3OQ9UYQ28rD"
+  },
+  {
+    "id": "12879973",
+    "title": "betty",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "3IhtE4fkytdrtEfV34UzkD"
+  },
+  {
+    "id": "8d24be31",
+    "title": "peace",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "6JlI8Ay77m4nJvZTHvfT1J"
+  },
+  {
+    "id": "1400a114",
+    "title": "hoax",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0YeDG5HnKnG7jpArkzsSPa"
+  },
+  {
+    "id": "a8e62d1c",
+    "title": "the lakes - bonus track",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0eFQWVz0qIxDOvhLpZ40P7"
+  },
+  {
+    "id": "b906a0da",
+    "title": "the 1",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0Jlcvv8IykzHaSmj49uNW8"
+  },
+  {
+    "id": "bc7db996",
+    "title": "cardigan",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4R2kfaDFhslZEMJqAFNpdd"
+  },
+  {
+    "id": "fe1946c2",
+    "title": "the last great american dynasty",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2Eeur20xVqfUoM3Q7EFPFt"
+  },
+  {
+    "id": "22b23400",
+    "title": "exile (feat. Bon Iver)",
+    "artist": "Taylor Swift, Bon Iver",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4pvb0WLRcMtbPGmtejJJ6y"
+  },
+  {
+    "id": "bf63ec15",
+    "title": "my tears ricochet",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "1MgV7FIyNxIG7WzMRJV5HC"
+  },
+  {
+    "id": "76c2b763",
+    "title": "mirrorball",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "0ZNU020wNYvgW84iljPkPP"
+  },
+  {
+    "id": "982d3f6c",
+    "title": "seven",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "6KJqZcs9XDgVck7Lg9QOTC"
+  },
+  {
+    "id": "5843e6ed",
+    "title": "august",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "3hUxzQpSfdDqwM3ZTFQY0K"
+  },
+  {
+    "id": "2b43ec50",
+    "title": "this is me trying",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "7kt9e9LFSpN1zQtYEl19o1"
+  },
+  {
+    "id": "d26d801f",
+    "title": "illicit affairs",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2NmsngXHeC1GQ9wWrzhOMf"
+  },
+  {
+    "id": "fd3ec19c",
+    "title": "invisible string",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "6VsvKPJ4xjVNKpI8VVZ3SV"
+  },
+  {
+    "id": "fb8e4163",
+    "title": "mad woman",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2QDyYdZyhlP2fp79KZX8Bi"
+  },
+  {
+    "id": "7dabba2e",
+    "title": "epiphany",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "08fa9LFcFBTcilB3iq2e2A"
+  },
+  {
+    "id": "1b6724e1",
+    "title": "betty",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "5kI4eCXXzyuIUXjQra0Cxi"
+  },
+  {
+    "id": "de51f59f",
+    "title": "peace",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "7MbT4I8qGntX4fMdqMQgke"
+  },
+  {
+    "id": "ec815c12",
+    "title": "hoax",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "6MWoRt97mnSTXZhu3ggi9C"
+  },
+  {
+    "id": "bab27e52",
+    "title": "I Forgot That You Existed",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "43rA71bccXFGD4C8GOpIlN"
+  },
+  {
+    "id": "92a13ac6",
+    "title": "Lover",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "1dGr1c8CrMLDpV6mPbImSI"
+  },
+  {
+    "id": "5ec916d2",
+    "title": "The Man",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "3RauEVgRgj1IuWdJ9fDs70"
+  },
+  {
+    "id": "2b403dab",
+    "title": "The Archer",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "3pHkh7d0lzM2AldUtz2x37"
+  },
+  {
+    "id": "ed4c1c31",
+    "title": "I Think He Knows",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "2YWtcWi3a83pdEg3Gif4Pd"
+  },
+  {
+    "id": "d3be912b",
+    "title": "Miss Americana & The Heartbreak Prince",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "214nt20w5wOxJnY462klLw"
+  },
+  {
+    "id": "6db70ba3",
+    "title": "Paper Rings",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "4y5bvROuBDPr5fuwXbIBZR"
+  },
+  {
+    "id": "bdde77f1",
+    "title": "Cornelia Street",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "12M5uqx0ZuwkpLp5rJim1a"
+  },
+  {
+    "id": "e9d01f8b",
+    "title": "Death By A Thousand Cuts",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "2dgFqt3w9xIQRjhPtwNk3D"
+  },
+  {
+    "id": "8e724257",
+    "title": "London Boy",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "1LLXZFeAHK9R4xUramtUKw"
+  },
+  {
+    "id": "79975e63",
+    "title": "Soon You’ll Get Better (feat. The Chicks)",
+    "artist": "Taylor Swift, The Chicks",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "4AYtqFyFbX0Xkc2wtcygTr"
+  },
+  {
+    "id": "596d1d9b",
+    "title": "False God",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "5hQSXkFgbxjZo9uCwd11so"
+  },
+  {
+    "id": "6412b56a",
+    "title": "You Need To Calm Down",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "6RRNNciQGZEXnqk8SQ9yv5"
+  },
+  {
+    "id": "177a78a8",
+    "title": "Afterglow",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "1SymEzIT3H8UZfibCs3TYi"
+  },
+  {
+    "id": "2dc9814e",
+    "title": "ME! (feat. Brendon Urie of Panic! At The Disco)",
+    "artist": "Taylor Swift, Brendon Urie, Panic! At The Disco",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "2Rk4JlNc2TPmZe2af99d45"
+  },
+  {
+    "id": "0ad2798a",
+    "title": "It’s Nice To Have A Friend",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "1SmiQ65iSAbPto6gPFlBYm"
+  },
+  {
+    "id": "b352e910",
+    "title": "Daylight",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "1fzAuUVbzlhZ1lJAx9PtY6"
+  },
+  {
+    "id": "9a224363",
+    "title": "...Ready For It?",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "2yLa0QULdQr0qAIvVwN6B5"
+  },
+  {
+    "id": "3f929b06",
+    "title": "End Game",
+    "artist": "Taylor Swift, Ed Sheeran, Future",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "2x0WlnmfG39ZuDmstl9xfX"
+  },
+  {
+    "id": "d5d92702",
+    "title": "I Did Something Bad",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "4svZDCRz4cJoneBpjpx8DJ"
+  },
+  {
+    "id": "f50e444a",
+    "title": "Don’t Blame Me",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "1R0a2iXumgCiFb7HEZ7gUE"
+  },
+  {
+    "id": "cce50158",
+    "title": "Delicate",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "6NFyWDv5CjfwuzoCkw47Xf"
+  },
+  {
+    "id": "449136f9",
+    "title": "Look What You Made Me Do",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "1P17dC1amhFzptugyAO7Il"
+  },
+  {
+    "id": "841f9a9c",
+    "title": "So It Goes...",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "5PxFv9yJEg9dxvbZggykro"
+  },
+  {
+    "id": "9723b9e6",
+    "title": "Gorgeous",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "1ZY1PqizIl78geGM4xWlEA"
+  },
+  {
+    "id": "cd146b65",
+    "title": "Getaway Car",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "0VE4kBnHJUgtMf0dy6DRmW"
+  },
+  {
+    "id": "90ac78b8",
+    "title": "King Of My Heart",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "7HuBDWi18s4aJM8UFnNheH"
+  },
+  {
+    "id": "ca49655f",
+    "title": "Dancing With Our Hands Tied",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "7I7JbDv63ZJJsSi24DyJrz"
+  },
+  {
+    "id": "eb6355fc",
+    "title": "Dress",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "6oVxXO5oQ4pTpO8RSnkzvv"
+  },
+  {
+    "id": "ae363db2",
+    "title": "This Is Why We Can't Have Nice Things",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "07NxDD1iKCHbAldceD7QLP"
+  },
+  {
+    "id": "35ab1d94",
+    "title": "Call It What You Want",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "1GwMQaZz6Au3QLDbjbMdme"
+  },
+  {
+    "id": "1d7ce437",
+    "title": "New Year’s Day",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "7F5oktn5YOsR9eR5YsFtqb"
+  },
+  {
+    "id": "ac1ca338",
+    "title": "All Too Well",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "00vJzaoxM3Eja1doBUhX0P"
+  },
+  {
+    "id": "c7f633f3",
+    "title": "The Best Day",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "7APTsjmZbj7TFXQJAiRti4"
+  },
+  {
+    "id": "b38c588f",
+    "title": "Red",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "4V9NuhKQcUFt4cgbynHV79"
+  },
+  {
+    "id": "ec101a66",
+    "title": "Holy Ground",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "4hCZk6WJBFQeG3P7WsyntI"
+  },
+  {
+    "id": "9b0d2ffc",
+    "title": "Teardrops On My Guitar - Radio Single Remix",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "7eGeUVeCEvEQrivmjl9Qn3"
+  },
+  {
+    "id": "5afd7501",
+    "title": "Our Song",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "7qGr3rjRhndRIpFUA5f2HJ"
+  },
+  {
+    "id": "1b1f9aed",
+    "title": "22",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "2P5gfMtCcKP0CkmgqFMyPg"
+  },
+  {
+    "id": "f9105c81",
+    "title": "I Knew You Were Trouble.",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "2o2IVjuqRkR9hJxtPjtAP0"
+  },
+  {
+    "id": "fa0177f8",
+    "title": "I Don’t Wanna Live Forever (Fifty Shades Darker)",
+    "artist": "ZAYN, Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "55n9yjI6qqXh5F2mYvUc2y"
+  },
+  {
+    "id": "fa612a3d",
+    "title": "Mean",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "5rcHBt2aNcGFWW0jaAUe1L"
+  },
+  {
+    "id": "87c852c6",
+    "title": "How You Get The Girl",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "3aSYZ4upQ6OSNos26YeVWL"
+  },
+  {
+    "id": "616eed36",
+    "title": "So It Goes...",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "41T04yafZVrjNq2FqvLtId"
+  },
+  {
+    "id": "5209fe30",
+    "title": "Fifteen",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "0H2UD0LfSCiRr59YMGlCuS"
+  },
+  {
+    "id": "b8918b86",
+    "title": "Mine",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "6FmJKLpyCt42nP2IOVEVc2"
+  },
+  {
+    "id": "dc4270bd",
+    "title": "Sparks Fly",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "5h2sBwpUSAndjObfU3ti2r"
+  },
+  {
+    "id": "8db90c73",
+    "title": "State Of Grace",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "0YRGTdfmJPALpglAaraYUr"
+  },
+  {
+    "id": "b067f8b5",
+    "title": "Haunted",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "6CB7DczrX9ZJB9Wkjegmaq"
+  },
+  {
+    "id": "cdd64c94",
+    "title": "Never Grow Up",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "1UPDfqsVIZLEiZeMuUsni2"
+  },
+  {
+    "id": "06e119f3",
+    "title": "Treacherous",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "0r3U7SOcoj4DIEyN44Lt5z"
+  },
+  {
+    "id": "ce24388d",
+    "title": "Babe",
+    "artist": "Sugarland, Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "40PXEOFLJc7UIpLMrhSfW1"
+  },
+  {
+    "id": "bbdc3f4b",
+    "title": "Welcome To New York",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "3YLA3NgzFRRa7LiHMtFPby"
+  },
+  {
+    "id": "3f2d1bda",
+    "title": "Fearless",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "43sE2O3skbGBpT2tO6fzv9"
+  },
+  {
+    "id": "0925d216",
+    "title": "Enchanted",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "5lg33MHs1BoUtJVClw8ZpI"
+  },
+  {
+    "id": "cf9882ec",
+    "title": "Change",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "5PSOWHll3h3Vy226xSJk0M"
+  },
+  {
+    "id": "7f9f9f9a",
+    "title": "Ours",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "0V3SNHDka1JSCP71HAzpxw"
+  },
+  {
+    "id": "55996d98",
+    "title": "Out Of The Woods",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "0GmfiNHSgkKamYgQEMYOH3"
+  },
+  {
+    "id": "c59350ae",
+    "title": "Come Back...Be Here",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "5hiqtrACtMJkNpaNHj0n9Z"
+  },
+  {
+    "id": "bc758a9a",
+    "title": "A Place in this World",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "2RSYYe7LhKFxIi50T5XtUo"
+  },
+  {
+    "id": "467b6caa",
+    "title": "This Love",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "64KRxmbqypPBlya4nxFmDn"
+  },
+  {
+    "id": "c6800f65",
+    "title": "The Lucky One",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "24ksPWXKg1k7OOG57pufED"
+  },
+  {
+    "id": "4b514ccf",
+    "title": "Invisible",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "0kqC185OTcnuhbz4T7g5RB"
+  },
+  {
+    "id": "6833f7a4",
+    "title": "Breathe",
+    "artist": "Taylor Swift, Colbie Caillat",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "3oxgFdIlxFEDEJqn7k5TVN"
+  },
+  {
+    "id": "4f4bad5b",
+    "title": "Better Man",
+    "artist": "Little Big Town",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "3EXetjrGgwIjDRNn6YA8sa"
+  },
+  {
+    "id": "507a97b3",
+    "title": "Jump Then Fall",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "5zytSTR2g0I9psX2Z12ex6"
+  },
+  {
+    "id": "ccb46bc4",
+    "title": "Begin Again",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "2G679wnKfyhUOeNx910OXg"
+  },
+  {
+    "id": "7693fb4b",
+    "title": "Tied Together with a Smile",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "4qNEi8zGIYLiMtoW8OaJdx"
+  },
+  {
+    "id": "306aad4d",
+    "title": "The Story Of Us",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "2fF3QzbGCrtrDXIdWcg1mv"
+  },
+  {
+    "id": "60f76c00",
+    "title": "Forever & Always",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "0QCS4NpURHvWdF1icdkfBw"
+  },
+  {
+    "id": "f3486f84",
+    "title": "Hey Stephen",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "0TYJbIHBtmWy9ugtU9BcbE"
+  },
+  {
+    "id": "022bfade",
+    "title": "Speak Now",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "1XLc4irbX7oQSneh6gWv3O"
+  },
+  {
+    "id": "7a1fdd26",
+    "title": "Wonderland",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "0eTCaVOYLpJlSkbEi2jay4"
+  },
+  {
+    "id": "f037c12e",
+    "title": "White Horse",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "4RMfSYDFkcz0bKoK8fHDgR"
+  },
+  {
+    "id": "f322fdf4",
+    "title": "I'm Only Me When I'm With You",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "6Py8IKZqDyU8aQVrjilbJw"
+  },
+  {
+    "id": "2830aa50",
+    "title": "Starlight",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "7txpzmA69zyk50K3ZyZSzC"
+  },
+  {
+    "id": "5415bea5",
+    "title": "I Know Places",
+    "artist": "Taylor Swift",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "3qGLcmO0XnnrcpAQGZwTvA"
+  },
+  {
+    "id": "bceb4d02",
+    "title": "Welcome To New York",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "3nRmDz7qGCvsMS30rGGY0x"
+  },
+  {
+    "id": "9f74534f",
+    "title": "Out Of The Woods",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "0qUnBLZ8bJqUNEeQgayL9t"
+  },
+  {
+    "id": "4da284ad",
+    "title": "All You Had To Do Was Stay",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "6aLOekfwbytwWvQftxTEF0"
+  },
+  {
+    "id": "83f92e00",
+    "title": "I Wish You Would",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "5gRYrtvyVyaCRvLt56OfuV"
+  },
+  {
+    "id": "60aa7f66",
+    "title": "Wildest Dreams",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "4A4A6dwl5DqdqrZaEtKGPR"
+  },
+  {
+    "id": "f0ed7567",
+    "title": "How You Get The Girl",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "0fM9dEhUFV4MHDuJgrcfOv"
+  },
+  {
+    "id": "36cbe4a9",
+    "title": "This Love",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "4L560fic5PaTuCFm6CviKa"
+  },
+  {
+    "id": "3d5a7b5f",
+    "title": "I Know Places",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "6EwNJz8CuVsrsLvXprJ20Q"
+  },
+  {
+    "id": "98b6b63d",
+    "title": "Clean",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "1NmVZsG18CzCAtw7rnV3yA"
+  },
+  {
+    "id": "b6432a04",
+    "title": "Wonderland",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "6RvRzl1YJTDnUvdOtV21IK"
+  },
+  {
+    "id": "4c470463",
+    "title": "You Are In Love",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "2KrOAg6FftbjgSKdd2a4rS"
+  },
+  {
+    "id": "d0a88745",
+    "title": "New Romantics",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "0qAIiGFKLdV1xpNlEhjpq8"
+  },
+  {
+    "id": "5e101fcc",
+    "title": "I Know Places - Voice Memo",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "4FoV729rw7IhoKlMZW5K5V"
+  },
+  {
+    "id": "23620059",
+    "title": "I Wish You Would - Voice Memo",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "4eTXfpHxhxVofrBUjAhPMg"
+  },
+  {
+    "id": "8682fb21",
+    "title": "Blank Space - Voice Memo",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "4e6QU4gpfZj9xxcK856RgG"
+  },
+  {
+    "id": "23d5f5c6",
+    "title": "Welcome To New York",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "10nqz67NQWWa7XPq7ycihi"
+  },
+  {
+    "id": "dc62a98d",
+    "title": "Blank Space",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "2ls70nUDfjzm1lSRDuKxmw"
+  },
+  {
+    "id": "ddfd6ef8",
+    "title": "Style",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "71PmZqBXH0RUETqxpwlV0w"
+  },
+  {
+    "id": "118479e1",
+    "title": "Out Of The Woods",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "7EpVQjqtKygiwJIASxMWNg"
+  },
+  {
+    "id": "65f02a48",
+    "title": "All You Had To Do Was Stay",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "4NNolUeL5m2ju7kf8pdg6H"
+  },
+  {
+    "id": "37466b5c",
+    "title": "Shake It Off",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "1kKlhuQE0HXp1IwBRpaH2P"
+  },
+  {
+    "id": "c1441c3c",
+    "title": "I Wish You Would",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "5RVJ6VKfwtosA5Q1qeHdjF"
+  },
+  {
+    "id": "4597dc6b",
+    "title": "Bad Blood",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "0TvQLMecTE8utzoNmvXRbK"
+  },
+  {
+    "id": "395198d0",
+    "title": "Wildest Dreams",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "3fVnlF4pGqWI9flVENcT28"
+  },
+  {
+    "id": "1d0aa83d",
+    "title": "How You Get The Girl",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "5Z9ocF6ng0m2haHnKtHwTp"
+  },
+  {
+    "id": "7291069a",
+    "title": "This Love",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "7lTxQZVXlvIX7Z3szSy8Sh"
+  },
+  {
+    "id": "4b97f480",
+    "title": "I Know Places",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "6Ck9WerfsyvC4v4AylUoDp"
+  },
+  {
+    "id": "bce4833f",
+    "title": "Clean",
+    "artist": "Taylor Swift",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "2k43eySbfpDVx0PrO99UI8"
+  },
+  {
+    "id": "b1dd1a1d",
+    "title": "State Of Grace",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "0b16LTzby1YRVd2nq2Z0fw"
+  },
+  {
+    "id": "8461eb60",
+    "title": "Red",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "7gJtmLyPTwKzhGzMBXtuXH"
+  },
+  {
+    "id": "c30d7898",
+    "title": "Treacherous",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "7nECwCDHS1JvQbrmuorZIH"
+  },
+  {
+    "id": "4df63476",
+    "title": "I Knew You Were Trouble.",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "3lKZf71jeNi14udIFPJ29V"
+  },
+  {
+    "id": "b9f044c0",
+    "title": "All Too Well",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "6GNRkaWUB0Lwc19SdkTgx8"
+  },
+  {
+    "id": "58d5eabc",
+    "title": "22",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "3WC5CVAahvn98hiseoIvbw"
+  },
+  {
+    "id": "38841b5d",
+    "title": "I Almost Do",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "1eyqSYBCTane4rl4vc6PWJ"
+  },
+  {
+    "id": "ed2885b5",
+    "title": "We Are Never Ever Getting Back Together",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "6kISMRfweKSvgHR0urMQFG"
+  },
+  {
+    "id": "fb3e3e66",
+    "title": "Stay Stay Stay",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "0F2S1QlnMaOfmNHIgmES3k"
+  },
+  {
+    "id": "01b385e4",
+    "title": "The Last Time",
+    "artist": "Taylor Swift, Gary Lightbody",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "2Tz4JnXZOcjcp8fWfMjBBk"
+  },
+  {
+    "id": "a649346e",
+    "title": "Holy Ground",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "3KmYVOuK2eG7LGP7qQ8DLR"
+  },
+  {
+    "id": "daa24788",
+    "title": "Sad Beautiful Tragic",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "70e9zuv2pJc7ON1OUAJ1zl"
+  },
+  {
+    "id": "26c08d28",
+    "title": "The Lucky One",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "5VQLMrWhailAhErKNUSnv1"
+  },
+  {
+    "id": "6fc2b57a",
+    "title": "Everything Has Changed",
+    "artist": "Taylor Swift, Ed Sheeran",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "5PjfMmF06QtxTPZBZHdhoZ"
+  },
+  {
+    "id": "96dab4a2",
+    "title": "Starlight",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "1gL4vMhDV3RgJQmDuY5HK1"
+  },
+  {
+    "id": "19478cd2",
+    "title": "Begin Again",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "1yG491M3fRfowMdGN5pey4"
+  },
+  {
+    "id": "71e92eb6",
+    "title": "The Moment I Knew",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "4qTAwKJQ68gmnrnfPD3vlO"
+  },
+  {
+    "id": "7a7c4fea",
+    "title": "Come Back...Be Here",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "1n8rB9AhxiAvVP1E2c3yOd"
+  },
+  {
+    "id": "a7b06a88",
+    "title": "Girl At Home",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "6VFpuI0DDmbC5UyWZQ4IRY"
+  },
+  {
+    "id": "78fce5e1",
+    "title": "Treacherous - Original Demo Recording",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "7skiELMb9SiQCcBpsExIJf"
+  },
+  {
+    "id": "d6d344e3",
+    "title": "Red - Original Demo Recording",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "2OghnlGqZZsFzHjG0CSE9l"
+  },
+  {
+    "id": "e3cb054e",
+    "title": "State Of Grace - Acoustic",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "5mfDBWY7ncZFm7ykmFTG4i"
+  },
+  {
+    "id": "735eefe7",
+    "title": "State Of Grace",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "786NsUYn4GGUf8AOt0SQhP"
+  },
+  {
+    "id": "d48ce46a",
+    "title": "Red",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "0cITLOYn1Sv4q27zZPqlNK"
+  },
+  {
+    "id": "1fe41ae0",
+    "title": "Treacherous",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "5kYFVSQoPu7yRpfiHBwMUk"
+  },
+  {
+    "id": "b0d8471c",
+    "title": "I Knew You Were Trouble.",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "72jCZdH0Lhg93z6Z4hBjgj"
+  },
+  {
+    "id": "964c995f",
+    "title": "All Too Well",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "4XMP3zVxrnr58T0tjIHvpR"
+  },
+  {
+    "id": "59c2ac48",
+    "title": "22",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "2ULNeSomDxVNmdDy8VxEBU"
+  },
+  {
+    "id": "5a58d6d6",
+    "title": "I Almost Do",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "5VwFkx7JOimOGTYfha5rs1"
+  },
+  {
+    "id": "13d23c42",
+    "title": "We Are Never Ever Getting Back Together",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "7AEAGTc8cReDqcbPoY9gwo"
+  },
+  {
+    "id": "c1b0a28b",
+    "title": "Stay Stay Stay",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "1qLeEu4iXEclkLwoBlMiou"
+  },
+  {
+    "id": "96c17efb",
+    "title": "The Last Time",
+    "artist": "Taylor Swift, Gary Lightbody",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "3n9mzjgAzjyKawvbHzciXF"
+  },
+  {
+    "id": "3e2bb78e",
+    "title": "Holy Ground",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "1fGsZsIkQkOspfsT24nQP6"
+  },
+  {
+    "id": "83f66ddf",
+    "title": "Sad Beautiful Tragic",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "6LKjHhOW1az75pCQ9XJJtF"
+  },
+  {
+    "id": "dbe2c87e",
+    "title": "The Lucky One",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "2X2J0BhxaLTmnxO4pPUhSd"
+  },
+  {
+    "id": "fe0da680",
+    "title": "Everything Has Changed",
+    "artist": "Taylor Swift, Ed Sheeran",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "4NAmRvqSITAAzKWnC8yRq3"
+  },
+  {
+    "id": "4dd026df",
+    "title": "Starlight",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "7MecVsMj22MneZt7kVFaCr"
+  },
+  {
+    "id": "a8499c15",
+    "title": "Begin Again",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "0L4YCNRfXAoTvdpWeH2RGj"
+  },
+  {
+    "id": "225607ed",
+    "title": "Mine - POP Mix",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "0GxW5K0qzrq7L1jwSY5OmY"
+  },
+  {
+    "id": "d5ebe8c8",
+    "title": "Sparks Fly",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "46NGAvL695VnbcSeTmQWmM"
+  },
+  {
+    "id": "782002c7",
+    "title": "Back To December",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "5l6GqSxplqnZbLg0LTPQeG"
+  },
+  {
+    "id": "7e090165",
+    "title": "Speak Now",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "7dXKdjpOaH2iwfFKmUj7aq"
+  },
+  {
+    "id": "3d7fbac3",
+    "title": "Dear John",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "3K2es3gElMRJ3qvmPW442g"
+  },
+  {
+    "id": "6fdfaf56",
+    "title": "Mean",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "0KztjtD3ytzgYjUKIVfBnW"
+  },
+  {
+    "id": "ba5b8c5a",
+    "title": "The Story Of Us",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "3lXekiVK1ZPZbKconsys73"
+  },
+  {
+    "id": "6bf4023c",
+    "title": "Never Grow Up",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "3JilapcaOXzjR9gtvCY8FO"
+  },
+  {
+    "id": "1b6777cd",
+    "title": "Enchanted",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "04S1pkp1VaIqjg8zZqknR5"
+  },
+  {
+    "id": "00658917",
+    "title": "Better Than Revenge",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "0PWgAyoxsjwGRuFSO0fyya"
+  },
+  {
+    "id": "7ac43b7c",
+    "title": "Innocent",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "0mTgFzkDgSAF3nJY25XCXG"
+  },
+  {
+    "id": "e4accd5c",
+    "title": "Haunted",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "2YjKcFQ1vYFhQPgsmCOjss"
+  },
+  {
+    "id": "d7d0df38",
+    "title": "Last Kiss",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "4EUQXLipplO2v9mVaqQtjc"
+  },
+  {
+    "id": "9e9bf3d3",
+    "title": "Long Live",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "4ewAfHYpDTzpW1GKO44CVP"
+  },
+  {
+    "id": "8b32837f",
+    "title": "Mine - POP Mix",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "0OAHsZ8vrS2NKom3cvfJQD"
+  },
+  {
+    "id": "4e6843f7",
+    "title": "Sparks Fly",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "09cM9BjyNFizKUOXh6j9rT"
+  },
+  {
+    "id": "019eb334",
+    "title": "Back To December",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "0tr6XR58KBdDYd8qvHVTs8"
+  },
+  {
+    "id": "0f0eb37f",
+    "title": "Speak Now",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "2PBghI9zJkQEWBzMSMo2Ki"
+  },
+  {
+    "id": "76f72f35",
+    "title": "Dear John",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "1GeLxMgpeCnMJntwyW6rLw"
+  },
+  {
+    "id": "774fbd26",
+    "title": "Mean",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "6yM6QsnTCTVOkKEvg3hGlo"
+  },
+  {
+    "id": "fca7b129",
+    "title": "The Story Of Us",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "7vBlnGdfOLzVEqiOQQxeU8"
+  },
+  {
+    "id": "827eb5c9",
+    "title": "Never Grow Up",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "57w0Uyk2jJAkO2hMJ36xJZ"
+  },
+  {
+    "id": "41491335",
+    "title": "Enchanted",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "3sqrvkNC6IPTIXvvbx9Arw"
+  },
+  {
+    "id": "46f49b50",
+    "title": "Better Than Revenge",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "55mh9j2aB7xZ1Oh463gK8k"
+  },
+  {
+    "id": "a29c6221",
+    "title": "Innocent",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "4LraIz87diVQdDK0rhi0S4"
+  },
+  {
+    "id": "b2075f7e",
+    "title": "Haunted",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "72idZxdEHLbi2YI486c3sE"
+  },
+  {
+    "id": "531aaeab",
+    "title": "Last Kiss",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "1VCJ7vk3Y2DoJIAEOXe3V8"
+  },
+  {
+    "id": "c96d7338",
+    "title": "Long Live",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "7BFc7ffruhZ4Hecnqf5xju"
+  },
+  {
+    "id": "096e05ab",
+    "title": "Ours",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "0hK93KD6Y0j9giUGh4Valj"
+  },
+  {
+    "id": "1df99fc7",
+    "title": "If This Was A Movie",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "5tSmAABuoOfR59lrtXdDqm"
+  },
+  {
+    "id": "3dd49152",
+    "title": "Superman",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "6aJ0ipi4EPmu1aTbFeXZnw"
+  },
+  {
+    "id": "abbecdfb",
+    "title": "Back To December - Acoustic",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "7k7BOXE4u6luKTwcLEAyrd"
+  },
+  {
+    "id": "fa8d2f78",
+    "title": "Mine",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "67Io3gxHwfbUreBf114c0u"
+  },
+  {
+    "id": "ea919901",
+    "title": "Back To December",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "5aNkiOMxQXkpoEY5bTYoCh"
+  },
+  {
+    "id": "fbe97be3",
+    "title": "The Story Of Us",
+    "artist": "Taylor Swift",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "2jt90bYlYDg1lXYWES34LJ"
+  },
+  {
+    "id": "b588ffb7",
+    "title": "Jump Then Fall",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "6WWvcA62QlnRguluWAk6bv"
+  },
+  {
+    "id": "ad56010d",
+    "title": "Untouchable",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "6ovFJkdau79DuXEvQjPaNH"
+  },
+  {
+    "id": "d72c878d",
+    "title": "Come In With The Rain",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "0cEG04R5cldkTLzK6phlcn"
+  },
+  {
+    "id": "c1a33f99",
+    "title": "SuperStar",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "0XfTh16YcKPzdxMPTeKTAq"
+  },
+  {
+    "id": "57619bf9",
+    "title": "The Other Side Of The Door",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "1yDJcXc549N6AabNBzFAku"
+  },
+  {
+    "id": "bc4fedc8",
+    "title": "Fearless",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "2okho7vU7Nsq1UZD0kgIMi"
+  },
+  {
+    "id": "67e6eddc",
+    "title": "Fifteen",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "5Ora3Ish2A1JN5veGYTxhw"
+  },
+  {
+    "id": "79abebaf",
+    "title": "Hey Stephen",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "3CI1f4yLwdHzcUnH7o0Xyh"
+  },
+  {
+    "id": "7a41a689",
+    "title": "White Horse",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "5yKB8qcTSflDercM2PXwot"
+  },
+  {
+    "id": "099dcc55",
+    "title": "Breathe",
+    "artist": "Taylor Swift, Colbie Caillat",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "23qIWGhpwvDgC23TyZOUck"
+  },
+  {
+    "id": "ef196d1f",
+    "title": "Tell Me Why",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "4x7Gxk2GfwZJcqpoVT1PbR"
+  },
+  {
+    "id": "32575940",
+    "title": "You're Not Sorry",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "3JhvYnOfKLJuWC7jEU0GmJ"
+  },
+  {
+    "id": "f234ddb4",
+    "title": "The Way I Loved You",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "4pEZUytwBzha5Un6m3SCFf"
+  },
+  {
+    "id": "edfba43e",
+    "title": "Forever & Always",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "3NKCWBT2uKp8rxSkcvIrdX"
+  },
+  {
+    "id": "2fc49dc9",
+    "title": "The Best Day",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "7CjuAoOiSrwWv7wJonAUmw"
+  },
+  {
+    "id": "bdca0914",
+    "title": "Change",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "3gFaNwyiafgUoQhR0pHYA9"
+  },
+  {
+    "id": "c59160a8",
+    "title": "Fearless",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "6zV8AVM9eVfdG7Qahwd64R"
+  },
+  {
+    "id": "f616b25d",
+    "title": "Fifteen",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "4yf9OivCH2lmQWN8mzpCC6"
+  },
+  {
+    "id": "fc95ae87",
+    "title": "Love Story",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "5xPsybHWRHbTYO44xnREY5"
+  },
+  {
+    "id": "644373ae",
+    "title": "Hey Stephen",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "4fWDgRZa0GKE5KZNhE9MQa"
+  },
+  {
+    "id": "0ebd1d45",
+    "title": "White Horse",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "1yFjBRQVhRdcdnrTE5LuyD"
+  },
+  {
+    "id": "0c9760d3",
+    "title": "You Belong With Me",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "7G6TDmGJXDoBaV6NGj3Yic"
+  },
+  {
+    "id": "fbdc7ba8",
+    "title": "Breathe",
+    "artist": "Taylor Swift, Colbie Caillat",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "0qsSmObOgBZfuMIwfAQDBP"
+  },
+  {
+    "id": "04d7964b",
+    "title": "Tell Me Why",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "6vLpy7UPYuOa75Bkqocrcw"
+  },
+  {
+    "id": "b65dca29",
+    "title": "You're Not Sorry",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "4N419mmxYybTfAECy5j4dw"
+  },
+  {
+    "id": "a722a2df",
+    "title": "The Way I Loved You",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "04LDcz3RX1P5sIlzQGqgUN"
+  },
+  {
+    "id": "ee4f5ee0",
+    "title": "Forever & Always",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "3yuOL0jFnVR8tizZzNNo0F"
+  },
+  {
+    "id": "b01f523e",
+    "title": "The Best Day",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "7G9D32Kx7hdQ9Uga1V4VXm"
+  },
+  {
+    "id": "0c1e4b6f",
+    "title": "Change",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "493jXNrYmXPCMbSJvVRYLk"
+  },
+  {
+    "id": "1af338c1",
+    "title": "Our Song - International Mix",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "5Ct2PYPUSogyWvbV40k9Bf"
+  },
+  {
+    "id": "cd5342ac",
+    "title": "Teardrops On My Guitar - International Mix",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "2RM02ladxD5mgdrlAwh3h9"
+  },
+  {
+    "id": "09d2e9d0",
+    "title": "Should've Said No - International Mix",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "2gwvtlwlKhvkfjz7Fcb6Yk"
+  },
+  {
+    "id": "d2c17817",
+    "title": "Tim McGraw",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "2Fn01AIMyHbha2ceNQeOqw"
+  },
+  {
+    "id": "944bf92f",
+    "title": "Picture To Burn",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "4BYejINgfZF0qKDMEH2cim"
+  },
+  {
+    "id": "41ff4128",
+    "title": "Teardrops On My Guitar - Radio Single Remix",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "2TF4UtYreqNbQ6Z9AccldU"
+  },
+  {
+    "id": "5cc24295",
+    "title": "A Place in this World",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "1oR4MUBpyNrAViC8wPNpfm"
+  },
+  {
+    "id": "cb894179",
+    "title": "Cold As You",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "569sXXQ7t0jSdqHooi2yqs"
+  },
+  {
+    "id": "bfa61fbe",
+    "title": "The Outside",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "5Tj2MqcFMf60CaGsKbM1aq"
+  },
+  {
+    "id": "24c21339",
+    "title": "Tied Together with a Smile",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "2zzxwmoOBnXDT0KnJsoIWk"
+  },
+  {
+    "id": "f78e8818",
+    "title": "Stay Beautiful",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "41sjzdjScVwnxnxADElts6"
+  },
+  {
+    "id": "086238ce",
+    "title": "Should've Said No",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "6CdaXOq1MWe2JHDalTG01d"
+  },
+  {
+    "id": "762ea2ba",
+    "title": "Mary's Song (Oh My My My)",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "2O8sogKJCfVZ4rotBv1vVF"
+  },
+  {
+    "id": "0d332f3f",
+    "title": "Our Song",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "1j6gmK6u4WNI33lMZ8dC1s"
+  },
+  {
+    "id": "13b5f5c9",
+    "title": "I'm Only Me When I'm With You",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "7CzxXgQXurKZCyHz9ufbo1"
+  },
+  {
+    "id": "925e2cc4",
+    "title": "Invisible",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "1k3PzDNjg38cWqOvL4M9vq"
+  },
+  {
+    "id": "e9788a11",
+    "title": "A Perfectly Good Heart",
+    "artist": "Taylor Swift",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "0YgHuReCSPwTXYny7isLja"
+  },
+  {
+    "id": "0ab2a146",
+    "title": "Opalite",
+    "artist": "Taylor Swift",
+    "year": 2026,
+    "service": "spotify",
+    "serviceId": "4s1Sql0NqvLh0ioDzSTaET"
+  },
+  {
+    "id": "57318b4e",
+    "title": "The Fate of Ophelia - The Chainsmokers Remix",
+    "artist": "Taylor Swift, The Chainsmokers",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "3JNaLxAymiSUMrmjOarjeo"
+  },
+  {
+    "id": "e6241137",
+    "title": "The Fate of Ophelia",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "3CFKUvybrj8Jg5F018tyuA"
+  },
+  {
+    "id": "c003241b",
+    "title": "The Fate of Ophelia - Loud Luxury Remix",
+    "artist": "Taylor Swift, Loud Luxury",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "6PlBKImSl4AZoxBU7F649D"
+  },
+  {
+    "id": "2a93f490",
+    "title": "The Fate of Ophelia",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "3wXuJTeA7dkrWShvbdUk0A"
+  },
+  {
+    "id": "9f0609bd",
+    "title": "The Fate of Ophelia",
+    "artist": "Taylor Swift",
+    "year": 2025,
+    "service": "spotify",
+    "serviceId": "5cKBWgDjB5IXZ5jnryewOH"
+  },
+  {
+    "id": "5ab4591e",
+    "title": "I Can Do It With a Broken Heart - Dombresky Remix",
+    "artist": "Taylor Swift, Dombresky",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "0hFF0aqyjDwDh6SQwRbTyx"
+  },
+  {
+    "id": "4d591d23",
+    "title": "I Can Do It With a Broken Heart",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "6zpL5ceKCUy7dipRdWjVtA"
+  },
+  {
+    "id": "1894f030",
+    "title": "I Can Do It With a Broken Heart - Instrumental",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2PGIFYRG1XWsPqNG14hgD1"
+  },
+  {
+    "id": "570b8b73",
+    "title": "I Can Do It With a Broken Heart",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "4n93SK7dQsQVu9BM5QzvAx"
+  },
+  {
+    "id": "ea9e0b9c",
+    "title": "I Can Do It With a Broken Heart - Instrumental",
+    "artist": "Taylor Swift",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "0Z8YQJNXTCZqflWehjoJqJ"
+  },
+  {
+    "id": "b0f6c567",
+    "title": "Fortnight (feat. Post Malone) - Cults Remix",
+    "artist": "Taylor Swift, Cults, Post Malone",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "7pM01Cfj8vt7z3qI2TveNT"
+  },
+  {
+    "id": "040b208f",
+    "title": "Fortnight (feat. Post Malone)",
+    "artist": "Taylor Swift, Post Malone",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "6GrvlxquXWumwyNeZb1oZz"
+  },
+  {
+    "id": "902bda14",
+    "title": "Fortnight (feat. Post Malone) - BLOND:ISH Remix",
+    "artist": "Taylor Swift, Post Malone, BLOND:ISH",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "1gejz5ROvJBUb6WJzkMAcc"
+  },
+  {
+    "id": "88fafdbe",
+    "title": "Fortnight (feat. Post Malone)",
+    "artist": "Taylor Swift, Post Malone",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "20nACtTlLpHqevuIVVD166"
+  },
+  {
+    "id": "eabc3a4f",
+    "title": "You’re Losing Me (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3CWq0pAKKTWb0K4yiglDc4"
+  },
+  {
+    "id": "300f9564",
+    "title": "Cruel Summer - LP Giobbi Remix",
+    "artist": "Taylor Swift, LP Giobbi",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "37jfioVu3Bd2Du9bteXNDU"
+  },
+  {
+    "id": "9c740001",
+    "title": "Cruel Summer",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1kHVme7OVyPqhtdiLj2SI4"
+  },
+  {
+    "id": "4f3c1aac",
+    "title": "Lavender Haze - Tensnake Remix",
+    "artist": "Taylor Swift, Tensnake",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "7kjSmkSo15pHlkb0mOQtfj"
+  },
+  {
+    "id": "43479cc9",
+    "title": "Lavender Haze - Snakehips Remix",
+    "artist": "Taylor Swift, Snakehips",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6F67FNdOBNMFzxdj1CQ5pL"
+  },
+  {
+    "id": "b1fc12a7",
+    "title": "Lavender Haze - Jungle Remix",
+    "artist": "Taylor Swift, Jungle",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0ThxqUZ9PwS6n0UT5i1XH6"
+  },
+  {
+    "id": "bb65cb1c",
+    "title": "Lavender Haze - Felix Jaehn Remix",
+    "artist": "Taylor Swift, felix jaehn",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5KxZfCXXmVvKhPo8hQz2pS"
+  },
+  {
+    "id": "6d4aa9e6",
+    "title": "Lavender Haze",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5NlYplrGsjUDFZ6x3HeVyT"
+  },
+  {
+    "id": "9434bb4c",
+    "title": "Lavender Haze - Felix Jaehn Remix",
+    "artist": "Taylor Swift, felix jaehn",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2M4tVhRXucLE9M3STv21Yi"
+  },
+  {
+    "id": "d84a1d27",
+    "title": "Anti-Hero - ILLENIUM Remix",
+    "artist": "Taylor Swift, ILLENIUM",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "6C0H8ts9M6deezz0yYR6LK"
+  },
+  {
+    "id": "930c46dd",
+    "title": "Anti-Hero (feat. Bleachers)",
+    "artist": "Taylor Swift, Bleachers",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "16M9Rxid0nXhVmme7lzVwN"
+  },
+  {
+    "id": "5488f95e",
+    "title": "Anti-Hero - Roosevelt Remix",
+    "artist": "Taylor Swift, Roosevelt",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "4XiypEn8iKbeP1TbTqdfk5"
+  },
+  {
+    "id": "365892bf",
+    "title": "Anti-Hero - Kungs Remix",
+    "artist": "Taylor Swift, Kungs",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "2oWpe2L8ypC080BxpDVuTY"
+  },
+  {
+    "id": "26e2c5af",
+    "title": "Anti-Hero - Jayda G Remix",
+    "artist": "Taylor Swift, Jayda G",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "4YrpqEBNuz7IMsZtUP6bNQ"
+  },
+  {
+    "id": "102c315a",
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "2wMKBH2p5kIDFkRWjS9IOW"
+  },
+  {
+    "id": "1d2430ee",
+    "title": "Anti-Hero (feat. Bleachers)",
+    "artist": "Taylor Swift, Bleachers",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "0j0gJqxitjhmmkrW56dtQH"
+  },
+  {
+    "id": "b55937ff",
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "70c3ObJaZ6tbc8CfDYAQjb"
+  },
+  {
+    "id": "efa758da",
+    "title": "Carolina - From The Motion Picture “Where The Crawdads Sing”",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "4axSuOg3BqsowKjRpj59RU"
+  },
+  {
+    "id": "3f336869",
+    "title": "Carolina - \"Where The Crawdads Sing\" - Video Edition",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "12xIjI9A9UlB6zEc7kyZ06"
+  },
+  {
+    "id": "3b1591b7",
+    "title": "All Too Well (10 Minute Version) (The Short Film)",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "1u4HUiREUR6vX1W1RYG2Tm"
+  },
+  {
+    "id": "d75bf278",
+    "title": "This Love (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "4d1CG5ei1E2vGbvmgf5KKv"
+  },
+  {
+    "id": "a19a329f",
+    "title": "Wildest Dreams (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "1IxeJLsubGTboNN9K5XNfL"
+  },
+  {
+    "id": "02217d99",
+    "title": "The Joker And The Queen (feat. Taylor Swift)",
+    "artist": "Ed Sheeran, Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "6N1K5OVVCopBjGViHs2IvP"
+  },
+  {
+    "id": "a08bc24c",
+    "title": "Message In A Bottle (Fat Max G Remix) (Taylor’s Version)",
+    "artist": "Taylor Swift, Fat Max Gsus",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "3tGq7hWDCtrnL83y5OGual"
+  },
+  {
+    "id": "12ff1e25",
+    "title": "Message In A Bottle (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "1zIzd27gmbNrWWkMCEWmgC"
+  },
+  {
+    "id": "45c48269",
+    "title": "Christmas Tree Farm",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4mKye6Z1kXuKolzMkJoKFA"
+  },
+  {
+    "id": "fa93f164",
+    "title": "Christmas Tree Farm - Recorded Live at the 2019 iHeartRadio Jingle Ball",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1alAo6dYalSx8yZUn17JxF"
+  },
+  {
+    "id": "e93ab1b8",
+    "title": "All Too Well (Sad Girl Autumn Version) - Recorded at Long Pond Studios",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1n3b9Eekoy3S9ZSZ5DmTW1"
+  },
+  {
+    "id": "cc042de1",
+    "title": "I Knew You Were Trouble (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1BY5apCyXIjMCaMvLBnUwM"
+  },
+  {
+    "id": "b9eba001",
+    "title": "22 (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5WzJ6723XqI2JpyGUDxREq"
+  },
+  {
+    "id": "0ed98eb0",
+    "title": "We Are Never Ever Getting Back Together (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4VTnbHXKIkfqqzfZwpJzA1"
+  },
+  {
+    "id": "eaa76c77",
+    "title": "All Too Well (10 Minute Version) (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7Eb9KO7l6Qt8skHG9oRQBD"
+  },
+  {
+    "id": "91961355",
+    "title": "Eyes Open (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0gPmM1WtVRg3uENW3o8bfx"
+  },
+  {
+    "id": "1ef569a6",
+    "title": "Safe & Sound (feat. Joy Williams and John Paul White) (Taylor’s Version)",
+    "artist": "Taylor Swift, Joy Williams, John Paul White",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6Q237Ts37YGYRIi5Vy5lVX"
+  },
+  {
+    "id": "7244dc1d",
+    "title": "Safe & Sound (feat. Joy Williams and John Paul White) (Taylor’s Version)",
+    "artist": "Taylor Swift, Joy Williams, John Paul White",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2RJnNdu4pb3MypbBroHU0T"
+  },
+  {
+    "id": "d8f0b41a",
+    "title": "Eyes Open (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2NIBaWXdjaTDmytjjwbEfP"
+  },
+  {
+    "id": "2e7657b0",
+    "title": "Wildest Dreams (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1Ov37jtRQ2YNAe8HzfczkL"
+  },
+  {
+    "id": "560c0a32",
+    "title": "willow - 90's trend remix",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "77p4fRpoeiZMtUy3P9kN21"
+  },
+  {
+    "id": "f57216d1",
+    "title": "Fearless (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5dwLFuYXsOikE1BMoBDMN6"
+  },
+  {
+    "id": "cbe289a9",
+    "title": "Love Story (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3RG3Jhpi8yAnogztYmzzYm"
+  },
+  {
+    "id": "f0739f6d",
+    "title": "White Horse (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4ieGtGwqOpvIQhRngp5VvR"
+  },
+  {
+    "id": "fdfcd772",
+    "title": "You Belong With Me (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "06qAK0pLx43pwzRi6MWV8g"
+  },
+  {
+    "id": "20c0b581",
+    "title": "If This Was A Movie (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0q6vsjvnCIWrtwRckCV7y0"
+  },
+  {
+    "id": "805e7959",
+    "title": "If This Was A Movie (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0kAZ3H6G9Zac4PMpmobMkj"
+  },
+  {
+    "id": "54290b9f",
+    "title": "Mr. Perfectly Fine (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7l2tmgUhV7Y2aJHjiszifg"
+  },
+  {
+    "id": "e5ff6201",
+    "title": "You All Over Me (feat. Maren Morris) (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift, Maren Morris",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5pcjystBtalYeqaiXCcgEY"
+  },
+  {
+    "id": "14a729de",
+    "title": "Love Story (Taylor's Version) - Elvira Remix",
+    "artist": "Taylor Swift, ELVIRA",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5RaBeejGtdPEszYEKYECs2"
+  },
+  {
+    "id": "f39d8a94",
+    "title": "Love Story (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3CeCwYWvdfXbZLXFhBrbnf"
+  },
+  {
+    "id": "3d64b281",
+    "title": "Christmas Tree Farm - Recorded Live at the 2019 iHeartRadio Jingle Ball",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2ziekbazMdLS2Gtdo78RID"
+  },
+  {
+    "id": "a1f62a26",
+    "title": "willow",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "3yk94DUDanXyVhRLVjmI3w"
+  },
+  {
+    "id": "cb745885",
+    "title": "willow - dancing witch version (Elvira remix)",
+    "artist": "Taylor Swift, ELVIRA",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2Ta5c5Z6DvM8GX0U1polSo"
+  },
+  {
+    "id": "7f5af25e",
+    "title": "willow - dancing witch version (Elvira remix)",
+    "artist": "Taylor Swift, ELVIRA",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2NnrAdjE9cPdMklonMBuAv"
+  },
+  {
+    "id": "5f0ccd45",
+    "title": "You're Not Sorry - CSI Remix",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "4VbErhGDMTnvPAnt5z70DL"
+  },
+  {
+    "id": "40ef8132",
+    "title": "Love Story - Pop Mix",
+    "artist": "Taylor Swift, Nathan Chapman",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "5lA0yK8S5tP3xoaRMCp4Ug"
+  },
+  {
+    "id": "5694ef5a",
+    "title": "Love Story - Digital Dog Remix",
+    "artist": "Taylor Swift, Digital Dog",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "3RNDw7yywLNyawDKV99hTx"
+  },
+  {
+    "id": "9d60f714",
+    "title": "Only The Young - Featured in Miss Americana",
+    "artist": "Taylor Swift",
+    "year": 2020,
+    "service": "spotify",
+    "serviceId": "2slqvGLwzZZYsT4K4Y1GBC"
+  },
+  {
+    "id": "0ff4c696",
+    "title": "Lover - First Dance Remix",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "2msvOEbkK50foYf9BMXr2X"
+  },
+  {
+    "id": "0b0da58e",
+    "title": "Lover (Remix) [feat. Shawn Mendes]",
+    "artist": "Taylor Swift, Shawn Mendes",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "3i9UVldZOE0aD0JnyfAZZ0"
+  },
+  {
+    "id": "65a73fae",
+    "title": "All Of The Girls You Loved Before",
+    "artist": "Taylor Swift",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "4P9Q0GojKVXpRTJCaL3kyy"
+  },
+  {
+    "id": "29a4b932",
+    "title": "You Need To Calm Down - Clean Bandit Remix",
+    "artist": "Taylor Swift, Clean Bandit",
+    "year": 2019,
+    "service": "spotify",
+    "serviceId": "7Bjf96uNizpvXLvNyOJpst"
+  },
+  {
+    "id": "9e50be99",
+    "title": "Delicate - Seeb Remix",
+    "artist": "Taylor Swift, Seeb",
+    "year": 2018,
+    "service": "spotify",
+    "serviceId": "2Sy2oGjP5RYB4cLVoDU0Gz"
+  },
+  {
+    "id": "db701a13",
+    "title": "Delicate - Sawyr And Ryan Tedder Mix",
+    "artist": "Taylor Swift, Sawyr, Ryan Tedder",
+    "year": 2018,
+    "service": "spotify",
+    "serviceId": "6SYwJcqaltK2WFRmD1unUV"
+  },
+  {
+    "id": "7f0df2f5",
+    "title": "Delicate - Recorded at The Tracking Room Nashville",
+    "artist": "Taylor Swift",
+    "year": 2018,
+    "service": "spotify",
+    "serviceId": "1Fj0T1XKuhRu7EZzJ7NJIK"
+  },
+  {
+    "id": "e6493834",
+    "title": "September - Recorded at The Tracking Room Nashville",
+    "artist": "Taylor Swift",
+    "year": 2018,
+    "service": "spotify",
+    "serviceId": "5eGX87IiKsGuzS3iw4CfCX"
+  },
+  {
+    "id": "2aeac83a",
+    "title": "...Ready For It? - BloodPop® Remix",
+    "artist": "Taylor Swift, BloodPop®",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "1Ygm9KdH3wbzDekO8JgxcW"
+  },
+  {
+    "id": "1fc0c32d",
+    "title": "Bad Blood",
+    "artist": "Taylor Swift, Kendrick Lamar",
+    "year": 2015,
+    "service": "spotify",
+    "serviceId": "6xsEAm6w9oMQYYg3jkEkMT"
+  },
+  {
+    "id": "c0dd549d",
+    "title": "Wildest Dreams - R3hab Remix",
+    "artist": "Taylor Swift, R3HAB",
+    "year": 2015,
+    "service": "spotify",
+    "serviceId": "5VDHMi7own9vDZjiwDES1e"
+  },
+  {
+    "id": "5433ffb9",
+    "title": "Sweeter Than Fiction - From \"One Chance\" Soundtrack",
+    "artist": "Taylor Swift",
+    "year": 2013,
+    "service": "spotify",
+    "serviceId": "0RFCHlNuTeUHIB36VuVbOL"
+  },
+  {
+    "id": "3235ea7b",
+    "title": "Everything Has Changed - Remix",
+    "artist": "Taylor Swift, Ed Sheeran",
+    "year": 2013,
+    "service": "spotify",
+    "serviceId": "3an4u3iZSy63ygYcWslJ5f"
+  },
+  {
+    "id": "d26cf1f7",
+    "title": "Ronan",
+    "artist": "Taylor Swift",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "0Nw8hv79MLJa1yjtsEgz08"
+  },
+  {
+    "id": "432ff0c6",
+    "title": "Today Was A Fairytale",
+    "artist": "Taylor Swift",
+    "year": 2011,
+    "service": "spotify",
+    "serviceId": "4pFvEWbjBpPUdYRQly0THs"
+  },
+  {
+    "id": "31b1e880",
+    "title": "Last Christmas",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "2IprIjGNRlj3TfqUWCAo0C"
+  },
+  {
+    "id": "f0d8e3bd",
+    "title": "Christmases When You Were Mine",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "1g09DZjQ7yBommCT6POY2n"
+  },
+  {
+    "id": "5082f9ae",
+    "title": "Santa Baby",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "71IScwIe7bcIlpnlkbKVQw"
+  },
+  {
+    "id": "c02d6624",
+    "title": "Silent Night",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "1cJkUN5LAotktryx2nPCr7"
+  },
+  {
+    "id": "402c84d6",
+    "title": "Christmas Must Be Something More",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "31JVjy3XWnh6C2zf4kLCXN"
+  },
+  {
+    "id": "ce130a36",
+    "title": "White Christmas",
+    "artist": "Taylor Swift",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "7GZ3KDorsc1yWndEtzGTjf"
   }
 ]
