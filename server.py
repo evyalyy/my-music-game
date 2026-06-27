@@ -1,6 +1,8 @@
 import json
 import os
 import subprocess
+from dotenv import load_dotenv
+load_dotenv()
 import threading
 import time
 from flask import Flask, request, jsonify, send_from_directory
@@ -49,6 +51,11 @@ def _prewarm():
         resolve_url(yt_id)
         time.sleep(0.5)  # be gentle with YouTube rate limits
     app.logger.info('Pre-warm complete.')
+
+
+@app.route('/ping')
+def ping():
+    return '', 204
 
 
 @app.route('/config')
