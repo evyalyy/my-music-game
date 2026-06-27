@@ -12,14 +12,23 @@ DB_PATH = Path(__file__).parent.parent / 'songs-db.json'
 VERSION_RE = re.compile(r'\bversion\b\s*\)?\s*$', re.I)
 TAYLORS_RE = re.compile(r'taylor.s version', re.I)
 
-# Live recordings: ' - Live', '(Live...', 'Live/YYYY'
-LIVE_RE = re.compile(r'\s-\s[Ll]ive\b|\([Ll]ive\b|\b[Ll]ive/\d{4}', re.I)
+# Alternate forms: remix, acoustic, instrumental, radio edit, karaoke as trailing tag
+# Matches: "Title - Foo Remix", "Title (Acoustic)", "Title (Radio Edit)", etc.
+VARIANT_RE = re.compile(
+    r'[-\(]\s*([\w\s]+\s+)?(remix|acoustic|instrumental|radio\s+edit|karaoke|club\s+mix|extended\s+mix)\s*\)?\s*$',
+    re.I,
+)
+
+# Live recordings: ' - Live', '(Live...', 'Live/YYYY', ', live'
+LIVE_RE = re.compile(r'\s-\s[Ll]ive\b|\([Ll]ive\b|\b[Ll]ive/\d{4}|,\s*live\b', re.I)
 
 
 def should_remove(entry):
     title = entry.get('title', '')
     if VERSION_RE.search(title) and not TAYLORS_RE.search(title):
         return 'version'
+    if VARIANT_RE.search(title):
+        return 'variant'
     if LIVE_RE.search(title):
         return 'live'
     return None
