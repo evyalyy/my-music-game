@@ -299,17 +299,21 @@
     setState('player');
 
     try {
+      console.log('[game] onTrackScanned', track, 'deviceId:', spotifyDeviceId);
       if (track.service === 'spotify') {
         await playSpotify(track.id);
       } else if (track.service === 'youtube') {
         await playYouTube(track.id);
       }
+      console.log('[game] playback initiated');
     } catch (e) {
+      console.error('[game] playback error', e);
       document.getElementById('play-status').textContent = `Error: ${e}`;
     }
   }
 
   async function playSpotify(trackId) {
+    console.log('[game] playSpotify', trackId, 'deviceId:', spotifyDeviceId);
     const res = await fetch(
       `https://api.spotify.com/v1/me/player/play?device_id=${spotifyDeviceId}`,
       {
@@ -318,6 +322,7 @@
         body: JSON.stringify({ uris: [`spotify:track:${trackId}`] }),
       }
     );
+    console.log('[game] Spotify API response', res.status);
     if (!res.ok && res.status !== 403) {
       document.getElementById('play-status').textContent = `Playback error (${res.status})`;
       return;
