@@ -226,6 +226,16 @@
     document.getElementById('scan-status').textContent = 'Scan a card';
 
     if (isDebug) {
+      // Auto-play if songUrl param provided (base64-encoded Spotify/YouTube URL)
+      const songUrlParam = new URLSearchParams(location.search).get('songUrl');
+      if (songUrlParam) {
+        try {
+          const url = atob(songUrlParam);
+          const track = parseTrackUrl(url);
+          if (track) { onTrackScanned(track); return; }
+        } catch (e) {}
+      }
+
       document.getElementById('debug-input').style.display = 'flex';
       document.getElementById('debug-url').value = '';
       document.getElementById('debug-play').onclick = () => {
