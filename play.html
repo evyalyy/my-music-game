@@ -298,10 +298,14 @@
     document.getElementById('play-btn').disabled = true;
     setState('player');
 
-    if (track.service === 'spotify') {
-      await playSpotify(track.id);
-    } else if (track.service === 'youtube') {
-      await playYouTube(track.id);
+    try {
+      if (track.service === 'spotify') {
+        await playSpotify(track.id);
+      } else if (track.service === 'youtube') {
+        await playYouTube(track.id);
+      }
+    } catch (e) {
+      document.getElementById('play-status').textContent = `Error: ${e}`;
     }
   }
 
@@ -322,6 +326,9 @@
       document.getElementById('play-status').textContent = 'Spotify Premium required.';
       return;
     }
+    // Optimistic update — player_state_changed will correct it once playback starts
+    document.getElementById('play-status').textContent = 'Playing…';
+    document.getElementById('play-btn').textContent = '⏸';
     document.getElementById('play-btn').disabled = false;
     document.getElementById('play-btn').onclick = async () => {
       const state = await spotifyPlayer.getCurrentState();
