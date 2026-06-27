@@ -5718,5 +5718,245 @@
     "year": 2018,
     "service": "spotify",
     "serviceId": "1bkvFmqfDFkm9CpnQSJC9i"
+  },
+  {
+    "id": "e24d421b",
+    "title": "Wann wird's mal wieder richtig Sommer",
+    "artist": "Rudi Carrell",
+    "year": 2003,
+    "service": "spotify",
+    "serviceId": "59VR9MekNIMRLxQYfSn3Qr"
+  },
+  {
+    "id": "61b542f4",
+    "title": "You Can Call Me Al",
+    "artist": "Paul Simon",
+    "year": 1986,
+    "service": "spotify",
+    "serviceId": "0qxYx4F3vm1AOnfux6dDxP"
+  },
+  {
+    "id": "e78d3549",
+    "title": "Start Me Up",
+    "artist": "The Rolling Stones",
+    "year": 1981,
+    "service": "spotify",
+    "serviceId": "7HKez549fwJQDzx3zLjHKC"
+  },
+  {
+    "id": "859175c3",
+    "title": "The Twist",
+    "artist": "Chubby Checker",
+    "year": 1960,
+    "service": "spotify",
+    "serviceId": "6DSvUZQdqtNfkJI4cAiUsM"
+  },
+  {
+    "id": "502b13ab",
+    "title": "Blurred Lines",
+    "artist": "Robin Thicke, T.I., Pharrell Williams",
+    "year": 2013,
+    "service": "spotify",
+    "serviceId": "2pgbGOb00WrlXY3ZRFKn7v"
+  },
+  {
+    "id": "7a7fdd43",
+    "title": "Hangover",
+    "artist": "Taio Cruz, Flo Rida",
+    "year": 2011,
+    "service": "spotify",
+    "serviceId": "23TrBtndcavtlYBQg5GoR8"
+  },
+  {
+    "id": "90b96f9a",
+    "title": "One More Time",
+    "artist": "Daft Punk",
+    "year": 2000,
+    "service": "spotify",
+    "serviceId": "2Uy6EhQXAYkXA6MohPgjpV"
+  },
+  {
+    "id": "3b96ec81",
+    "title": "China In Your Hand",
+    "artist": "T'Pau",
+    "year": 1987,
+    "service": "spotify",
+    "serviceId": "3U9B0ZcnVPisVh9wGOg6qL"
+  },
+  {
+    "id": "b4629dfd",
+    "title": "The Best",
+    "artist": "Tina Turner",
+    "year": 1989,
+    "service": "spotify",
+    "serviceId": "6pPWRBubXOBAHnjl5ZIujB"
+  },
+  {
+    "id": "b35ba2b1",
+    "title": "The Hustle",
+    "artist": "Van McCoy & The Soul City Symphony",
+    "year": 1975,
+    "service": "spotify",
+    "serviceId": "2yDXsPUm95218qlAQfnilm"
+  },
+  {
+    "id": "0090259b",
+    "title": "Piece of My Heart",
+    "artist": "Erma Franklin",
+    "year": 1968,
+    "service": "spotify",
+    "serviceId": "2GbePPrWWSRxcmW6QRSPae"
+  },
+  {
+    "id": "66a35e24",
+    "title": "Hungry Eyes - From \"Dirty Dancing\" Soundtrack",
+    "artist": "Eric Carmen",
+    "year": 1987,
+    "service": "spotify",
+    "serviceId": "7eafuv44YprITfOdzfVLoU"
+  },
+  {
+    "id": "8bc2df71",
+    "title": "Karma Chameleon",
+    "artist": "Culture Club",
+    "year": 1983,
+    "service": "spotify",
+    "serviceId": "3XDeeP9wBZzGhIPZmLfEEx"
+  },
+  {
+    "id": "e44e9a46",
+    "title": "99 Luftballons",
+    "artist": "Nena",
+    "year": 1983,
+    "service": "spotify",
+    "serviceId": "4ZhPLoMzZwewHLLjV1J15c"
+  },
+  {
+    "id": "5de4ef3a",
+    "title": "Beinhart",
+    "artist": "Torfrock",
+    "year": 1990,
+    "service": "spotify",
+    "serviceId": "2zygsl5Awjq2CuJc1L55x0"
+  },
+  {
+    "id": "bc0c4021",
+    "title": "In Da Club",
+    "artist": "50 Cent",
+    "year": 2003,
+    "service": "spotify",
+    "serviceId": "7iL6o9tox1zgHpKUfh9vuC"
+  },
+  {
+    "id": "f6101ba3",
+    "title": "Don't Go",
+    "artist": "Yazoo",
+    "year": 1982,
+    "service": "spotify",
+    "serviceId": "5JOVSWohrjXW0BFTboh8XO"
+  },
+  {
+    "id": "757698c9",
+    "title": "I Wanna Dance with Somebody (Who Loves Me)",
+    "artist": "Whitney Houston",
+    "year": 1987,
+    "service": "spotify",
+    "serviceId": "2tUBqZG2AbRi7Q0BIrVrEj"
+  },
+  {
+    "id": "ab2ed049",
+    "title": "7 Years",
+    "artist": "Lukas Graham",
+    "year": 2015,
+    "service": "spotify",
+    "serviceId": "5kqIPrATaCc2LqxVWzQGbk"
+  },
+  {
+    "id": "b74cab32",
+    "title": "Sugar-Baby",
+    "artist": "Peter Kraus",
+    "year": 1989,
+    "service": "spotify",
+    "serviceId": "6OnOIWxhezuZjF4APOl7oF"
+  },
+  {
+    "id": "86b19e2b",
+    "title": "Lean On",
+    "artist": "Major Lazer, DJ Snake, MØ",
+    "year": 2015,
+    "service": "spotify",
+    "serviceId": "2YWjW3wwQIBLNhxWKBQd16"
+  },
+  {
+    "id": "a0886522",
+    "title": "Einmal um die Welt",
+    "artist": "CRO",
+    "year": 2011,
+    "service": "spotify",
+    "serviceId": "2L6hCTpUlR2p7Su3hiSB0s"
+  },
+  {
+    "id": "13e4882d",
+    "title": "Ich will keine Schokolade",
+    "artist": "Trude Herr",
+    "year": 1959,
+    "service": "spotify",
+    "serviceId": "2uwDgQNRc1zS5khCPVM0jl"
+  },
+  {
+    "id": "ae407552",
+    "title": "80 Millionen",
+    "artist": "Max Giesinger",
+    "year": 2012,
+    "service": "spotify",
+    "serviceId": "4EB11zPPq3jDbhnwWpzFL9"
+  },
+  {
+    "id": "33a4c972",
+    "title": "Friday I'm In Love",
+    "artist": "The Cure",
+    "year": 1984,
+    "service": "spotify",
+    "serviceId": "4QlzkaRHtU8gAdwqjWmO8n"
+  },
+  {
+    "id": "1cfacd31",
+    "title": "What Is Love - 7\" Mix",
+    "artist": "Haddaway",
+    "year": 1992,
+    "service": "spotify",
+    "serviceId": "2IHaGyfxNoFPLJnaEg4GTs"
+  },
+  {
+    "id": "953b02c0",
+    "title": "Auf uns",
+    "artist": "Andreas Bourani",
+    "year": 2014,
+    "service": "spotify",
+    "serviceId": "6dXt4t5jgySnVTeTpT4C0l"
+  },
+  {
+    "id": "6bd5687d",
+    "title": "Don't Stop Believin'",
+    "artist": "Journey",
+    "year": 1981,
+    "service": "spotify",
+    "serviceId": "4bHsxqR3GMrXTxEPLuK5ue"
+  },
+  {
+    "id": "0aaad718",
+    "title": "Orinoco Flow",
+    "artist": "Enya",
+    "year": 1988,
+    "service": "spotify",
+    "serviceId": "0Fyj9w0HVfjoxm9S8nGClt"
+  },
+  {
+    "id": "5c0efacc",
+    "title": "Über den Wolken",
+    "artist": "Reinhard Mey",
+    "year": 1983,
+    "service": "spotify",
+    "serviceId": "5JSzcnZbYk3qv3nEn5Bo41"
   }
 ]
