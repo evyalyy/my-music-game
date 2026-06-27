@@ -240,6 +240,12 @@
       return;
     }
 
+    if (qrScanner) {
+      // Camera already running — just resume scanning
+      qrScanner.resume();
+      return;
+    }
+
     qrScanner = new Html5Qrcode('reader');
     qrScanner.start(
       { facingMode: 'environment' },
@@ -250,7 +256,7 @@
           document.getElementById('scan-status').textContent = 'Not a music URL — try again';
           return;
         }
-        stopScanner();
+        qrScanner.pause();
         onTrackScanned(track);
       },
       () => {}  // per-frame errors — ignore
@@ -261,8 +267,7 @@
 
   function stopScanner() {
     if (qrScanner) {
-      qrScanner.stop().catch(() => {});
-      qrScanner = null;
+      qrScanner.pause();
     }
     document.getElementById('debug-input').style.display = 'none';
   }
