@@ -99,18 +99,20 @@ def fetch_all_tracks(token, artist_id):
 
 
 def fetch_popularity(token, tracks):
-    """Annotate tracks in-place with a 'popularity' field (0-100)."""
-    for i in range(0, len(tracks), 50):
-        batch = tracks[i:i + 50]
+    """Annotate tracks in-place with a 'popularity' field (0-100).
+
+    Uses the single-track endpoint one at a time — Spotify's batch
+    'Get Several Tracks' endpoint (GET /v1/tracks?ids=...) returns 403 for
+    Development Mode apps as of their Nov 2024 API access changes.
+    """
+    for t in tracks:
         res = requests.get(
-            'https://api.spotify.com/v1/tracks',
+            f'https://api.spotify.com/v1/tracks/{t["serviceId"]}',
             headers={'Authorization': f'Bearer {token}'},
-            params={'ids': ','.join(t['serviceId'] for t in batch)},
             timeout=10,
         )
         res.raise_for_status()
-        for t, full in zip(batch, res.json()['tracks']):
-            t['popularity'] = full['popularity'] if full else 0
+        t['popularity'] = res.json()['popularity']
 
 
 def merge_into_db(new_tracks, service='spotify'):

@@ -48,13 +48,17 @@ def build_db_config():
         'qr_title': '',
         'qr_title_pos': 'top',
         'qr_title_enabled': False,
+        # Disable Google Font download: the API-served Montserrat is Latin-only
+        # and renders Cyrillic titles as blank boxes. Local fonts have full Cyrillic.
+        'google_font': None,
     }
     hcg_utils.db = db
     return db
 
 
-def load_songs(artist_filter=None, title_include=None, title_exclude=None):
+def load_songs(artist_filter=None, title_include=None, title_exclude=None, max_per_artist=None):
     import re
+    from collections import defaultdict
     db = json.loads(DB_PATH.read_text())
     songs = [e for e in db if e.get('service') == 'spotify']
     if artist_filter:
@@ -63,6 +67,15 @@ def load_songs(artist_filter=None, title_include=None, title_exclude=None):
         songs = [s for s in songs if re.search(title_include, s['title'], re.IGNORECASE)]
     if title_exclude:
         songs = [s for s in songs if not re.search(title_exclude, s['title'], re.IGNORECASE)]
+    if max_per_artist:
+        counts = defaultdict(int)
+        limited = []
+        for s in songs:
+            if counts[s['artist']] >= max_per_artist:
+                continue
+            counts[s['artist']] += 1
+            limited.append(s)
+        songs = limited
     return songs
 
 
@@ -93,10 +106,12 @@ def main():
                         help='Only include songs whose title matches this regex')
     parser.add_argument('--title-exclude', default=None, metavar='REGEX',
                         help='Exclude songs whose title matches this regex')
+    parser.add_argument('--max-per-artist', type=int, default=None, metavar='N',
+                        help='Limit to at most N songs per artist (keeps db order, so sort songs-db.json first)')
     args = parser.parse_args()
 
     songs = load_songs(artist_filter=args.artist, title_include=args.title_include,
-                       title_exclude=args.title_exclude)
+                       title_exclude=args.title_exclude, max_per_artist=args.max_per_artist)
     if not songs:
         print('No matching songs found in songs-db.json')
         sys.exit(1)
