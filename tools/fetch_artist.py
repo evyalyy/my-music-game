@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Fetch all tracks for a Spotify artist and merge into songs-db.json."""
 
+import argparse
 import json
 import os
-import sys
 import uuid
 import re
 import requests
@@ -98,6 +98,21 @@ def fetch_all_tracks(token, artist_id):
     return tracks
 
 
+def fetch_popularity(token, tracks):
+    """Annotate tracks in-place with a 'popularity' field (0-100)."""
+    for i in range(0, len(tracks), 50):
+        batch = tracks[i:i + 50]
+        res = requests.get(
+            'https://api.spotify.com/v1/tracks',
+            headers={'Authorization': f'Bearer {token}'},
+            params={'ids': ','.join(t['serviceId'] for t in batch)},
+            timeout=10,
+        )
+        res.raise_for_status()
+        for t, full in zip(batch, res.json()['tracks']):
+            t['popularity'] = full['popularity'] if full else 0
+
+
 def merge_into_db(new_tracks, service='spotify'):
     db = json.loads(DB_PATH.read_text()) if DB_PATH.exists() else []
     existing_ids = {e['serviceId'] for e in db if e.get('service') == service}
@@ -122,10 +137,11 @@ def merge_into_db(new_tracks, service='spotify'):
 
 
 def main():
-    if len(sys.argv) < 2:
-        print('Usage: python tools/fetch_artist.py "Artist Name"')
-        print('       python tools/fetch_artist.py https://open.spotify.com/artist/ID')
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description='Fetch tracks for a Spotify artist and merge into songs-db.json')
+    parser.add_argument('query', help='Artist name, Spotify artist URL, or URI')
+    parser.add_argument('--top', type=int, metavar='N',
+                         help='Only keep the N most popular tracks (by Spotify popularity score)')
+    args = parser.parse_args()
 
     client_id = os.environ.get('SPOTIFY_CLIENT_ID')
     client_secret = os.environ.get('SPOTIFY_CLIENT_SECRET')
@@ -133,10 +149,15 @@ def main():
         print('Error: SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET must be set in .env')
         sys.exit(1)
 
-    query = sys.argv[1]
     token = get_token(client_id, client_secret)
-    artist_id = resolve_artist_id(token, query)
+    artist_id = resolve_artist_id(token, args.query)
     tracks = fetch_all_tracks(token, artist_id)
+
+    if args.top:
+        fetch_popularity(token, tracks)
+        tracks.sort(key=lambda t: t['popularity'], reverse=True)
+        tracks = tracks[:args.top]
+
     added, skipped = merge_into_db(tracks)
     print(f'Done. Added {added} new tracks, skipped {skipped} duplicates.')
     print(f'Database: {DB_PATH}')
