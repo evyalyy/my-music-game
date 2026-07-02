@@ -2,12 +2,17 @@
 """Fetch all tracks for a Spotify artist and merge into songs-db.json."""
 
 import argparse
+import base64
+import hashlib
 import json
 import os
-import uuid
 import re
+import secrets
+import sys
+import uuid
 import requests
 from pathlib import Path
+from urllib.parse import parse_qs, urlencode, urlparse
 
 try:
     from dotenv import load_dotenv
@@ -16,6 +21,56 @@ except ImportError:
     pass
 
 DB_PATH = Path(__file__).parent.parent / 'songs-db.json'
+REDIRECT_URI = 'https://localhost'
+
+
+# ---------------------------------------------------------------------------
+# OAuth PKCE (needed for popularity/top-tracks data — Spotify restricts these
+# to user-authorized tokens, client-credentials tokens get 403)
+# ---------------------------------------------------------------------------
+
+def _pkce_pair():
+    verifier = secrets.token_urlsafe(64)
+    digest = hashlib.sha256(verifier.encode()).digest()
+    challenge = base64.urlsafe_b64encode(digest).rstrip(b'=').decode()
+    return verifier, challenge
+
+
+def get_user_token(client_id):
+    verifier, challenge = _pkce_pair()
+    state = secrets.token_hex(8)
+
+    params = {
+        'client_id': client_id,
+        'response_type': 'code',
+        'redirect_uri': REDIRECT_URI,
+        'state': state,
+        'code_challenge_method': 'S256',
+        'code_challenge': challenge,
+    }
+    url = 'https://accounts.spotify.com/authorize?' + urlencode(params)
+    print(f'\nOpen this URL in your browser to log in:\n\n  {url}\n')
+    print('After login, Spotify redirects to play.html — copy the full URL')
+    print('from the address bar and paste it here.')
+    redirect_url = input('\nPaste redirect URL: ').strip()
+
+    qs = parse_qs(urlparse(redirect_url).query)
+    if qs.get('state', [None])[0] != state:
+        print('State mismatch — possible CSRF. Aborting.')
+        sys.exit(1)
+    if 'code' not in qs:
+        print('No code found in redirect URL.')
+        sys.exit(1)
+
+    res = requests.post('https://accounts.spotify.com/api/token', data={
+        'grant_type': 'authorization_code',
+        'code': qs['code'][0],
+        'redirect_uri': REDIRECT_URI,
+        'client_id': client_id,
+        'code_verifier': verifier,
+    }, timeout=10)
+    res.raise_for_status()
+    return res.json()['access_token']
 
 
 def get_token(client_id, client_secret):
@@ -156,7 +211,8 @@ def main():
     tracks = fetch_all_tracks(token, artist_id)
 
     if args.top:
-        fetch_popularity(token, tracks)
+        user_token = get_user_token(client_id)
+        fetch_popularity(user_token, tracks)
         tracks.sort(key=lambda t: t['popularity'], reverse=True)
         tracks = tracks[:args.top]
 
