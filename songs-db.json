@@ -3504,14 +3504,6 @@
     "serviceId": "1bkvFmqfDFkm9CpnQSJC9i"
   },
   {
-    "id": "e24d421b",
-    "title": "Wann wird's mal wieder richtig Sommer",
-    "artist": "Rudi Carrell",
-    "year": 2003,
-    "service": "spotify",
-    "serviceId": "59VR9MekNIMRLxQYfSn3Qr"
-  },
-  {
     "id": "61b542f4",
     "title": "You Can Call Me Al",
     "artist": "Paul Simon",
@@ -5288,46 +5280,6 @@
     "serviceId": "2JHRPXa7cVtsRjMb30a9KE"
   },
   {
-    "id": "99082504",
-    "title": "The Twist",
-    "artist": "Chubby Checker",
-    "year": 1960,
-    "service": "spotify",
-    "serviceId": "59ZswYtwcU6EP581dK7UHC"
-  },
-  {
-    "id": "9e0ef584",
-    "title": "Blurred Lines",
-    "artist": "Robin Thicke, T.I., Pharrell Williams",
-    "year": 2013,
-    "service": "spotify",
-    "serviceId": "0n4bITAu0Y0nigrz3MFJMb"
-  },
-  {
-    "id": "858a643c",
-    "title": "Hangover",
-    "artist": "Taio Cruz, Flo Rida",
-    "year": 2011,
-    "service": "spotify",
-    "serviceId": "5pmL3RzOy3IvGFaSDi4hZL"
-  },
-  {
-    "id": "885b001d",
-    "title": "One More Time",
-    "artist": "Daft Punk",
-    "year": 2000,
-    "service": "spotify",
-    "serviceId": "0DiWol3AO6WpXZgp0goxAV"
-  },
-  {
-    "id": "33d12818",
-    "title": "China In Your Hand",
-    "artist": "T'Pau",
-    "year": 1987,
-    "service": "spotify",
-    "serviceId": "0ow5yxh0ouMJ0om8EyEt8P"
-  },
-  {
     "id": "7739f6dd",
     "title": "Super Bowl LIX Halftime Show - Live",
     "artist": "Kendrick Lamar, NFL",
@@ -5336,44 +5288,12 @@
     "serviceId": "6g6W3pMAFbp2FS1QCijkpM"
   },
   {
-    "id": "9bab70f4",
-    "title": "Hungry Eyes - From \"Dirty Dancing\" Soundtrack",
-    "artist": "Eric Carmen",
-    "year": 1987,
-    "service": "spotify",
-    "serviceId": "31H6au3jhblhr6MMJiXnCq"
-  },
-  {
     "id": "c0cf5d61",
     "title": "Karma Chameleon - Remastered 2002",
     "artist": "Culture Club",
     "year": 1983,
     "service": "spotify",
     "serviceId": "2wSAWEYUHkt92X4SBAPqZE"
-  },
-  {
-    "id": "b788f347",
-    "title": "99 Luftballons",
-    "artist": "Nena",
-    "year": 1983,
-    "service": "spotify",
-    "serviceId": "2IJftBfq7pJ43tfnOR0RB3"
-  },
-  {
-    "id": "66043cf2",
-    "title": "Beinhart",
-    "artist": "Torfrock",
-    "year": 1990,
-    "service": "spotify",
-    "serviceId": "3nOernkswNwTfHHGya0GAk"
-  },
-  {
-    "id": "cb129ba2",
-    "title": "Don't Go",
-    "artist": "Yazoo",
-    "year": 1982,
-    "service": "spotify",
-    "serviceId": "098JUtp63d1Hsge11VuoD2"
   },
   {
     "id": "c7d20d51",
@@ -5390,46 +5310,6 @@
     "year": 2015,
     "service": "spotify",
     "serviceId": "2e7s0oEzUoJtDSPtYJuVvD"
-  },
-  {
-    "id": "f4dba2fa",
-    "title": "Einmal um die Welt",
-    "artist": "CRO",
-    "year": 2012,
-    "service": "spotify",
-    "serviceId": "6gQAyT7B7cYGTRBOiFdQUS"
-  },
-  {
-    "id": "184a8aa1",
-    "title": "Ich will keine Schokolade",
-    "artist": "Trude Herr",
-    "year": 1960,
-    "service": "spotify",
-    "serviceId": "48N0qA4BX71bCNFTRq1CbG"
-  },
-  {
-    "id": "f62316a0",
-    "title": "80 Millionen",
-    "artist": "Max Giesinger",
-    "year": 2016,
-    "service": "spotify",
-    "serviceId": "2ladamWCFAfQbgIIdkewAx"
-  },
-  {
-    "id": "9b0ce7bc",
-    "title": "What Is Love - 7\" Mix",
-    "artist": "Haddaway",
-    "year": 1993,
-    "service": "spotify",
-    "serviceId": "0OTO8ZF2YqFQVw9hnZylTd"
-  },
-  {
-    "id": "1b481f84",
-    "title": "Auf uns",
-    "artist": "Andreas Bourani",
-    "year": 2014,
-    "service": "spotify",
-    "serviceId": "5s5jOmBknaXr7jOBnTQjs5"
   },
   {
     "id": "7303f780",
@@ -7774,5 +7654,397 @@
     "year": 2023,
     "service": "spotify",
     "serviceId": "3aNT0S7Nl3qFouifZpXZZQ"
+  },
+  {
+    "id": "04ff1f25",
+    "title": "Желтые тюльпаны",
+    "artist": "Natasha Korolyova",
+    "year": 1990,
+    "service": "spotify",
+    "serviceId": "076kDz2eEpYpKfi6Fzn621"
+  },
+  {
+    "id": "0dd9b21b",
+    "title": "Кукушка",
+    "artist": "Kino",
+    "year": 1990,
+    "service": "spotify",
+    "serviceId": "6of17XmoecCKX6LOrXeCw3"
+  },
+  {
+    "id": "ff2379aa",
+    "title": "Белые розы",
+    "artist": "Ласковый Май",
+    "year": 1989,
+    "service": "spotify",
+    "serviceId": "6XxnLWeiqFgcwsxz0tmKwJ"
+  },
+  {
+    "id": "e0695478",
+    "title": "Нажми на кнопку",
+    "artist": "Технология",
+    "year": 1991,
+    "service": "spotify",
+    "serviceId": "4DGkYSyPbGjpILjfq6nnhx"
+  },
+  {
+    "id": "a153f90b",
+    "title": "Музыка нас связала",
+    "artist": "Mirage",
+    "year": 1988,
+    "service": "spotify",
+    "serviceId": "0FGC7vqqtfIEdQU21nFFAa"
+  },
+  {
+    "id": "a6abb202",
+    "title": "Люби меня, люби",
+    "artist": "Otpetye Moshenniki",
+    "year": 1998,
+    "service": "spotify",
+    "serviceId": "4zYrisQWPAWhV4acfag0li"
+  },
+  {
+    "id": "1a9214bf",
+    "title": "18 Мне уже",
+    "artist": "Ruki Vverh!",
+    "year": 1999,
+    "service": "spotify",
+    "serviceId": "0tXubSI1kh1XeyIsE2Rtrk"
+  },
+  {
+    "id": "ac8dbe18",
+    "title": "Он тебя целует",
+    "artist": "Ruki Vverh!",
+    "year": 2000,
+    "service": "spotify",
+    "serviceId": "1p4qUoDAXKPyyQDFVkvMTL"
+  },
+  {
+    "id": "7d41a00d",
+    "title": "Тучи",
+    "artist": "Ivanushki International",
+    "year": 1996,
+    "service": "spotify",
+    "serviceId": "2Pl5jJTg4J95lvbYNw5EZr"
+  },
+  {
+    "id": "a017b503",
+    "title": "Кукла",
+    "artist": "Ivanushki International",
+    "year": 1996,
+    "service": "spotify",
+    "serviceId": "6jPInPpr5eOENh7mK9N9RV"
+  },
+  {
+    "id": "d5802547",
+    "title": "Мальчик хочет в Тамбов",
+    "artist": "Murat Nasyrov",
+    "year": 1998,
+    "service": "spotify",
+    "serviceId": "7BwjUPx97RgQCNTpux1RrK"
+  },
+  {
+    "id": "9df579ff",
+    "title": "Облака",
+    "artist": "Andrey Gubin",
+    "year": 1998,
+    "service": "spotify",
+    "serviceId": "7oEWGTJ7d4OXTSxWBa5NIz"
+  },
+  {
+    "id": "1d51f60b",
+    "title": "Зима-холода",
+    "artist": "Andrey Gubin",
+    "year": 1997,
+    "service": "spotify",
+    "serviceId": "0NAAWRsrOxl8JWEG4pD7FW"
+  },
+  {
+    "id": "27ad4eeb",
+    "title": "Хару мамбуру",
+    "artist": "Nogu Svelo!",
+    "year": 1996,
+    "service": "spotify",
+    "serviceId": "1VDxsFbWIVkAuv9NToHpOi"
+  },
+  {
+    "id": "fed53150",
+    "title": "Владивосток 2000",
+    "artist": "Mumiy Troll",
+    "year": 1997,
+    "service": "spotify",
+    "serviceId": "62Vf7c3MtB7BR08VbpnAsX"
+  },
+  {
+    "id": "4173d4a5",
+    "title": "ариведерчи",
+    "artist": "Zemfira",
+    "year": 1999,
+    "service": "spotify",
+    "serviceId": "5NHsnQXXOxC0Orkp58XLpg"
+  },
+  {
+    "id": "c7a9fc2c",
+    "title": "Я сошла с ума",
+    "artist": "t.A.T.u.",
+    "year": 2000,
+    "service": "spotify",
+    "serviceId": "6zdYyd6S2CJdmSlR05TXig"
+  },
+  {
+    "id": "435019c1",
+    "title": "Нас не догонят",
+    "artist": "t.A.T.u.",
+    "year": 2001,
+    "service": "spotify",
+    "serviceId": "5k1k233ab4KvgsjCjLhu5O"
+  },
+  {
+    "id": "6341788b",
+    "title": "Звезда по имени Солнце",
+    "artist": "Kino",
+    "year": 1990,
+    "service": "spotify",
+    "serviceId": "0WMObwSSmP8k9azseajaKt"
+  },
+  {
+    "id": "bd0d4f26",
+    "title": "Крылья",
+    "artist": "Nautilus Pompilius",
+    "year": 1990,
+    "service": "spotify",
+    "serviceId": "2jHBaZjG5QBfJYz7C8aZj5"
+  },
+  {
+    "id": "bc7ecba5",
+    "title": "Бухгалтер",
+    "artist": "Kombinaciya",
+    "year": 1990,
+    "service": "spotify",
+    "serviceId": "3JeCVPctOYKQmiB1UlVtvm"
+  },
+  {
+    "id": "f193a7ef",
+    "title": "Париж",
+    "artist": "Car-Man",
+    "year": 1990,
+    "service": "spotify",
+    "serviceId": "2GmFuzdZWonmrmqs2rIdHt"
+  },
+  {
+    "id": "01c550e2",
+    "title": "Невозможное возможно",
+    "artist": "Dima Bilan",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "43huhYuLGojQDjQEUIKY8O"
+  },
+  {
+    "id": "539ebd59",
+    "title": "Believe",
+    "artist": "Dima Bilan",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "17NIAyw09hYcb10hZXxgjN"
+  },
+  {
+    "id": "9d2f7170",
+    "title": "На берегу неба",
+    "artist": "Dima Bilan",
+    "year": 2003,
+    "service": "spotify",
+    "serviceId": "6w5atIsxVNKPERC9UYuiaD"
+  },
+  {
+    "id": "63de992f",
+    "title": "Опера #2",
+    "artist": "Vitas",
+    "year": 2001,
+    "service": "spotify",
+    "serviceId": "2fKog3E5P7HVQZs2sQMFrO"
+  },
+  {
+    "id": "5a7d0d91",
+    "title": "Дыши",
+    "artist": "SEREBRO",
+    "year": 2007,
+    "service": "spotify",
+    "serviceId": "1g8sV4v72ZTWZ2QBf59oAH"
+  },
+  {
+    "id": "39b819d1",
+    "title": "Районы-кварталы",
+    "artist": "Zveri",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "46Y9Jp57brIX3pqfN7zd8W"
+  },
+  {
+    "id": "09c6f303",
+    "title": "WWW",
+    "artist": "Leningrad",
+    "year": 2002,
+    "service": "spotify",
+    "serviceId": "7jon6Uo20fSA0bhMxrbHeq"
+  },
+  {
+    "id": "42daed77",
+    "title": "В Питере — пить",
+    "artist": "Leningrad",
+    "year": 2010,
+    "service": "spotify",
+    "serviceId": "4Ysgi3OZxxObD4bUzZuj4Q"
+  },
+  {
+    "id": "61590bc0",
+    "title": "Полковнику никто не пишет",
+    "artist": "Би-2",
+    "year": 2001,
+    "service": "spotify",
+    "serviceId": "7a2tITrS5LZtlefeZscRFf"
+  },
+  {
+    "id": "2e18808e",
+    "title": "ХОЧЕШЬ?",
+    "artist": "Zemfira",
+    "year": 2000,
+    "service": "spotify",
+    "serviceId": "4wwqUoX7OweabhkpP2kaTS"
+  },
+  {
+    "id": "e54e9797",
+    "title": "Часики",
+    "artist": "Valeriya",
+    "year": 2006,
+    "service": "spotify",
+    "serviceId": "6plfiT0DKXvPmCfjcF5lIX"
+  },
+  {
+    "id": "7793a51e",
+    "title": "Всё будет хорошо",
+    "artist": "Verka Serduchka",
+    "year": 2003,
+    "service": "spotify",
+    "serviceId": "2UuOcNP8dU5nVq57ABxzIo"
+  },
+  {
+    "id": "2961e222",
+    "title": "Стоп! Стоп! Стоп!",
+    "artist": "VIA Gra",
+    "year": 2003,
+    "service": "spotify",
+    "serviceId": "3v4VzHVCNjRqd000W7RGRX"
+  },
+  {
+    "id": "170f01e5",
+    "title": "Еврейский портной",
+    "artist": "Mikhail Shufutinsky",
+    "year": 1993,
+    "service": "spotify",
+    "serviceId": "0AxDeghNjL3Z5UyMQfnlRY"
+  },
+  {
+    "id": "576957ea",
+    "title": "Душа болит",
+    "artist": "Mikhail Shufutinsky",
+    "year": 1994,
+    "service": "spotify",
+    "serviceId": "247SJ89L8symFUDNVBicdv"
+  },
+  {
+    "id": "d94f9a63",
+    "title": "Обожаю",
+    "artist": "Mikhail Shufutinsky",
+    "year": 2003,
+    "service": "spotify",
+    "serviceId": "56JBSzeMX2KXKyllE9yUTk"
+  },
+  {
+    "id": "96c3380d",
+    "title": "Левый берег Дона (Версия 2017)",
+    "artist": "Mikhail Shufutinsky",
+    "year": 2018,
+    "service": "spotify",
+    "serviceId": "3skU1CRUocCan181P02CXt"
+  },
+  {
+    "id": "bce80d35",
+    "title": "3-е Сентября",
+    "artist": "Egor Kreed, Mikhail Shufutinsky",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "1R210XVWvBONZijbH3vw7A"
+  },
+  {
+    "id": "426fb12f",
+    "title": "Любимая",
+    "artist": "Mikhail Shufutinsky",
+    "year": 2016,
+    "service": "spotify",
+    "serviceId": "6DYqmZ2HGQZoekwH7cxMIH"
+  },
+  {
+    "id": "02904525",
+    "title": "Хозяин-барин",
+    "artist": "Mikhail Shufutinsky",
+    "year": 2024,
+    "service": "spotify",
+    "serviceId": "2pQmLDOVMct0qGTrt24mab"
+  },
+  {
+    "id": "b156a2b0",
+    "title": "Шарада ночь",
+    "artist": "Mikhail Shufutinsky, Katya Lel",
+    "year": 2017,
+    "service": "spotify",
+    "serviceId": "2wI2MgdyO6tU7CZHuJgmCB"
+  },
+  {
+    "id": "9d30c1e5",
+    "title": "Дядя Паша",
+    "artist": "Mikhail Shufutinsky",
+    "year": 2013,
+    "service": "spotify",
+    "serviceId": "4yAV1Cihp7Oy4gEnMngBX5"
+  },
+  {
+    "id": "de88cc6e",
+    "title": "Марджанджа",
+    "artist": "Mikhail Shufutinsky",
+    "year": 2003,
+    "service": "spotify",
+    "serviceId": "70EuD3t2ndOTMFpUD40S3T"
+  },
+  {
+    "id": "e3a6f3d1",
+    "title": "Две свечи",
+    "artist": "Mikhail Shufutinsky",
+    "year": 1993,
+    "service": "spotify",
+    "serviceId": "7yxe1fKiCmrRkRxRKq6bTC"
+  },
+  {
+    "id": "184adf30",
+    "title": "Never Let You Go",
+    "artist": "Dima Bilan",
+    "year": 2008,
+    "service": "spotify",
+    "serviceId": "6QEKQt2NaSwipYV0fsspYA"
+  },
+  {
+    "id": "2d16b5c6",
+    "title": "Number One Fan",
+    "artist": "Dima Bilan",
+    "year": 2007,
+    "service": "spotify",
+    "serviceId": "3rAylgvZqPkjALdFoAW6Ac"
+  },
+  {
+    "id": "26254e22",
+    "title": "Всё, что касается",
+    "artist": "Zveri",
+    "year": 2005,
+    "service": "spotify",
+    "serviceId": "1ckQOpzH9SJ6mrFu3NPlJi"
   }
 ]
