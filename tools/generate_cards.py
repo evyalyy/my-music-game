@@ -56,7 +56,8 @@ def build_db_config():
     return db
 
 
-def load_songs(artist_filter=None, title_include=None, title_exclude=None, max_per_artist=None):
+def load_songs(artist_filter=None, title_include=None, title_exclude=None, max_per_artist=None,
+               limit_artist=None):
     import re
     from collections import defaultdict
     db = json.loads(DB_PATH.read_text())
@@ -74,6 +75,18 @@ def load_songs(artist_filter=None, title_include=None, title_exclude=None, max_p
             if counts[s['artist']] >= max_per_artist:
                 continue
             counts[s['artist']] += 1
+            limited.append(s)
+        songs = limited
+    if limit_artist:
+        name, _, n = limit_artist.rpartition(':')
+        n = int(n)
+        count = 0
+        limited = []
+        for s in songs:
+            if name.lower() in s['artist'].lower():
+                count += 1
+                if count > n:
+                    continue
             limited.append(s)
         songs = limited
     return songs
@@ -108,29 +121,40 @@ def main():
                         help='Exclude songs whose title matches this regex')
     parser.add_argument('--max-per-artist', type=int, default=None, metavar='N',
                         help='Limit to at most N songs per artist (keeps db order, so sort songs-db.json first)')
+    parser.add_argument('--batch-size', type=int, default=None, metavar='N',
+                        help='Split songs into batches of N, generating one PDF per batch')
+    parser.add_argument('--limit-artist', default=None, metavar='NAME:N',
+                        help='Cap a specific artist (substring match) to at most N songs, '
+                             'keeping db order; other artists unaffected')
     args = parser.parse_args()
 
     songs = load_songs(artist_filter=args.artist, title_include=args.title_include,
-                       title_exclude=args.title_exclude, max_per_artist=args.max_per_artist)
+                       title_exclude=args.title_exclude, max_per_artist=args.max_per_artist,
+                       limit_artist=args.limit_artist)
     if not songs:
         print('No matching songs found in songs-db.json')
         sys.exit(1)
-
-    print(f'Generating cards for {len(songs)} songs...')
-    hitster_songs = to_hitster_format(songs)
-
-    # Write songs.json so hitster_card_creator loads from it (fetch=False path)
-    write_songs_json(hitster_songs, args.output)
 
     db = build_db_config()
     # Override OUTPUT_DIR to point inside our submodule
     hitster_card_creator.OUTPUT_DIR = str(CARD_GEN_OUTPUT)
 
-    hitster_card_creator.generate_hitster_cards(
-        db,
-        output_dir=args.output,
-        fetch=False,
-    )
+    batch_size = args.batch_size or len(songs)
+    batches = [songs[i:i + batch_size] for i in range(0, len(songs), batch_size)]
+
+    for i, batch in enumerate(batches, start=1):
+        output_dir = args.output if len(batches) == 1 else f'{args.output}_{i}'
+        print(f'Generating cards for {len(batch)} songs ({output_dir})...')
+        hitster_songs = to_hitster_format(batch)
+
+        # Write songs.json so hitster_card_creator loads from it (fetch=False path)
+        write_songs_json(hitster_songs, output_dir)
+
+        hitster_card_creator.generate_hitster_cards(
+            db,
+            output_dir=output_dir,
+            fetch=False,
+        )
 
 
 if __name__ == '__main__':

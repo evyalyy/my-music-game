@@ -1,0 +1,730 @@
+[
+  {
+    "id": "1cbd9c40",
+    "title": "Welcome To New York (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4WUepByoeqcedHoYhSNHRt"
+  },
+  {
+    "id": "bc871d06",
+    "title": "Blank Space (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0108kcWLnn2HlH2kedi1gn"
+  },
+  {
+    "id": "fc04fdb6",
+    "title": "Style (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3Vpk1hfMAQme8VJ0SNRSkd"
+  },
+  {
+    "id": "4a86b93c",
+    "title": "Out Of The Woods (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1OcSfkeCg9hRC2sFKB4IMJ"
+  },
+  {
+    "id": "03f75173",
+    "title": "All You Had To Do Was Stay (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2k0ZEeAqzvYMcx9Qt5aClQ"
+  },
+  {
+    "id": "1e77fb0f",
+    "title": "Shake It Off (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "50yNTF0Od55qnHLxYsA5Pw"
+  },
+  {
+    "id": "369188a7",
+    "title": "I Wish You Would (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3FxJDucHWdw6caWTKO5b23"
+  },
+  {
+    "id": "6fc0772c",
+    "title": "Bad Blood (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "7oZONwFiFIErZcXAtTu7FY"
+  },
+  {
+    "id": "94a1ef1c",
+    "title": "How You Get The Girl (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "733OhaXQIHY7BKtY3vnSkn"
+  },
+  {
+    "id": "c762ef88",
+    "title": "I Know Places (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1ULabO0PEsdJekqVH6G10G"
+  },
+  {
+    "id": "fcc4fb9b",
+    "title": "Clean (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0lKUBmEyQfzsQHozyeXzES"
+  },
+  {
+    "id": "1fa4da5b",
+    "title": "Wonderland (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6HRsJu8vcnzYDN4t0570FY"
+  },
+  {
+    "id": "fe617f28",
+    "title": "You Are In Love (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0TyGh27YQ5LknmiDhCzJiT"
+  },
+  {
+    "id": "808137cc",
+    "title": "New Romantics (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5M787RexsAiVYjQusM98CV"
+  },
+  {
+    "id": "eb04b8eb",
+    "title": "\"Slut!\" (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0CD7DzeCsuPJygddqlUVYa"
+  },
+  {
+    "id": "bd2187c9",
+    "title": "Say Don't Go (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3CCRVu4F91Qp2mnGjmWBrf"
+  },
+  {
+    "id": "325500c2",
+    "title": "Now That We Don't Talk (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5QUIK7ZtziW8kGWo8RqopF"
+  },
+  {
+    "id": "c97ae641",
+    "title": "Suburban Legends (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6M9ppdfFjR1AbpUl3Y8DcV"
+  },
+  {
+    "id": "804c3cd6",
+    "title": "Is It Over Now? (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6IG3sQ8s9nfk6TUlVzRhbN"
+  },
+  {
+    "id": "0dc6840d",
+    "title": "Mine (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "7G0gBu6nLdhFDPRLc0HdDG"
+  },
+  {
+    "id": "a1b2b1e5",
+    "title": "Sparks Fly (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3MytWN8L7shNYzGl4tAKRp"
+  },
+  {
+    "id": "b4d16786",
+    "title": "Back To December (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "79uDOz0zuuWS7HWxzMmTa2"
+  },
+  {
+    "id": "18c8e030",
+    "title": "Speak Now (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5xXqyjLicvEpch72qEryFT"
+  },
+  {
+    "id": "0bab433b",
+    "title": "Dear John (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1zU8j1x3yi9xalMF96pzKp"
+  },
+  {
+    "id": "70fee4e1",
+    "title": "Mean (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "30Y4CV7A6YqtQtTTo7Ue4j"
+  },
+  {
+    "id": "85d0defb",
+    "title": "The Story Of Us (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "6dTA6y0C2ReQklntzZl8l3"
+  },
+  {
+    "id": "c6ac0886",
+    "title": "Never Grow Up (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "2EFZ9emtKWEglWUQGEQ3P9"
+  },
+  {
+    "id": "fe8875de",
+    "title": "Enchanted (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3sW3oSbzsfecv9XoUdGs7h"
+  },
+  {
+    "id": "a5ab8934",
+    "title": "Better Than Revenge (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0NwGC0v03ysCYINtg6ns58"
+  },
+  {
+    "id": "63c13034",
+    "title": "Innocent (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "12nBPF4Rh4XLFJV0YLN7uj"
+  },
+  {
+    "id": "45e6aeb1",
+    "title": "Haunted (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4tMzIAFTFdqGBQLdfbPces"
+  },
+  {
+    "id": "471e18df",
+    "title": "Last Kiss (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "59KOoHFcw5XfICnO57holu"
+  },
+  {
+    "id": "b180b6f0",
+    "title": "Long Live (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4hqJ4bSlYJOXb6Z4SRmzxs"
+  },
+  {
+    "id": "5880605e",
+    "title": "Ours (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "3yNJkriPzWjkkDAWHIAVUq"
+  },
+  {
+    "id": "0fecb358",
+    "title": "Superman (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4evLyY5Ue1Wesc61t2KXAU"
+  },
+  {
+    "id": "52393ac2",
+    "title": "When Emma Falls in Love (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "0zo975x58DlXbZllWvfYhg"
+  },
+  {
+    "id": "ca144dd6",
+    "title": "I Can See You (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "5kHMfzgLZP95O9NBy0ku4v"
+  },
+  {
+    "id": "1d007d80",
+    "title": "Foolish One (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "4s8BIKx4Zh6ryAEz8RTlaU"
+  },
+  {
+    "id": "f7d80d36",
+    "title": "Timeless (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2023,
+    "service": "spotify",
+    "serviceId": "1HCdems7PQZRj42QDWLA0A"
+  },
+  {
+    "id": "7861e98f",
+    "title": "State Of Grace (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6lzc0Al0zfZOIFsFvBS1ki"
+  },
+  {
+    "id": "11b6bf88",
+    "title": "Red (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4OAuvHryIVv4kMDNSLuPt6"
+  },
+  {
+    "id": "820a105a",
+    "title": "Treacherous (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3S7HNKPakdwNEBFIVTL6dZ"
+  },
+  {
+    "id": "3dde8c1e",
+    "title": "I Knew You Were Trouble (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6AtZLIzUINvExIUy4QhdjP"
+  },
+  {
+    "id": "72920ede",
+    "title": "All Too Well (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3nsfB1vus2qaloUdcBZvDu"
+  },
+  {
+    "id": "d4e567b6",
+    "title": "22 (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3yII7UwgLF6K5zW3xad3MP"
+  },
+  {
+    "id": "4cacade4",
+    "title": "I Almost Do (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2r9CbjYgFhtAmcFv1cSquB"
+  },
+  {
+    "id": "739fae3c",
+    "title": "We Are Never Ever Getting Back Together (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5YqltLsjdqFtvqE7Nrysvs"
+  },
+  {
+    "id": "3a34fdf1",
+    "title": "Stay Stay Stay (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7eQj6r5PIdYKEIZjucBMcq"
+  },
+  {
+    "id": "e6c832ef",
+    "title": "Holy Ground (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7J4b3LVCIGO4CMBDFLPoP6"
+  },
+  {
+    "id": "3fa83d6d",
+    "title": "Sad Beautiful Tragic (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "73qMN9bXy7MSPwwGfH3wQr"
+  },
+  {
+    "id": "4cdb95e5",
+    "title": "The Lucky One (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4e5ayHsOLJNLTGfjau2mEw"
+  },
+  {
+    "id": "ce253b15",
+    "title": "Starlight (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7A2cNLRT0YJc1yjxHlKihs"
+  },
+  {
+    "id": "adaea437",
+    "title": "Begin Again (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "05GsNucq8Bngd9fnd4fRa0"
+  },
+  {
+    "id": "3478a47b",
+    "title": "The Moment I Knew (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0NRHj8hDwwmSPaA41o379r"
+  },
+  {
+    "id": "c4152f8f",
+    "title": "Come Back...Be Here (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4pNApnaUWAL2J4KO2eqokq"
+  },
+  {
+    "id": "31750503",
+    "title": "Girl At Home (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0DMVrlMUn01M0IcpDbwgu7"
+  },
+  {
+    "id": "91d8975f",
+    "title": "State Of Grace (Acoustic Version) (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5jAIouBES8LWMiriuNq170"
+  },
+  {
+    "id": "92f4257c",
+    "title": "Ronan (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "7nWui6jiMM2m9qFmET1Mtj"
+  },
+  {
+    "id": "174436fd",
+    "title": "Better Man (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4OmFmE0fzcMG6g0Y8p4eSD"
+  },
+  {
+    "id": "844cc2e3",
+    "title": "Babe (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0v4z1tuZvn6LGknom9Qx7d"
+  },
+  {
+    "id": "5d9957e8",
+    "title": "Message In A Bottle (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3z6XUommYDWPHeFhmhhT6j"
+  },
+  {
+    "id": "4e3fec3b",
+    "title": "Forever Winter (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3oGVx9RBmiYGv5ZCecWLkx"
+  },
+  {
+    "id": "48cd97fa",
+    "title": "The Very First Night (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6pYNq0ZwpPVazKzsqpf0G8"
+  },
+  {
+    "id": "4ab55db6",
+    "title": "All Too Well (10 Minute Version) (Taylor's Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5enxwA8aAbwZbf5qCHORXi"
+  },
+  {
+    "id": "0453a055",
+    "title": "Fearless (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "77sMIMlNaSURUAXq5coCxE"
+  },
+  {
+    "id": "31e72106",
+    "title": "Fifteen (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2nqio0SfWg6gh2eCtfuMa5"
+  },
+  {
+    "id": "0e6baebe",
+    "title": "Love Story (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6YvqWjhGD8mB5QXcbcUKtx"
+  },
+  {
+    "id": "5e02c52f",
+    "title": "Hey Stephen (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "550erGcdD9n6PnwxrvYqZT"
+  },
+  {
+    "id": "4e38dfd2",
+    "title": "White Horse (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "5YL553x8sHderRBDlm3NM3"
+  },
+  {
+    "id": "5837311c",
+    "title": "You Belong With Me (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1qrpoAMXodY6895hGKoUpA"
+  },
+  {
+    "id": "66ae5787",
+    "title": "Tell Me Why (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0k0vFacOHNuArLWMiH60p7"
+  },
+  {
+    "id": "cab266a6",
+    "title": "You’re Not Sorry (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6iiAfo4wTA2CVC3Uwx9uh8"
+  },
+  {
+    "id": "237d0f17",
+    "title": "The Way I Loved You (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "22bPsP2jCgbLUvh82U0Z3M"
+  },
+  {
+    "id": "ab575eaa",
+    "title": "Forever & Always (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1msEuwSBneBKpVCZQcFTsU"
+  },
+  {
+    "id": "47db6e01",
+    "title": "The Best Day (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "6ON9UuIq49xXY9GPmHIYRp"
+  },
+  {
+    "id": "6cc68e63",
+    "title": "Change (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "3ExweHKZF9B752DPQByRVT"
+  },
+  {
+    "id": "4371f987",
+    "title": "Jump Then Fall (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2m3ObD945KvpE5y9A1eUWm"
+  },
+  {
+    "id": "2ab77c50",
+    "title": "Untouchable (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0tQ9vBYpldCuikPsbgOVKA"
+  },
+  {
+    "id": "ec83239a",
+    "title": "Forever & Always (Piano Version) (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "01QdEx6kFr78ZejhQtWR5m"
+  },
+  {
+    "id": "3fb84241",
+    "title": "Come In With The Rain (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1n2wszmJyVkw6FHqyLnQsY"
+  },
+  {
+    "id": "0b167157",
+    "title": "Superstar (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "51A8eKvvZz9uydvIZ7xRSV"
+  },
+  {
+    "id": "d7e38267",
+    "title": "The Other Side Of The Door (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1cSFlSBdpT4F5vb1frQ231"
+  },
+  {
+    "id": "6cbcb56f",
+    "title": "Today Was A Fairytale (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2JoJrsEV15OzbijS47lids"
+  },
+  {
+    "id": "40bce657",
+    "title": "Mr. Perfectly Fine (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "2CYVETnhM9aytqrazYYwrK"
+  },
+  {
+    "id": "21766e1f",
+    "title": "We Were Happy (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "34V9RiEPe8MNdU32qJsJa1"
+  },
+  {
+    "id": "1940e3f7",
+    "title": "Don’t You (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4uuEGH5SVuzkkSFjo2DEiY"
+  },
+  {
+    "id": "51642759",
+    "title": "Bye Bye Baby (Taylor’s Version) (From The Vault)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "4qUijfYU8EoIWiY6oSyrgT"
+  },
+  {
+    "id": "d75bf278",
+    "title": "This Love (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2022,
+    "service": "spotify",
+    "serviceId": "4d1CG5ei1E2vGbvmgf5KKv"
+  },
+  {
+    "id": "91961355",
+    "title": "Eyes Open (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0gPmM1WtVRg3uENW3o8bfx"
+  },
+  {
+    "id": "2e7657b0",
+    "title": "Wildest Dreams (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "1Ov37jtRQ2YNAe8HzfczkL"
+  },
+  {
+    "id": "20c0b581",
+    "title": "If This Was A Movie (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "year": 2021,
+    "service": "spotify",
+    "serviceId": "0q6vsjvnCIWrtwRckCV7y0"
+  }
+]
