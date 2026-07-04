@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Name That Tune</title>
+  <title>HiHitster</title>
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -182,7 +182,7 @@
 
 <!-- Auth view -->
 <div id="view-auth" class="view active">
-  <h1 class="hero">Name<br>that<br><em>tune</em></h1>
+  <h1 class="hero">Hi<em>hitster</em></h1>
   <button class="dial" id="start-btn" style="display: none;" aria-label="Start"><i class="ico"></i></button>
   <div class="status" id="auth-status">Loading…</div>
 </div>
@@ -340,7 +340,7 @@
   async function initSpotifySDK() {
     await loadSpotifySDK();
     spotifyPlayer = new Spotify.Player({
-      name: 'Music Game',
+      name: 'HiHitster',
       getOAuthToken: cb => cb(spotifyToken),
       volume: 1.0,
     });
@@ -470,6 +470,7 @@
     currentTrack = track;
     document.getElementById('play-status').textContent = 'Loading…';
     document.getElementById('play-btn').disabled = true;
+    setPlaying(false);
     setState('player');
 
     if (track.service === 'spotify') {
@@ -492,10 +493,9 @@
       document.getElementById('play-status').textContent = 'Spotify Premium required.';
       return;
     }
-    // The API call above already starts playback.
+    // Icon/status are driven by player_state_changed so they reflect the SDK's
+    // real state; on mobile the track may start paused until the first tap.
     document.getElementById('play-btn').disabled = false;
-    setPlaying(true);
-    document.getElementById('play-status').textContent = 'Playing…';
     document.getElementById('play-btn').onclick = async () => {
       const state = await spotifyPlayer.getCurrentState();
       if (!state) return;
@@ -584,8 +584,8 @@
     document.getElementById('auth-status').textContent = 'Ready to play';
     const startBtn = document.getElementById('start-btn');
     startBtn.style.display = 'flex';
-    startBtn.onclick = () => {
-      spotifyPlayer?.activateElement?.();
+    startBtn.onclick = async () => {
+      try { await spotifyPlayer?.activateElement?.(); } catch (e) { /* unlock best-effort */ }
       setState('scanner');
     };
   }
