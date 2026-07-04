@@ -73,7 +73,7 @@
   }
 
   // ── Keepalive ─────────────────────────────────────────────────────────────
-  setInterval(() => fetch('/ping'), 10 * 60 * 1000);
+  setInterval(() => fetch('/ping').catch(() => {}), 10 * 60 * 1000);
 
   // ── URL parser ────────────────────────────────────────────────────────────
   function parseTrackUrl(url) {
@@ -108,8 +108,10 @@
   })();
 
   // ── Auth globals ──────────────────────────────────────────────────────────
+  // No backend on GitHub Pages, so fall back to this public client id (not a secret — PKCE flow).
+  const FALLBACK_SPOTIFY_CLIENT_ID = '10ab8dc8e73247598b1d55bb8e875a09';
   let SPOTIFY_CLIENT_ID;
-  const REDIRECT_URI = `${location.origin}/play.html`;
+  const REDIRECT_URI = `${location.origin}${location.pathname.slice(0, location.pathname.lastIndexOf('/') + 1)}play.html`;
   let spotifyToken = null;
 
   // ── PKCE helpers ──────────────────────────────────────────────────────────
@@ -349,8 +351,10 @@
 
   // ── Main entry point ──────────────────────────────────────────────────────
   async function main() {
-    const config = await fetch('/config').then(r => r.json());
-    SPOTIFY_CLIENT_ID = config.spotifyClientId;
+    SPOTIFY_CLIENT_ID = await fetch('/config')
+      .then(r => r.json())
+      .then(config => config.spotifyClientId)
+      .catch(() => FALLBACK_SPOTIFY_CLIENT_ID);
 
     const params = new URLSearchParams(location.search);
 
