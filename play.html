@@ -69,7 +69,7 @@
       document.getElementById(`view-${v}`).classList.toggle('active', v === view);
     });
     if (view === 'scanner') startScanner();
-    if (currentView === 'scanner' && view !== 'scanner') stopScanner();
+    if (currentView === 'scanner' && view !== 'scanner') pauseScanner();
     currentView = view;
   }
 
@@ -224,7 +224,6 @@
 
   // ── QR Scanner ────────────────────────────────────────────────────────────
   let qrScanner = null;
-  let refocusTimer = null;
   const isDebug = new URLSearchParams(location.search).has('debug');
 
   // Nudge the camera to refocus. Toggling out of and back into continuous
@@ -260,6 +259,13 @@
       return;
     }
 
+    // Request the camera only once per session; on later visits just resume
+    // scanning so the browser doesn't re-prompt for camera access each time.
+    if (qrScanner) {
+      qrScanner.resume();
+      return;
+    }
+
     qrScanner = new Html5Qrcode('reader');
     qrScanner.start(
       { facingMode: 'environment' },
@@ -270,26 +276,21 @@
           document.getElementById('scan-status').textContent = 'Not a music URL — try again';
           return;
         }
-        stopScanner();
+        pauseScanner();
         onTrackScanned(track);
       },
       () => {}  // per-frame errors — ignore
     ).then(() => {
       refocus();
-      refocusTimer = setInterval(refocus, 5000);
+      setInterval(refocus, 5000);
       document.getElementById('reader').onclick = refocus;  // tap to force focus
     }).catch(err => {
       document.getElementById('scan-status').textContent = `Camera error: ${err}`;
     });
   }
 
-  function stopScanner() {
-    clearInterval(refocusTimer);
-    refocusTimer = null;
-    if (qrScanner) {
-      qrScanner.stop().catch(() => {});
-      qrScanner = null;
-    }
+  function pauseScanner() {
+    try { qrScanner?.pause(true); } catch (e) { /* already paused */ }
     document.getElementById('debug-input').style.display = 'none';
   }
 
