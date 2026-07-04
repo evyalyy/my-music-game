@@ -391,16 +391,20 @@
     // OAuth callback
     if (params.has('code')) {
       document.getElementById('auth-status').textContent = 'Connecting to Spotify…';
+      const code = params.get('code');
+      const rawState = params.get('state') || '';
+      // Strip the code from the URL up-front so a reload / bfcache restore
+      // can't re-run the exchange with an already-consumed code.
+      history.replaceState({}, '', location.pathname);
       try {
-        const rawState = params.get('state') || '';
         const { verifier } = JSON.parse(atob(rawState.replace(/-/g, '+').replace(/_/g, '/')));
-        const data = await exchangeCode(params.get('code'), verifier);
+        const data = await exchangeCode(code, verifier);
         if (data.error) {
-          document.getElementById('auth-status').textContent = `Auth error: ${data.error}`;
+          document.getElementById('auth-status').textContent =
+            `Auth error: ${data.error}${data.error_description ? ' — ' + data.error_description : ''}`;
           return;
         }
         storeToken(data);
-        history.replaceState({}, '', location.pathname);
       } catch (e) {
         document.getElementById('auth-status').textContent = `Auth error: ${e}`;
         return;
