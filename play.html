@@ -215,7 +215,7 @@
       document.getElementById(`view-${v}`).classList.toggle('active', v === view);
     });
     if (view === 'scanner') startScanner();
-    if (currentView === 'scanner' && view !== 'scanner') pauseScanner();
+    if (currentView === 'scanner' && view !== 'scanner') leaveScanner();
     currentView = view;
   }
 
@@ -351,6 +351,7 @@
 
   // ── QR Scanner ────────────────────────────────────────────────────────────
   let qrScanner = null;
+  let scanLocked = false;  // ignore repeat decodes until we return to the scanner
   const isDebug = new URLSearchParams(location.search).has('debug');
 
   // Nudge the camera to refocus. Toggling out of and back into continuous
@@ -370,6 +371,7 @@
 
   function startScanner() {
     document.getElementById('scan-status').textContent = 'Scan a card';
+    scanLocked = false;
 
     if (isDebug) {
       document.getElementById('debug-input').style.display = 'flex';
@@ -386,24 +388,23 @@
       return;
     }
 
-    // Request the camera only once per session; on later visits just resume
-    // scanning so the browser doesn't re-prompt for camera access each time.
-    if (qrScanner) {
-      qrScanner.resume();
-      return;
-    }
+    // Start the camera once per session and leave it running; a scanLocked
+    // flag ignores repeat decodes so we never pause (which would show the
+    // library's "Scanner paused" overlay) or re-prompt for camera access.
+    if (qrScanner) return;
 
     qrScanner = new Html5Qrcode('reader');
     qrScanner.start(
       { facingMode: 'environment' },
       { fps: 10, qrbox: { width: 250, height: 250 } },
       (decodedText) => {
+        if (scanLocked) return;
         const track = parseTrackUrl(decodedText);
         if (!track) {
           document.getElementById('scan-status').textContent = 'Not a music URL — try again';
           return;
         }
-        pauseScanner();
+        scanLocked = true;
         onTrackScanned(track);
       },
       () => {}  // per-frame errors — ignore
@@ -416,8 +417,7 @@
     });
   }
 
-  function pauseScanner() {
-    try { qrScanner?.pause(true); } catch (e) { /* already paused */ }
+  function leaveScanner() {
     document.getElementById('debug-input').style.display = 'none';
   }
 
