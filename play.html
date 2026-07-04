@@ -39,6 +39,7 @@
 <!-- Auth view -->
 <div id="view-auth" class="view active">
   <div class="status" id="auth-status">Loading…</div>
+  <button class="btn-round" id="start-btn" style="display: none;">▶</button>
 </div>
 
 <!-- Scanner view -->
@@ -424,12 +425,16 @@
     document.getElementById('auth-status').textContent = 'Connecting to Spotify…';
     await initSpotifySDK();
 
-    // Mobile browsers block audio until a user gesture. The first tap unlocks
-    // the SDK's audio element so scanned tracks can autoplay thereafter.
-    document.addEventListener('pointerdown',
-      () => spotifyPlayer?.activateElement?.(), { once: true });
-
-    setState('scanner');
+    // Mobile browsers block audio until a user gesture, so gate the session
+    // behind a Start tap that unlocks the SDK's audio element. Without this,
+    // scanned tracks stay paused and can't be resumed.
+    document.getElementById('auth-status').textContent = 'Ready to play';
+    const startBtn = document.getElementById('start-btn');
+    startBtn.style.display = 'flex';
+    startBtn.onclick = () => {
+      spotifyPlayer?.activateElement?.();
+      setState('scanner');
+    };
   }
 
   main();
