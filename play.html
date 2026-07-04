@@ -242,7 +242,7 @@
   }
 
   function startScanner() {
-    document.getElementById('scan-status').textContent = 'Scan a card';
+    document.getElementById('scan-status').textContent = 'Tap screen to focus, then scan a card';
 
     if (isDebug) {
       document.getElementById('debug-input').style.display = 'flex';
@@ -423,6 +423,11 @@
     // Init Spotify SDK once
     document.getElementById('auth-status').textContent = 'Connecting to Spotify…';
     await initSpotifySDK();
+
+    // Mobile browsers block audio until a user gesture. The first tap unlocks
+    // the SDK's audio element so scanned tracks can autoplay thereafter.
+    document.addEventListener('pointerdown',
+      () => spotifyPlayer?.activateElement?.(), { once: true });
 
     setState('scanner');
   }
