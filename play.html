@@ -213,12 +213,33 @@
       document.getElementById('auth-status').textContent = `Spotify init error: ${message}`;
       setState('auth');
     });
+    spotifyPlayer.addListener('player_state_changed', state => {
+      if (!state || currentTrack?.service !== 'spotify') return;
+      document.getElementById('play-btn').textContent = state.paused ? '▶' : '⏸';
+      document.getElementById('play-status').textContent = state.paused ? 'Paused' : 'Playing…';
+    });
     await spotifyPlayer.connect();
   }
 
   // ── QR Scanner ────────────────────────────────────────────────────────────
   let qrScanner = null;
+  let refocusTimer = null;
   const isDebug = new URLSearchParams(location.search).has('debug');
+
+  // Nudge the camera to refocus. Toggling out of and back into continuous
+  // focus forces a fresh autofocus pass on devices that otherwise lock focus.
+  async function refocus() {
+    if (!qrScanner) return;
+    try {
+      const modes = (qrScanner.getRunningTrackCapabilities().focusMode) || [];
+      if (modes.includes('manual') && modes.includes('continuous')) {
+        await qrScanner.applyVideoConstraints({ advanced: [{ focusMode: 'manual' }] });
+      }
+      if (modes.includes('continuous')) {
+        await qrScanner.applyVideoConstraints({ advanced: [{ focusMode: 'continuous' }] });
+      }
+    } catch (e) { /* focus control unsupported — ignore */ }
+  }
 
   function startScanner() {
     document.getElementById('scan-status').textContent = 'Scan a card';
@@ -252,12 +273,18 @@
         onTrackScanned(track);
       },
       () => {}  // per-frame errors — ignore
-    ).catch(err => {
+    ).then(() => {
+      refocus();
+      refocusTimer = setInterval(refocus, 5000);
+      document.getElementById('reader').onclick = refocus;  // tap to force focus
+    }).catch(err => {
       document.getElementById('scan-status').textContent = `Camera error: ${err}`;
     });
   }
 
   function stopScanner() {
+    clearInterval(refocusTimer);
+    refocusTimer = null;
     if (qrScanner) {
       qrScanner.stop().catch(() => {});
       qrScanner = null;
@@ -311,17 +338,15 @@
       document.getElementById('play-status').textContent = 'Spotify Premium required.';
       return;
     }
+    // The API call above already starts playback.
     document.getElementById('play-btn').disabled = false;
+    document.getElementById('play-btn').textContent = '⏸';
+    document.getElementById('play-status').textContent = 'Playing…';
     document.getElementById('play-btn').onclick = async () => {
       const state = await spotifyPlayer.getCurrentState();
       if (!state) return;
       state.paused ? spotifyPlayer.resume() : spotifyPlayer.pause();
     };
-    spotifyPlayer.addListener('player_state_changed', state => {
-      if (!state) return;
-      document.getElementById('play-btn').textContent = state.paused ? '▶' : '⏸';
-      document.getElementById('play-status').textContent = state.paused ? 'Paused' : 'Playing…';
-    });
   }
 
   async function playYouTube(videoId) {
@@ -332,6 +357,11 @@
       ytAudio.src = data.url;
       document.getElementById('play-btn').disabled = false;
       document.getElementById('play-btn').onclick = () => ytAudio.paused ? ytAudio.play() : ytAudio.pause();
+      try {
+        await ytAudio.play();
+      } catch (e) {
+        document.getElementById('play-status').textContent = 'Tap ▶ to play';  // autoplay blocked
+      }
     } catch (e) {
       document.getElementById('play-status').textContent = `Error: ${e}`;
     }
