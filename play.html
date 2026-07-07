@@ -388,15 +388,17 @@
       return;
     }
 
-    // Start the camera once per session and leave it running; a scanLocked
-    // flag ignores repeat decodes so we never pause (which would show the
-    // library's "Scanner paused" overlay) or re-prompt for camera access.
-    if (qrScanner) return;
+    // Start the camera once per session; on later visits resume decoding.
+    // Resuming (rather than re-starting) avoids a camera-access re-prompt.
+    if (qrScanner) {
+      try { qrScanner.resume(); } catch (e) { /* already scanning */ }
+      return;
+    }
 
     qrScanner = new Html5Qrcode('reader');
     qrScanner.start(
       { facingMode: 'environment' },
-      { fps: 10, qrbox: { width: 250, height: 250 } },
+      { fps: 5, qrbox: { width: 250, height: 250 } },
       (decodedText) => {
         if (scanLocked) return;
         const track = parseTrackUrl(decodedText);
@@ -419,6 +421,12 @@
 
   function leaveScanner() {
     document.getElementById('debug-input').style.display = 'none';
+    // Pause decoding while off the scanner to save power/heat; keep the camera
+    // stream so returning doesn't re-prompt. Hide the library's paused overlay.
+    try { qrScanner?.pause(true); } catch (e) { /* not scanning */ }
+    document.querySelectorAll('#reader div').forEach(d => {
+      if (d.innerText === 'Scanner paused') d.style.display = 'none';
+    });
   }
 
   // Reflect playback state on the dial icon and drive the VU meter animation.
