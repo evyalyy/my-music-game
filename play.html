@@ -352,6 +352,7 @@
   // ── QR Scanner ────────────────────────────────────────────────────────────
   let qrScanner = null;
   let scanLocked = false;  // ignore repeat decodes until we return to the scanner
+  let refocusInterval = null;
   const isDebug = new URLSearchParams(location.search).has('debug');
 
   // Nudge the camera to refocus. Toggling out of and back into continuous
@@ -388,14 +389,7 @@
       return;
     }
 
-    // Start the camera once per session; on later visits resume decoding.
-    // Resuming (rather than re-starting) avoids a camera-access re-prompt.
-    if (qrScanner) {
-      try { qrScanner.resume(); } catch (e) { /* already scanning */ }
-      return;
-    }
-
-    qrScanner = new Html5Qrcode('reader');
+    if (!qrScanner) qrScanner = new Html5Qrcode('reader');
     qrScanner.start(
       { facingMode: 'environment' },
       { fps: 5, qrbox: { width: 250, height: 250 } },
@@ -412,7 +406,7 @@
       () => {}  // per-frame errors — ignore
     ).then(() => {
       refocus();
-      setInterval(refocus, 5000);
+      refocusInterval = setInterval(refocus, 5000);
       document.getElementById('reader').onclick = refocus;  // tap to force focus
     }).catch(err => {
       document.getElementById('scan-status').textContent = `Camera error: ${err}`;
@@ -421,12 +415,10 @@
 
   function leaveScanner() {
     document.getElementById('debug-input').style.display = 'none';
-    // Pause decoding while off the scanner to save power/heat; keep the camera
-    // stream so returning doesn't re-prompt. Hide the library's paused overlay.
-    try { qrScanner?.pause(true); } catch (e) { /* not scanning */ }
-    document.querySelectorAll('#reader div').forEach(d => {
-      if (d.innerText === 'Scanner paused') d.style.display = 'none';
-    });
+    clearInterval(refocusInterval);
+    // Fully stop the camera while off the scanner — cuts power/heat. Costs a
+    // re-prompt-free reacquire (permission is already granted) on return.
+    qrScanner?.stop().catch(() => {} /* not scanning */);
   }
 
   // Reflect playback state on the dial icon and drive the VU meter animation.
