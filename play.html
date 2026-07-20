@@ -142,6 +142,14 @@
     }
     .btn-next:active { background: var(--amber); color: var(--petrol); }
 
+    .btn-torch {
+      padding: 0.5rem 1.4rem; border: 1.5px solid var(--amber); border-radius: 2rem;
+      background: transparent; color: var(--amber); cursor: pointer;
+      font: 700 0.75rem/1 'Space Mono', monospace; letter-spacing: 0.16em; text-transform: uppercase;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .btn-torch.is-on { background: var(--amber); color: var(--petrol); }
+
     /* ── Scanner viewport with corner brackets ── */
     .viewport {
       position: relative; width: 280px; padding: 12px; border-radius: 20px;
@@ -194,6 +202,7 @@
     <input id="debug-url" type="text" placeholder="Paste Spotify or YouTube URL…">
     <button class="btn-next" id="debug-play">Play</button>
   </div>
+  <button class="btn-torch" id="torch-btn" style="display: none;">Flashlight</button>
   <div class="status" id="scan-status">Scan a card</div>
 </div>
 
@@ -353,7 +362,19 @@
   let qrScanner = null;
   let scanLocked = false;  // ignore repeat decodes until we return to the scanner
   let refocusInterval = null;
+  let torchOn = false;
   const isDebug = new URLSearchParams(location.search).has('debug');
+
+  async function toggleTorch() {
+    if (!qrScanner) return;
+    const next = !torchOn;
+    try {
+      await qrScanner.applyVideoConstraints({ advanced: [{ torch: next }] });
+      torchOn = next;
+      document.getElementById('torch-btn').classList.toggle('is-on', torchOn);
+    } catch (e) { /* torch control unsupported — ignore */ }
+  }
+  document.getElementById('torch-btn').onclick = toggleTorch;
 
   // Nudge the camera to refocus. Toggling out of and back into continuous
   // focus forces a fresh autofocus pass on devices that otherwise lock focus.
@@ -408,6 +429,8 @@
       refocus();
       refocusInterval = setInterval(refocus, 5000);
       document.getElementById('reader').onclick = refocus;  // tap to force focus
+      const caps = qrScanner.getRunningTrackCapabilities() || {};
+      document.getElementById('torch-btn').style.display = caps.torch ? 'block' : 'none';
     }).catch(err => {
       document.getElementById('scan-status').textContent = `Camera error: ${err}`;
     });
@@ -416,6 +439,9 @@
   function leaveScanner() {
     document.getElementById('debug-input').style.display = 'none';
     clearInterval(refocusInterval);
+    torchOn = false;
+    document.getElementById('torch-btn').classList.remove('is-on');
+    document.getElementById('torch-btn').style.display = 'none';
     // Fully stop the camera while off the scanner — cuts power/heat. Costs a
     // re-prompt-free reacquire (permission is already granted) on return.
     qrScanner?.stop().catch(() => {} /* not scanning */);
