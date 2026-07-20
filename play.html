@@ -431,6 +431,7 @@
       document.getElementById('reader').onclick = refocus;  // tap to force focus
       const caps = qrScanner.getRunningTrackCapabilities() || {};
       document.getElementById('torch-btn').style.display = caps.torch ? 'block' : 'none';
+      if (torchOn) qrScanner.applyVideoConstraints({ advanced: [{ torch: true }] }).catch(() => {});
     }).catch(err => {
       document.getElementById('scan-status').textContent = `Camera error: ${err}`;
     });
@@ -439,9 +440,6 @@
   function leaveScanner() {
     document.getElementById('debug-input').style.display = 'none';
     clearInterval(refocusInterval);
-    torchOn = false;
-    document.getElementById('torch-btn').classList.remove('is-on');
-    document.getElementById('torch-btn').style.display = 'none';
     // Fully stop the camera while off the scanner — cuts power/heat. Costs a
     // re-prompt-free reacquire (permission is already granted) on return.
     qrScanner?.stop().catch(() => {} /* not scanning */);
